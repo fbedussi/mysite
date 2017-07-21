@@ -9,11 +9,13 @@
 
 <body>
     <header role="banner">
-        <h1 class="pageTitle">Francesco Bedussi</h1>
-    </header>
-    <main>
-        <img class="profileImage" src="francesco-bedussi.jpg" alt="Francesco Bedussi" />
+        <h1 class="pageTitle"><img class="name" src="francesco-bedussi.svg" alt="Francesco Bedussi" /></h1>
+        <div class="jobTitleContainer">
+            <span class="jobTitle">front-end developer</span><span class="cursor">|</span>
         </div>
+        <img class="profileImage" src="francesco-bedussi.jpg" alt="Francesco Bedussi" />
+    </header>
+    <main class="main">
         <div class="profileText">
             <p>I am a senior front end developer.</p>
             <p>I like to build things, to solve problems and to learn new things.</p>
@@ -25,10 +27,13 @@
                 Do you want to know something about me? Ask to my chatbot avatar!
             </div>
             <iframe
+                class="chatBox"
                 width="100%"
-                style="height: 100vh;"
                 src="https://console.api.ai/api-client/demo/embedded/5890d9ba-a444-49d7-be59-f7e2f4aeebce">
             </iframe>
+            <div class="downloadContainer">
+                <P>...or just <a class="btn-download" href="francesco-bedussi-cv.txt">download my CV</a></P>
+            </div>
         </div>
     </main>
     <footer>
