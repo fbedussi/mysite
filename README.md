@@ -1,1 +1,1 @@
-My personal website... WIP
+My personal website

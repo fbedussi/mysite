@@ -1,39 +1,32 @@
-var jobTitle = document.querySelector('.jobTitle');
+const internalLink = [].slice.call(document.querySelectorAll('a[href^="#"]'));
+const backButtons = [].slice.call(document.querySelectorAll('.backIcon'));
+const content = document.querySelector('.content');
+const menuButton = document.querySelector('.menuButton');
+const overlay = document.querySelector('.overlay');
+const menu = document.querySelector('.mainMenu');
 
-function randomizeInterval(interval) {
-    return interval + Math.random() * interval;
-}
+menuButton.addEventListener('click', (e) => document.body.classList.toggle('menuOpen'));
 
-function delElChar(el) {
-    el.innerText = el.innerText.substring(0, el.innerText.length - 1);
-}
+overlay.addEventListener('click', (e) => document.body.classList.remove('menuOpen'));
 
-function delElText(el, interval = 100) {
-        return new Promise(resolve => {
-            delElChar(el);
-        
-            if (el.innerText.length === 0) {
-                return resolve();
-            }
-            
-            setTimeout(() => {
-                resolve(delElText(el, interval)) ;
-            }, randomizeInterval(interval));
-        })
-}
 
-function addElChar(el, char) {
-    el.innerText = el.innerText + char;
-}
-
-function addElText(el, text,  interval = 800) {
-    while (el.innerText.length < text.length) {
-        setTimeout(addElChar, randomizeInterval(), el, text[el.innerText.length]);
-    }
-}
-
-['interface developer', 'full-stack developer'].forEach(jobTitleText => {
-    delElText(jobTitle).then(() => {
-        console.log('pippo');
-    });
+internalLink.forEach((element) => {
+  element.addEventListener('click', (e) => {
+    e.preventDefault();
+    const target = document.querySelector(e.currentTarget.hash);
+    document.body.classList.remove('menuOpen');
+    target.focus();
+    target.classList.remove('hide');
+    setTimeout(() => target.classList.add('is-open'), 10);
+  })  
 });
+
+backButtons.forEach((element) => {
+    element.addEventListener('click', (e) => {
+      e.preventDefault();
+      const parentSlide = e.currentTarget.parentElement;
+      parentSlide.classList.remove('is-open');
+      //TODO: mange focus
+      setTimeout(() => parentSlide.classList.add('hide'), 500);
+    })  
+  });

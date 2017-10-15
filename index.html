@@ -1,63 +1,346 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
-    <title>Francesco Bedussi</title>
-    <link rel="stylesheet" href="style.css"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francesco Bedussi, front end and javascript developer</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <header role="banner">
-        <h1 class="pageTitle"><img class="name" src="francesco-bedussi.svg" alt="Francesco Bedussi" /></h1>
-        <div class="jobTitleContainer">
-            <span class="jobTitle">front-end developer</span><span class="cursor">|</span>
+    <svg width="0" height="0" class="hide">
+        <defs>
+            <g id="backIcon">
+                <path d="M7.41 10.59L2.83 6l4.58-4.59L6 0 0 6l6 6z" />
+                <path d="M-8-6h24v24H-8z" fill="none" />
+            </g>
+
+        </defs>
+    </svg>
+
+    <div class="menuWrapper">
+        <button class="menuButton">
+            <span class="menuIcon">
+                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                </svg>
+                <span class="visuallyHidden">Menu</span>
+            </span>
+        </button>
+        <div class="menuInner">
+            <nav class="mainMenu">
+                <ul>
+                    <li>
+                        <a class="underlineIn" href="#about">About me</a>
+                    </li>
+                    <li>
+                        <a class="underlineIn" href="#contact">Contact me</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="social">
+                <li>
+                    <a class="underlineIn" href="https://www.linkedin.com/in/francescobedussi/" target="_blank">Linkedin</a>
+                </li>
+                <li>
+                    <a class="underlineIn" href="https://twitter.com/fbedussi" target="_blank">Twitter</a>
+                </li>
+                <li>
+                    <a class="underlineIn" href="https://github.com/fbedussi" target="_blank">Github</a>
+                </li>
+            </ul>
         </div>
-        <img class="profileImage" src="francesco-bedussi.jpg" alt="Francesco Bedussi" />
-    </header>
-    <main class="main">
-        <div class="profileText">
-            <p>I am a senior front end developer.</p>
-            <p>I like to build things, to solve problems and to learn new things.</p>
-            <p>I love to work with people different from me, but toward a common goal.</p>
-            <p>I'm most interested in accessibility, usability, test automation and artificial intelligence.</p>
+    </div>
+
+    <main class="content">
+        <div class="overlay"></div>
+        <div class="slide is-open">
+            <h1 class="headline">I am a
+                <a class="link" href="#frontEndPortfolio">senior front end engineer</a>
+                <br />
+                <a class="link" href="#jsPortfolio">and javascript developer</a>
+            </h1>
+
         </div>
-        <div class="chatContainer">
-            <div class="chatIntro">
-                Do you want to know something about me? Ask to my chatbot avatar!
+
+        <div class="slide hide" id="frontEndPortfolio">
+            <button class="icon backIcon">
+                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="#backIcon" />
+                </svg>
+                <span class="visuallyHidden">back</span>
+            </button>
+            <h2 class="slideTitle">Front end development portfolio</h2>
+            <ul>
+                <li>
+                    <a href="#cavalli">
+                        <span class="portfolioItem">Just Cavalli e-store</span>
+                        <span class="portfolioDate">2017</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#apl">
+                        <span class="portfolioItem">APL configurator</span>
+                        <span class="portfolioDate">2017</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#margiela">
+                        <span class="portfolioItem">Maison Margiela e-store</span>
+                        <span class="portfolioDate">2016</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#y3">
+                        <span class="portfolioItem">Y-3 e-store</span>
+                        <span class="portfolioDate">2016</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#lagerfeld">
+                        <span class="portfolioItem">Karl Lagerfeld e-store</span>
+                        <span class="portfolioDate">2015</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#nextOpening">
+                        <span class="portfolioItem">Next Opening Food website</span>
+                        <span class="portfolioDate">2014</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#bicigeneratori">
+                        <span class="portfolioItem">Bicigeneratori website</span>
+                        <span class="portfolioDate">2013</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#viro">
+                        <span class="portfolioItem">Club Viro della Sicurezza blog</span>
+                        <span class="portfolioDate">2013</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#carisma">
+                        <span class="portfolioItem">Carisma website</span>
+                        <span class="portfolioDate">2012</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#legambiente">
+                        <span class="portfolioItem">Lebambiente Bologna website</span>
+                        <span class="portfolioDate">2012</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="slide hide" id="jsPortfolio">
+            <button class="icon backIcon">
+                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="#backIcon" />
+                </svg>
+                <span class="visuallyHidden">back</span>
+            </button>
+            <h2 class="slideTitle">JavasScript development portfolio</h2>
+            <ul>
+                <li>
+                    <a href="#ttracker">
+                        <span class="portfolioItem">tTracker, a time tracking app for freelancers</span>
+                        <span class="portfolioDate">2017</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#remedi">
+                        <span class="portfolioItem">ReMEdi reveal.js markdown editor</span>
+                        <span class="portfolioDate">2016</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#nightwatchGui">
+                        <span class="portfolioItem">nightwatchGui, a Graphical User Interface for the test automation framework nightwatch-cucumber</span>
+                        <span class="portfolioDate">2016</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#gpp">
+                        <span class="portfolioItem">Gherkin/Cucumber file preprocessor</span>
+                        <span class="portfolioDate">2016</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="slide hide" id="cavalli">
+            <button class="icon backIcon">
+                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="#backIcon" />
+                </svg>
+                <span class="visuallyHidden">back</span>
+            </button>
+            <h2 class="slideTitle">
+                <a href="https://www.justcavalli.com" target="_blank">Just Cavalli e-store</a>
+            </h2>
+            <div class="imageAndDatasheet">
+                <img src="media/cavalli.jpg" alt="">
+
+                <div class="dataSheet">
+                    <h3 class="dataSheet-title">Technical details</h3>
+                    <ul class="dataSheet-list">
+                        <li>Fully accessible website compliant with WCAG 2.0 level A requirements</li>
+                        <li>ES-6 + webpack</li>
+                        <li>SASS + PostCss</li>
+                        <li>Mobile &amp; desktop versions, with a shared core and different heads</li>
+                        <li>Wordpress integration for non e-commerce contents</li>
+                        <li>Based on a .NET MVC custom front-end platform</li>
+                        <li>Based on custom js pub-sub framework</li>
+                    </ul>
+                </div>
             </div>
-            <iframe
-                class="chatBox"
-                width="100%"
-                src="https://console.api.ai/api-client/demo/embedded/5890d9ba-a444-49d7-be59-f7e2f4aeebce">
-            </iframe>
-            <div class="downloadContainer">
-                <P>...or just <a class="btn-download" href="francesco-bedussi-cv.txt">download my CV</a></P>
-            </div>
+
+            <a class="btn">visit the </a>
+
         </div>
+
+        <div class="slide hide" id="about">
+            <button class="icon backIcon">
+                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="#backIcon" />
+                </svg>
+                <span class="visuallyHidden">back</span>
+            </button>
+            <h2 id="about" class="slideTitle">About me</h2>
+            <h1 id="who-i-am">Who I am</h1>
+            <p>I am a senior front end developer. I’m expert in usability, accessibility, and test automation.</p>
+
+            <h1 id="expertise">Expertise</h1>
+            <p>I work in the web industry since 2002. At first as a project leader, then, from 2007 to 2014 as a free lance
+                web developer and web marketing consultant. Since 2015 I am a full time interface developer at Yoox Net-A-Porter
+                Group.
+            </p>
+
+            <h1 id="skills">Skills</h1>
+            <ul>
+                <li>Front-end development: JavaScript, ES6, Redux.js, React.js, jQuery, HTML5, CSS3, Sass, Bootstrap, Foundation,
+                    AJAX, SVG</li>
+                <li>Back-end development: Node.Js, PHP, C#, .NET MVC, Electron</li>
+                <li>Programming paradigms: OOP, functional programming</li>
+                <li>CMS: Joomla!, Wordpress</li>
+                <li>OS: Linux, Windows</li>
+                <li>Tools: git, Mercurial, Visual Studio, Webpack, npm, ESlint, Postcss</li>
+            </ul>
+
+            <h1 id="languages">Languages</h1>
+            <ul>
+                <li>Italian: mother tongue</li>
+                <li>English: advanced (Cambridge Certificate in Advanced English, grade A)</li>
+            </ul>
+
+            <h1 id="work-experience">Work experience</h1>
+
+            <h2 id="interface-developer">Interface Developer</h2>
+
+            <p>
+                <strong>2015 &gt; Today</strong>
+            </p>
+
+            <p>Yoox Net-A-Porter Group, Via Nannetti 1, Zola Predosa (BO) Key responsibilities: front-end development for monobrand
+                web sites. Development of the corporate framework for functional automated testing. Accessibility evangelist.</p>
+
+            <h2 id="web-developer--web-marketing-consultant">Web developer &amp; web marketing consultant</h2>
+
+            <p>
+                <strong>2007 &gt; 2014</strong>
+            </p>
+
+            <p>Free lance. Key clients: Viro Spa, Centro Anatartide, Sviluppi Urbani Srl. Key responsibilities: design and development
+                of web sites and on-line communication campaigns.</p>
+
+            <h2 id="co-founder">Co-founder</h2>
+
+            <p>
+                <strong>2004 &gt;2007</strong>
+            </p>
+
+            <p>Caffe Network Scarl, Bologna, Italy, an agency specialised in the set up, fine tuning, monitoring and management
+                of distribution networks for free press editorial initiatives and for ambient advertising solutions. Key
+                responsibilities: start-up, business development, marketing manager.</p>
+
+            <h2 id="project-leader">Project leader</h2>
+
+            <p>
+                <strong>2002 &gt; 2003</strong>
+            </p>
+
+            <p>O-one, Reggio Emilia, web agency Key responsibilities: business development, project management.</p>
+
+            <h1 id="education">Education</h1>
+
+            <ul>
+                <li>
+                    <strong>2015</strong> Course “Agile Development”, a week long intensive course on Agile theory and practice followed
+                    by a 2 week long boot camp.</li>
+                <li>
+                    <strong>2014</strong> Course on “Information and Communication Technologies: Opportunities for business and local
+                    development“ - Spinner, Bologna, Italy</li>
+                <li>
+                    <strong>2001</strong> Graduated in Communication Sciences with 110 cum laude (maximum grade) from the University
+                    of Bologna, Italy</li>
+            </ul>
+        </div>
+
+        <div class="slide hide" id="contact">
+            <button class="icon backIcon">
+                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="#backIcon" />
+                </svg>
+                <span class="visuallyHidden">back</span>
+            </button>
+            <h2 class="slideTitle">Contact me</h2>
+            <p>
+                <a mailto="francesco@francescobedussi.it">francesco@francescobedussi.it</p>
+            <ul class="social contact-social">
+                <li class="btn">
+                    <a href="https://www.linkedin.com/in/francescobedussi/" target="_blank">Linkedin</a>
+                </li>
+                <li class="btn">
+                    <a href="https://twitter.com/fbedussi" target="_blank">Twitter</a>
+                </li>
+                <li class="btn">
+                    <a href="https://github.com/fbedussi" target="_blank">Github</a>
+                </li>
+            </ul>
+        </div>
+
     </main>
-    <footer>
-        <ul class="socialContainer">
-            <li>
-                <a href="https://www.linkedin.com/in/francescobedussi/" target="_black">
-                    <span class="icon"><img src="linkedin.svg" alt=""/></span>
-                    <span class="text">Linkedin</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/fbedussi" target="_black">
-                    <span class="icon"><img src="github.svg" alt=""/></span>
-                    <span class="text">Github</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://twitter.com/fbedussi" target="_black">                
-                    <span class="icon"><img src="twitter.svg" alt=""/></span>
-                    <span class="text">Twitter</span>
-                </a>
-            </li>
-        </ul>
-    </footer>
     <script src="script.js" type="text/javascript"></script>
 </body>
+
 </html>
+
+
+<!-- <li><a href="http://www.maisonmargiela.com">www.maisonmargiela.com</a>, Front-end development of a full responsive web site based on the corporate .NET MVC platform.</li>
+<li><a href="http://www.dsquared2.com/it">http://www.dsquared2.com</a>, Partial rework, bugfix &amp; maintenance</li>
+<li><a href="http://www.y-3.com/">http://www.y-3.com</a>, Front-end development of a desktop and mobile web site</li>
+<li><a href="http://www.karl.com">www.karl.com</a>, Front-end development of a desktop and mobile web site based on the corporate .NET MVC platform.</li>
+<li><a href="https://github.com/fbedussi/JOE">JOE</a>, Mini framework for object composition in front-end development.</li>
+<li><a href="http://www.bicigeneratori.it">www.bicigeneratori.it</a>, Design and front-end development on Joomla CMS.</li>
+<li><a href="http://www.carismarct.com">www.carismarct.com</a>, Design and front-end development on Joomla CMS.</li>
+<li><a href="http://www.legambientebologna.org">www.legambientebologna.org</a>, Design and front-end development on Joomla CMS.</li>
+<li><a href="http://www.greennight.it">www.greennight.it</a>, Design and front-end development on Joomla CMS.</li>
+<li><a href="http://clubsicurezza.viro.it">clubsicurezza.viro.it</a>, Design and front-end development on Wordpress CMS.</li>
+<li><a href="www.italiativogliobene.it">www.italiativogliobene.it</a>, Web site setup on Wordpress CMS and development of a mini application for booking management.</li>
+<li><a href="github.com/fbedussi/joomla_vanilla_js_gallery_plg">Joomla gallery plug-in</a>, Joomla gallery plug-in in vanilla JavaScript.</li> -->
+
+<!-- <li>
+    <a href="https://github.com/fbedussi/reveal-js-editor">REMEDI</a>, A cross platform editor (build upon the electron framework) to author reveal.js presentation
+    in markdown.</li>
+<li>
+    <a href="https://github.com/fbedussi/nightwatchGui">nightwatchGui</a>, Graphical User Interface in Node.js for the test automation framework nightwatch-cucumber.</li>
+<li>
+    <a href="https://github.com/fbedussi/gpp">Gherkin/Cucumber file preprocessor</a>, Gherkin/Cucumber file preprocessor in Node.Js.</li>
+<li>
+    <a href="https://github.com/fbedussi/addressbook">address book</a>, Web based address book manager for small organizations written in PHP.</li> -->
