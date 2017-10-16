@@ -14,15 +14,21 @@ $internalLinks.on('click', (e) => {
   e.preventDefault();
   const $target = $(e.currentTarget.hash);
   $(document.body).removeClass('menuOpen');
-  $target.focus();
   $target.removeClass('hide');
   setTimeout(() => $target.addClass('is-open'), 10);
+  setTimeout(() => $target.focus(), 500);
 });
 
 $backButtons.on('click', (e) => {
   e.preventDefault();
   const $parentSlide = $(e.currentTarget.parentElement);
-  $parentSlide.removeClass('is-open');
-  $parentSlide.prevAll('is-open').eq(0).focus();
+  var $last = $parentSlide
+    .removeClass('is-open')
+    .prevAll('.is-open')
+    .last()
+    //.focus()
+  ;
+  console.log($last);
+  $last.focus();
   setTimeout(() => $parentSlide.addClass('hide'), 500);
 });

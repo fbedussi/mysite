@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Francesco Bedussi, front end and javascript developer</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
 </head>
 
 <body>
@@ -101,16 +103,16 @@
 
     <main class="content">
         <div class="overlay"></div>
-        <div class="slide is-open">
+        <div tabindex="-1" class="slide is-open">
             <h1 class="headline">I am a
-                <a class="link" href="#frontEndPortfolio">senior front end engineer</a>
+                <a class="link" href="#frontEndPortfolio">senior front end developer</a>
                 <br />
-                <a class="link" href="#jsPortfolio">and javascript developer</a>
+                and <a class="link" href="#jsPortfolio">javascript engineer</a>
             </h1>
 
         </div>
 
-        <div class="slide hide" id="frontEndPortfolio">
+        <div tabindex="-1" class="slide hide" id="frontEndPortfolio">
             <button class="icon backIcon">
                 <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="#backIcon" />
@@ -175,14 +177,14 @@
                 </li>
                 <li>
                     <a href="#legambiente">
-                        <span class="portfolioItem">Lebambiente Bologna website</span>
+                        <span class="portfolioItem">Legambiente Bologna website</span>
                         <span class="portfolioDate">2012</span>
                     </a>
                 </li>
             </ul>
         </div>
 
-        <div class="slide hide" id="jsPortfolio">
+        <div tabindex="-1" class="slide hide" id="jsPortfolio">
             <button class="icon backIcon">
                 <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="#backIcon" />
@@ -209,16 +211,16 @@
                         <span class="portfolioDate">2016</span>
                     </a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="#gpp">
                         <span class="portfolioItem">Gherkin/Cucumber file preprocessor</span>
                         <span class="portfolioDate">2016</span>
                     </a>
-                </li>
+                </li> -->
             </ul>
         </div>
 
-        <div class="slide hide" id="cavalli">
+        <div tabindex="-1" class="slide hide" id="cavalli">
             <button class="icon backIcon">
                 <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="#backIcon" />
@@ -239,7 +241,7 @@
                         <li>ES-6 + webpack</li>
                         <li>SASS + PostCss</li>
                         <li>Mobile &amp; desktop versions, with a shared core and different heads</li>
-                        <li>Wordpress integration for non e-commerce contents</li>
+                        <li>Wordpress integration for editorial content</li>
                         <li>Based on a .NET MVC custom front-end platform</li>
                         <li>Based on custom js pub-sub framework</li>
                     </ul>
@@ -248,7 +250,7 @@
             </div>
         </div>
 
-        <div class="slide hide" id="apl">
+        <div tabindex="-1" class="slide hide" id="apl">
             <button class="icon backIcon">
                 <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="#backIcon" />
@@ -264,8 +266,8 @@
                 <div class="dataSheet">
                     <h3 class="dataSheet-title">Technical details</h3>
                     <ul class="dataSheet-list">
-                        <li>React + Redux</li>
-                        <li>Dynamic contents via json file</li>
+                        <li>React + Redux + Jest</li>
+                        <li>Dynamic content loading via json file</li>
                         <li>Fully responsive</li>
                     </ul>
                     <a class="btn" href="http://www.ledpedestriancrossing.com/configuratore/index.html" href="_blank">visit the site</a>
@@ -273,7 +275,7 @@
             </div>
         </div>
 
-        <div class="slide hide" id="margiela">
+        <div tabindex="-1" class="slide hide" id="margiela">
             <button class="icon backIcon">
                 <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="#backIcon" />
@@ -301,7 +303,7 @@
             </div>
         </div>
 
-        <div class="slide hide" id="y3">
+        <div tabindex="-1" class="slide hide" id="y3">
             <button class="icon backIcon">
                 <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="#backIcon" />
@@ -327,7 +329,7 @@
             </div>
         </div>
 
-        <div class="slide hide" id="lagerfeld">
+        <div tabindex="-1" class="slide hide" id="lagerfeld">
             <button class="icon backIcon">
                 <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="#backIcon" />
@@ -345,7 +347,7 @@
                     <ul class="dataSheet-list">
                         <li>Desktop &amp; Mobile versions</li>
                         <li>SASS + Compass</li>
-                        <li>Wordpress integration for non e-commerce contents</li>
+                        <li>Wordpress integration for editorial content</li>
                         <li>Based on a .NET MVC custom front-end platform</li>
                         <li>Based on custom js pub-sub framework</li>
                     </ul>
@@ -354,7 +356,7 @@
             </div>
         </div>
 
-        <div class="slide hide" id="nextOpening">
+        <div tabindex="-1" class="slide hide" id="nextOpening">
             <button class="icon backIcon">
                 <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="#backIcon" />
@@ -377,7 +379,7 @@
             </div>
         </div>
 
-        <div class="slide hide" id="bicigeneratori">
+        <div tabindex="-1" class="slide hide" id="bicigeneratori">
             <button class="icon backIcon">
                 <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="#backIcon" />
@@ -402,7 +404,7 @@
             </div>
         </div>
 
-        <div class="slide hide" id="carisma">
+        <div tabindex="-1" class="slide hide" id="carisma">
             <button class="icon backIcon">
                 <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="#backIcon" />
@@ -426,7 +428,7 @@
             </div>
         </div>
 
-        <div class="slide hide" id="legambiente">
+        <div tabindex="-1" class="slide hide" id="legambiente">
             <button class="icon backIcon">
                 <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="#backIcon" />
@@ -451,7 +453,7 @@
             </div>
         </div>
 
-        <div class="slide hide" id="viro">
+        <div tabindex="-1" class="slide hide" id="viro">
             <button class="icon backIcon">
                 <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="#backIcon" />
@@ -476,7 +478,112 @@
             </div>
         </div>
 
-        <div class="slide hide" id="about">
+        <div tabindex="-1" class="slide hide" id="ttracker">
+            <button class="icon backIcon">
+                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="#backIcon" />
+                </svg>
+                <span class="visuallyHidden">back</span>
+            </button>
+            <h2 class="slideTitle">
+                <a href="https://github.com/fbedussi/ttracker" target="_blank">tTracker</a>
+            </h2>
+            <div class="imageAndDatasheet">
+                <img src="media/ttracker.jpg" alt="">
+
+                <div class="dataSheet">
+                    <h3 class="dataSheet-title">Technical details</h3>
+                    <p class="dataSheet-intro">A time tracking app for freelancers with automatic invoice generation.</p>
+                    <ul class="dataSheet-list">
+                        <li>React + Redux + Jest + Material.Ui</li>
+                        <li>Test Driven Developed</li>
+                        <li>Optimistic interface</li>
+                        <li>Support for multiple databases: services for indexedDb and firebase are included, more can be added</li>
+                    </ul>
+                    <a class="btn" href="https://github.com/fbedussi/ttracker" href="_blank">take a look at the project</a>
+                </div>
+            </div>
+        </div>
+
+        <div tabindex="-1" class="slide hide" id="remedi">
+            <button class="icon backIcon">
+                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="#backIcon" />
+                </svg>
+                <span class="visuallyHidden">back</span>
+            </button>
+            <h2 class="slideTitle">
+                <a href="https://github.com/fbedussi/reveal-js-editor" target="_blank">ReMEdi</a>
+            </h2>
+            <div class="imageAndDatasheet">
+                <img src="media/remedi.jpg" alt="">
+
+                <div class="dataSheet">
+                    <h3 class="dataSheet-title">Technical details</h3>
+                    <p class="dataSheet-intro">An editor to author reveal.js presentation in markdown.</p>
+                    <ul class="dataSheet-list">
+                        <li>Electron + React + Redux</li>
+                        <li>Themable UI</li>
+                        <li>Multilanguage</li>
+                    </ul>
+                    <a class="btn" href="https://github.com/fbedussi/reveal-js-editor" href="_blank">take a look at the project</a>
+                </div>
+            </div>
+        </div>
+
+        <div tabindex="-1" class="slide hide" id="nightwatchGui">
+            <button class="icon backIcon">
+                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="#backIcon" />
+                </svg>
+                <span class="visuallyHidden">back</span>
+            </button>
+            <h2 class="slideTitle">
+                <a href="https://github.com/fbedussi/nightwatchGui" target="_blank">Nightwatch Gui</a>
+            </h2>
+            <div class="imageAndDatasheet">
+                <img src="media/nightwatchgui.jpg" alt="">
+
+                <div class="dataSheet">
+                    <h3 class="dataSheet-title">Technical details</h3>
+                    <p class="dataSheet-intro">A gui to launch nightwatch-cucumber functional tests</p>
+                    <ul class="dataSheet-list">
+                        <li>Node.js + Express</li>
+                        <li>Vanilla Js</li>
+                    </ul>
+                    <a class="btn" href="https://github.com/fbedussi/nightwatchGui" href="_blank">take a look at the project</a>
+                </div>
+            </div>
+        </div>
+
+        <div tabindex="-1" class="slide hide" id="gpp">
+            <button class="icon backIcon">
+                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="#backIcon" />
+                </svg>
+                <span class="visuallyHidden">back</span>
+            </button>
+            <h2 class="slideTitle">
+                <a href="https://github.com/fbedussi/gpp" target="_blank">Gherkin pre-processor</a>
+            </h2>
+            <div class="imageAndDatasheet">
+                <img src="media/gpp.jpg" alt="">
+
+                <div class="dataSheet">
+                    <h3 class="dataSheet-title">Technical details</h3>
+                    <p class="dataSheet-intro">Gherkin/Cucumber file preprocessor</p>
+                    <ul class="dataSheet-list">
+                        <li>Node.js</li>
+                        <li>Watch mode</li>
+                        <li>File partials</li>
+                        <li>Conditional rendering</li>
+                    </ul>
+                    <a class="btn" href="https://github.com/fbedussi/gpp" href="_blank">take a look at the project</a>
+                </div>
+            </div>
+        </div>
+
+        <div tabindex="-1" class="slide hide" id="about">
             <button class="icon backIcon">
                 <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="#backIcon" />
@@ -484,71 +591,50 @@
                 <span class="visuallyHidden">back</span>
             </button>
             <h2 id="about" class="slideTitle">About me</h2>
-            <h1 id="who-i-am">Who I am</h1>
-            <p>I am a senior front end developer. I’m expert in usability, accessibility, and test automation.</p>
+            <p>I am a senior front end and javascript developer. I’m expert in usability, accessibility, and test automation.</p>
 
-            <h1 id="expertise">Expertise</h1>
-            <p>I work in the web industry since 2002. At first as a project leader, then, from 2007 to 2014 as a free lance
+            <h3 class="slideSubtitle" id="expertise">Expertise</h3>
+            <p>I work in the web industry since 2002. At first as a project leader, then, from 2007 to 2014 as a freelance
                 web developer and web marketing consultant. Since 2015 I am a full time interface developer at Yoox Net-A-Porter
                 Group.
             </p>
 
-            <h1 id="skills">Skills</h1>
+            <h3 class="slideSubtitle" id="skills">Skills</h3>
             <ul>
                 <li>Front-end development: JavaScript, ES6, Redux.js, React.js, jQuery, HTML5, CSS3, Sass, Bootstrap, Foundation,
-                    AJAX, SVG</li>
-                <li>Back-end development: Node.Js, PHP, C#, .NET MVC, Electron</li>
+                    AJAX, SVG, Material UI, indexedDb</li>
+                <li>Back-end development: Node.Js, C#, .NET MVC, Electron, Firebase</li>
                 <li>Programming paradigms: OOP, functional programming</li>
                 <li>CMS: Joomla!, Wordpress</li>
                 <li>OS: Linux, Windows</li>
-                <li>Tools: git, Mercurial, Visual Studio, Webpack, npm, ESlint, Postcss</li>
+                <li>Tools: Git, Mercurial, Visual Studio, Webpack, npm, ESlint, Postcss</li>
             </ul>
 
-            <h1 id="languages">Languages</h1>
+            <h3 class="slideSubtitle" id="languages">Languages</h3>
             <ul>
                 <li>Italian: mother tongue</li>
                 <li>English: advanced (Cambridge Certificate in Advanced English, grade A)</li>
             </ul>
 
-            <h1 id="work-experience">Work experience</h1>
+            <h3 class="slideSubtitle" id="work-experience">Work experience</h3>
 
-            <h2 id="interface-developer">Interface Developer</h2>
-
-            <p>
-                <strong>2015 &gt; Today</strong>
-            </p>
-
-            <p>Yoox Net-A-Porter Group, Via Nannetti 1, Zola Predosa (BO) Key responsibilities: front-end development for monobrand
+            <h4 class="slideSubtitle2" id="interface-developer">Interface Developer (<strong>2015 &gt; Today</strong>)</h4>
+            <p>Yoox Net-A-Porter Group, Via Nannetti 1, Zola Predosa (BO).<br/>Key responsibilities: front-end development for monobrand
                 web sites. Development of the corporate framework for functional automated testing. Accessibility evangelist.</p>
 
-            <h2 id="web-developer--web-marketing-consultant">Web developer &amp; web marketing consultant</h2>
-
-            <p>
-                <strong>2007 &gt; 2014</strong>
-            </p>
-
-            <p>Free lance. Key clients: Viro Spa, Centro Anatartide, Sviluppi Urbani Srl. Key responsibilities: design and development
+            <h4 class="slideSubtitle2" id="web-developer--web-marketing-consultant">Web developer &amp; web marketing consultant (2007 &gt; 2014)</h4>
+            <p>Free lance. Key clients: Viro Spa, Centro Anatartide, Sviluppi Urbani Srl.<br/>Key responsibilities: design and development
                 of web sites and on-line communication campaigns.</p>
 
-            <h2 id="co-founder">Co-founder</h2>
-
-            <p>
-                <strong>2004 &gt;2007</strong>
-            </p>
-
+            <h4 class="slideSubtitle2" id="co-founder">Co-founder <strong>(2004 &gt;2007)</strong></h4>
             <p>Caffe Network Scarl, Bologna, Italy, an agency specialised in the set up, fine tuning, monitoring and management
-                of distribution networks for free press editorial initiatives and for ambient advertising solutions. Key
+                of distribution networks for free press editorial initiatives and for ambient advertising solutions.<br/>Key
                 responsibilities: start-up, business development, marketing manager.</p>
 
-            <h2 id="project-leader">Project leader</h2>
+            <h4 class="slideSubtitle2" id="project-leader">Project leader <strong>(2002 &gt; 2003)</strong></h4>
+            <p>O-one, Reggio Emilia, web agency.<br/>Key responsibilities: business development, project management.</p>
 
-            <p>
-                <strong>2002 &gt; 2003</strong>
-            </p>
-
-            <p>O-one, Reggio Emilia, web agency Key responsibilities: business development, project management.</p>
-
-            <h1 id="education">Education</h1>
+            <h3 class="slideSubtitle" id="education">Education</h3>
 
             <ul>
                 <li>
@@ -563,7 +649,7 @@
             </ul>
         </div>
 
-        <div class="slide hide" id="contact">
+        <div tabindex="-1" class="slide hide" id="contact">
             <button class="icon backIcon">
                 <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="#backIcon" />
@@ -587,32 +673,8 @@
         </div>
 
     </main>
-    <script src="vjQUery.js" type="text/javascript"></script>
+    <script src="vjQuery.js" type="text/javascript"></script>
     <script src="script.js" type="text/javascript"></script>
 </body>
 
 </html>
-
-
-<!-- <li><a href="http://www.maisonmargiela.com">www.maisonmargiela.com</a>, Front-end development of a full responsive web site based on the corporate .NET MVC platform.</li>
-<li><a href="http://www.dsquared2.com/it">http://www.dsquared2.com</a>, Partial rework, bugfix &amp; maintenance</li>
-<li><a href="http://www.y-3.com/">http://www.y-3.com</a>, Front-end development of a desktop and mobile web site</li>
-<li><a href="http://www.karl.com">www.karl.com</a>, Front-end development of a desktop and mobile web site based on the corporate .NET MVC platform.</li>
-<li><a href="https://github.com/fbedussi/JOE">JOE</a>, Mini framework for object composition in front-end development.</li>
-<li><a href="http://www.bicigeneratori.it">www.bicigeneratori.it</a>, Design and front-end development on Joomla CMS.</li>
-<li><a href="http://www.carismarct.com">www.carismarct.com</a>, Design and front-end development on Joomla CMS.</li>
-<li><a href="http://www.legambientebologna.org">www.legambientebologna.org</a>, Design and front-end development on Joomla CMS.</li>
-<li><a href="http://www.greennight.it">www.greennight.it</a>, Design and front-end development on Joomla CMS.</li>
-<li><a href="http://clubsicurezza.viro.it">clubsicurezza.viro.it</a>, Design and front-end development on Wordpress CMS.</li>
-<li><a href="www.italiativogliobene.it">www.italiativogliobene.it</a>, Web site setup on Wordpress CMS and development of a mini application for booking management.</li>
-<li><a href="github.com/fbedussi/joomla_vanilla_js_gallery_plg">Joomla gallery plug-in</a>, Joomla gallery plug-in in vanilla JavaScript.</li> -->
-
-<!-- <li>
-    <a href="https://github.com/fbedussi/reveal-js-editor">REMEDI</a>, A cross platform editor (build upon the electron framework) to author reveal.js presentation
-    in markdown.</li>
-<li>
-    <a href="https://github.com/fbedussi/nightwatchGui">nightwatchGui</a>, Graphical User Interface in Node.js for the test automation framework nightwatch-cucumber.</li>
-<li>
-    <a href="https://github.com/fbedussi/gpp">Gherkin/Cucumber file preprocessor</a>, Gherkin/Cucumber file preprocessor in Node.Js.</li>
-<li>
-    <a href="https://github.com/fbedussi/addressbook">address book</a>, Web based address book manager for small organizations written in PHP.</li> -->

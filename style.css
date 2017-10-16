@@ -92,6 +92,10 @@ img {
     max-width: 100%;
 }
 
+p {
+    max-width: 70em;
+}
+
 .visuallyHidden {
     position:absolute;
     left:-10000px;
@@ -107,6 +111,7 @@ img {
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
+    font-display: swap;
     background-color: var(--bgColor--menu);
     width: 100%;
     min-height: 100vh;
@@ -127,7 +132,7 @@ body {
     font-weight: 600;    
 }
 
-.menuIcon {
+.menuButton {
     position: absolute;
     z-index: 20;
     top: var(--padding);
@@ -160,12 +165,14 @@ body {
     transform: rotate(-45deg);
 }
 
-
 .menuInner {
-    display: flex;
-    padding-top: 1em;
+    display: none;
+    padding-top: calc(var(--padding) + 1em);
 }
 
+.menuOpen .menuInner {
+    display: flex;
+}
 .mainMenu {
     flex: 1;
 }
@@ -235,6 +242,16 @@ body {
     opacity: 0.6;
     margin-bottom: 0.5em;
     font-size: 2rem;
+}
+
+.slideSubtitle {
+    font-size: 1.5rem;
+    margin: 1em 0 0.5em;
+}
+
+.slideSubtitle2 {
+    font-size: 1.2rem;
+    margin: 0.75em 0 0.25em;
 }
 
 .portfolioItem {

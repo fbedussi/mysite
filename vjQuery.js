@@ -1,8 +1,15 @@
 var $;
 (function() {
+const renew = (elements) => Object.create(vjQuery)._init(elements);
 const vjQuery = {
     elements: [],    
     length: 0,
+    _init: function(elements) {
+        this.elements = [].concat(elements);
+        this.length = this.elements.length;
+
+        return this;
+    },
     query: function(query) {
         var element;
         if (query instanceof HTMLElement) {
@@ -32,7 +39,13 @@ const vjQuery = {
         return this;
     },
     eq: function(index) {
-      return this.elements[index];
+        return renew(this.elements[index]);
+    },
+    first: function() {
+        return this.eq(0);
+    },
+    last: function() {
+        return this.eq(this.length - 1);
     },
     each: function(cb) {
         this.elements.forEach(cb);
@@ -40,8 +53,7 @@ const vjQuery = {
         return this;
     },
     filter: function(cb) {
-        this.elements = this.elements.filter(cb);
-        return;  
+        return renew(this.elements.filter(cb));
     },
     on: function() {
         const events = arguments[0];
@@ -97,28 +109,32 @@ const vjQuery = {
             return this;
         }
 
-        this.elements[0] = this.elements[0].prevElementSibling;
-        this.length = 1;
-        return this;
+        return renew(this.elements[0].prevElementSibling);
+    },
+    siblings: function(selector) {
+        if (!this.elements[0]) {
+            return this;
+        }
+        var siblings = selector ? this.elements[0].parentElement.querySelectorAll(':scope > ' + selector) : this.elements[0].parentElement.children;
+
+        return renew([].filer.call(siblings, (el) => el != this.elements[0]));
     },
     prevAll: function(selector) {
         if (!this.elements[0]) {
             return this;
         }
-        var siblings = this.elements[0].parentElement.childern
-        var prev = this.elements[0].prevElementSibling
-        this.elements = [];
-        while (prev) {
-            this.elements.push(prev);
-            prev = prev.prevElementSibling;
+        var siblings = selector ? this.elements[0].parentElement.querySelectorAll(':scope > ' + selector) : this.elements[0].parentElement.children;
+        var currentElHit = false;
+        var i=0;
+        while (!currentElHit) {
+            if (i === siblings.length - 1 || siblings[i] === this.elements[0] || siblings[i].compareDocumentPosition(this.elements[0]) === 2) {
+                currentElHit = true;
+            }
+            i++;
         }
-
-        if (selector) {
-            this.elements = this.elements.querySelectorAll(selector);
-        }
-
-        this.length = this.elements.length
-        return this;
+        var prevAll = [].slice.call(siblings, 0, i);
+        
+        return renew(prevAll);
     },
     next: function() {
         if (!this.elements[0] || !this.elements[0].nextElementSibling) {
@@ -127,9 +143,7 @@ const vjQuery = {
             return this;
         }
 
-        this.elements[0] = this.elements[0].nextElementSibling;
-        this.length = 1;
-        return this;
+        return renew(this.elements[0].nextElementSibling);
     }
 }
 $ = (selector) => Object.create(vjQuery).query(selector);
