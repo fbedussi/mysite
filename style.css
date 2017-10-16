@@ -13,6 +13,10 @@
     --btnHoverTextColor: var(--bgColor);
     --btnBgColor: teal;   
     --transitionDuration: 0.5s;
+    --iconHeight: 2.5rem;
+    --iconWidth: 2.5rem;
+    --menuIconHeight: var(--iconHeight);
+    --menuIconWidth: var(--iconWidth);
 }
 
 button,
@@ -110,8 +114,8 @@ body {
 }
 
 .icon {
-    width: 2rem;
-    height: 2rem;
+    width: var(--iconWidth);
+    height: var(--iconHeight);
 }
 
 .menuWrapper {
@@ -129,6 +133,33 @@ body {
     top: var(--padding);
     right: var(--padding);
 }
+
+.menuIconPart {
+	transition: all var(--transitionDuration);
+}
+
+#menuIconMiddle, #menuIconMiddle2 {
+	transform-origin: center center;
+}
+
+.menuOpen #menuIconTop {
+    transform: translateY(calc(var(--menuIconHeight) / 2));
+    opacity: 0;
+}
+
+.menuOpen #menuIconBottom {
+    transform: translateY(calc(0 - var(--menuIconHeight) / 2));
+    opacity: 0;
+}
+
+.menuOpen #menuIconMiddle {
+    transform: rotate(45deg);
+}
+
+.menuOpen #menuIconMiddle2 {
+    transform: rotate(-45deg);
+}
+
 
 .menuInner {
     display: flex;
@@ -178,7 +209,7 @@ body {
 }
 
 .headline {
-    font-size: 200%;
+    font-size: calc(2rem + 1vw);
     transform: translateY(calc(60vh - 100%));
 }
 
@@ -220,6 +251,16 @@ body {
 
 .imageAndDatasheet {
     position: relative;
+    display: inline-block;
+}
+
+.imageAndDatasheet img {
+    transition: filter var(--transitionDuration);
+    filter: blur(5px);
+}
+
+.imageAndDatasheet img:hover {
+    filter: none;
 }
 
 .dataSheet {
@@ -243,6 +284,11 @@ body {
     padding: 1em 2em;
 }
 
+.dataSheet .btn {
+    margin: 1em;
+    display: inline-block;
+}
+
 .contact-social li {
     display: inline-block;
     margin: 1em 1em 1em 0;
@@ -251,13 +297,13 @@ body {
 .btn {
     position: relative;
     border: solid 1px currentColor;
-    border-radius: 1em;
+    border-radius: 2px;
     padding: 0.25em 0.5em;
     line-height: 1.5em;
     overflow: hidden;
 }
 
-.btn::before {
+/* .btn::before {
     content: "";
     position: absolute;
     top: 0;
@@ -280,4 +326,17 @@ body {
 
 .btn:hover::before {
     transform: translateY(0);    
+} */
+
+.btn {
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 8px currentColor;
+}
+
+.btn:active {
+    box-shadow: 0px 0px 6px currentColor inset;
+    transform: scale(0.95);
 }
