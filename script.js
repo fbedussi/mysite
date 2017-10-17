@@ -4,6 +4,7 @@ const $content = $('.content');
 const $menuButton = $('.menuButton');
 const $overlay = $('.overlay');
 const $menu = $('.mainMenu');
+const $body = $(document.body);
 
 $menuButton.on('click', (e) => document.body.classList.toggle('menuOpen'));
 
@@ -32,3 +33,12 @@ $backButtons.on('click', (e) => {
   $last.focus();
   setTimeout(() => $parentSlide.addClass('hide'), 500);
 });
+
+$body
+  .on('keyup', (e) => {
+    if (e.keyCode = 9) {
+      $body.addClass('keyboardNavigation')
+    }
+  })
+  .on('click', () => $body.removeClass('keyboardNavigation'))
+;

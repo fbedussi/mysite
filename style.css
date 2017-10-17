@@ -19,6 +19,14 @@
     --menuIconWidth: var(--iconWidth);
 }
 
+*:focus {
+    outline: none;
+}
+
+.keyboardNavigation *:focus {
+    outline: solid 2px red;;
+}
+
 button,
 input {
     -moz-appearance: none;
