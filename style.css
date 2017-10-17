@@ -13,8 +13,8 @@
     --btnHoverTextColor: var(--bgColor);
     --btnBgColor: teal;   
     --transitionDuration: 0.5s;
-    --iconHeight: 2.5rem;
-    --iconWidth: 2.5rem;
+    --iconHeight: 1.5rem;
+    --iconWidth: 1.5rem;
     --menuIconHeight: var(--iconHeight);
     --menuIconWidth: var(--iconWidth);
 }
@@ -121,6 +121,7 @@ body {
 .icon {
     width: var(--iconWidth);
     height: var(--iconHeight);
+    display: inline-block
 }
 
 .menuWrapper {
@@ -196,7 +197,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: calc(100% + var(--menuH));
     background-color: rgba(0, 0, 0, 0.6);
     opacity: 0;
     transition: opacity var(--transitionDuration);
@@ -271,20 +272,9 @@ body {
     display: inline-block;
 }
 
-.imageAndDatasheet img {
-    transition: filter var(--transitionDuration);
-    filter: blur(5px);
-}
-
-.imageAndDatasheet img:hover {
-    filter: none;
-}
-
 .dataSheet {
-    position: absolute;
-    top: 2em;
-    left: 2em;
-    width: 40%;
+    margin-top: 2rem;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 2px;
     color: #fff;
@@ -292,17 +282,21 @@ body {
 
 .dataSheet-title {
     border-bottom: solid 1px #fff;
-    padding: 0.5em 1em;
+    padding: 0.5rem 1rem;
     font-size: 1.5rem;
+}
+
+.dataSheet-intro {
+    padding: 1rem 2rem 0;
 }
 
 .dataSheet-list {
     list-style-type: square;
-    padding: 1em 2em;
+    padding: 1rem 2rem;
 }
 
 .dataSheet .btn {
-    margin: 1em;
+    margin: 1rem;
     display: inline-block;
 }
 
@@ -320,31 +314,6 @@ body {
     overflow: hidden;
 }
 
-/* .btn::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--btnBgColor);
-    transition: transform var(--transitionDuration);
-    transform: translateY(-100%);
-}
-
-.btn a {
-    position: relative;
-    transition: color var(--transitionDuration);    
-}
-    
-.btn:hover a {
-    color: var(--btnHovertextColor);
-}
-
-.btn:hover::before {
-    transform: translateY(0);    
-} */
-
 .btn {
     transition: all 0.2s;
 }
@@ -356,4 +325,24 @@ body {
 .btn:active {
     box-shadow: 0px 0px 6px currentColor inset;
     transform: scale(0.95);
+}
+
+@media screen and (min-width: 40em) {
+    
+
+    .dataSheet {
+        position: absolute;
+        top: 0;
+        left: 2rem;
+        width: 40%;
+    }
+
+    .imageAndDatasheet img {
+        transition: filter var(--transitionDuration);
+        filter: blur(5px);
+    }
+    
+    .imageAndDatasheet img:hover {
+        filter: none;
+    }    
 }
