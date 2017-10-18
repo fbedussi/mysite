@@ -34,10 +34,8 @@ $backButtons.on('click', (e) => {
     .removeClass('is-open')
     .prevAll('.is-open')
     .last()
-    //.focus()
+    .focus()
   ;
-  console.log($last);
-  $last.focus();
   setTimeout(() => $parentSlide.addClass('hide'), 500);
 });
 
@@ -49,3 +47,19 @@ $body
   })
   .on('click', () => $body.removeClass('keyboardNavigation'))
 ;
+
+var font300 = new FontFaceObserver('Source Sans Pro', {
+  weight: 300
+});
+
+var font600 = new FontFaceObserver('Source Sans Pro', {
+  weight: 600
+});
+
+font300.load().then(function () {
+  $body.addClass('font300Loaded')
+});
+
+font600.load().then(function () {
+  $body.addClass('font600Loaded')
+});

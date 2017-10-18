@@ -125,12 +125,16 @@ body,
 }
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: sans-serif;
     font-display: swap;
     background-color: var(--bgColor--menu);
     width: 100%;
     overflow: hidden;
     font-weight: 300;
+}
+
+body.font300Loaded.font600Loaded {
+    font-family: 'Source Sans Pro', sans-serif;    
 }
 
 .icon {
