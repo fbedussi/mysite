@@ -21,6 +21,7 @@ $internalLinks.on('click', (e) => {
   ;
   if ($img.length) {
     $img.elements[0].src = $img.elements[0].dataset.src;
+    $img.elements[0].srcset = $img.elements[0].dataset.srcset;
   }
   setTimeout(() => $target.addClass('is-open'), 10);
   setTimeout(() => $target.focus(), 500);
