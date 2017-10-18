@@ -5,6 +5,9 @@ const vjQuery = {
     elements: [],    
     length: 0,
     _init: function(elements) {
+        if (elements.length !== undefined) {
+            elements = [].slice.call(elements);
+        }
         this.elements = [].concat(elements);
         this.length = this.elements.length;
 
@@ -144,6 +147,13 @@ const vjQuery = {
         }
 
         return renew(this.elements[0].nextElementSibling);
+    },
+    find: function(selector) {
+        if (!this.elements[0]) {
+            return this;
+        }
+
+        return renew(this.elements[0].querySelectorAll(selector));
     }
 }
 $ = (selector) => Object.create(vjQuery).query(selector);

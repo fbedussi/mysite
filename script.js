@@ -15,7 +15,13 @@ $internalLinks.on('click', (e) => {
   e.preventDefault();
   const $target = $(e.currentTarget.hash);
   $(document.body).removeClass('menuOpen');
-  $target.removeClass('hide');
+  const $img = $target
+    .removeClass('hide')
+    .find('img')
+  ;
+  if ($img.length) {
+    $img.elements[0].src = $img.elements[0].dataset.src;
+  }
   setTimeout(() => $target.addClass('is-open'), 10);
   setTimeout(() => $target.focus(), 500);
 });
