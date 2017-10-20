@@ -1,2 +1,0 @@
-font loading management
-responsive images

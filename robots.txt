@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /addressbook/
+Disallow: /vecchiosito/
+Disallow: /ucm/
+Disallow: /xmlrpc/
+
+Disallow: /skipp/
+Disallow: /kimai/
+Disallow: /prove/
