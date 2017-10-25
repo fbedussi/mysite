@@ -284,6 +284,10 @@ p + p {
     margin: 0.75em 0 0.25em;
 }
 
+li:first-child .slideSubtitle2 {
+    margin-top: 0;
+}
+
 .portfolioItem {
     font-size: 150%;
 }
