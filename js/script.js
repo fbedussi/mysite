@@ -16,19 +16,21 @@ function openSlide($target) {
     $img.elements[0].src = $img.elements[0].dataset.src;
     $img.elements[0].srcset = $img.elements[0].dataset.srcset;
   }
+  $('.is-open').removeClass('is-open');
   setTimeout(() => $target.addClass('is-open'), 10);
   setTimeout(() => $target.focus(), 500);
 }
 
-$menuButton.on('click', (e) => document.body.classList.toggle('menuOpen'));
+$menuButton.on('click', (e) => $body.toggleClass('menuOpen'));
 
-$overlay.on('click', (e) => document.body.classList.remove('menuOpen'));
+$overlay.on('click', (e) => $body.removeClass('menuOpen'));
 
+//Open slide at landging
 if (window.location.hash.length) {
   openSlide($(window.location.hash));
 }
 
-window.addEventListener("hashchange", function() {
+$(window).on("hashchange", function() {
   var $target;
   if (window.location.hash.length) {
     $target = $(window.location.hash);
@@ -41,7 +43,6 @@ window.addEventListener("hashchange", function() {
 $internalLinks.on('click', (e) => {
   e.preventDefault();
   window.location.hash = e.currentTarget.hash; 
-  //openSlide($(e.currentTarget.hash));
 });
 
 $backButtons.on('click', (e) => {
@@ -50,9 +51,8 @@ $backButtons.on('click', (e) => {
   const $prevSlide = $parentSlide
     .removeClass('is-open')
     .prev('.is-open')
-    .focus()
   ;
-  //window.location.hash = $prevSlide.elements[0].id;
+  window.location.hash = $prevSlide.elements[0].id;
   setTimeout(() => $parentSlide.addClass('hide'), 500);
 });
 
