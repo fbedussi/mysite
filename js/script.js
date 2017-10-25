@@ -6,23 +6,25 @@ const $overlay = $('.overlay');
 const $menu = $('.mainMenu');
 const $body = $(document.body);
 
-$menuButton.on('click', (e) => document.body.classList.toggle('menuOpen'));
+$menuButton.on('click', (e) => $body.toggleClass('menuOpen'));
 
-$overlay.on('click', (e) => document.body.classList.remove('menuOpen'));
-
+$overlay.on('click', (e) => $body.removeClass('menuOpen'));
 
 $internalLinks.on('click', (e) => {
   e.preventDefault();
   const $target = $(e.currentTarget.hash);
-  $(document.body).removeClass('menuOpen');
+  $body.removeClass('menuOpen');
   const $img = $target
     .removeClass('hide')
     .find('img')
   ;
+
   if ($img.length) {
-    $img.elements[0].src = $img.elements[0].dataset.src;
-    $img.elements[0].srcset = $img.elements[0].dataset.srcset;
+    $img.attr('src', $img.data('src'));
+    $img.attr('srcset', $img.data('srcset'));
   }
+
+  $target.nextAll('.is-open').removeClass('is-open');
   setTimeout(() => $target.addClass('is-open'), 10);
   setTimeout(() => $target.focus(), 500);
 });
