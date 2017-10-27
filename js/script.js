@@ -6,38 +6,53 @@ const $overlay = $('.overlay');
 const $menu = $('.mainMenu');
 const $body = $(document.body);
 
-$menuButton.on('click', (e) => $body.toggleClass('menuOpen'));
-
-$overlay.on('click', (e) => $body.removeClass('menuOpen'));
-
-$internalLinks.on('click', (e) => {
-  e.preventDefault();
-  const $target = $(e.currentTarget.hash);
-  $body.removeClass('menuOpen');
+function openSlide($target) {
+  $(document.body).removeClass('menuOpen');
   const $img = $target
     .removeClass('hide')
     .find('img')
   ;
-
   if ($img.length) {
-    $img.attr('src', $img.data('src'));
-    $img.attr('srcset', $img.data('srcset'));
+    $img.elements[0].src = $img.elements[0].dataset.src;
+    $img.elements[0].srcset = $img.elements[0].dataset.srcset;
   }
-
-  $target.nextAll('.is-open').removeClass('is-open');
+  $('.is-open').removeClass('is-open');
   setTimeout(() => $target.addClass('is-open'), 10);
   setTimeout(() => $target.focus(), 500);
+}
+
+$menuButton.on('click', (e) => $body.toggleClass('menuOpen'));
+
+$overlay.on('click', (e) => $body.removeClass('menuOpen'));
+
+//Open slide at landging
+if (window.location.hash.length) {
+  openSlide($(window.location.hash));
+}
+
+$(window).on("hashchange", function() {
+  var $target;
+  if (window.location.hash.length) {
+    $target = $(window.location.hash);
+  } else {
+    $target = $('#home');
+  }
+  openSlide($target);
+});
+
+$internalLinks.on('click', (e) => {
+  e.preventDefault();
+  window.location.hash = e.currentTarget.hash; 
 });
 
 $backButtons.on('click', (e) => {
   e.preventDefault();
   const $parentSlide = $(e.currentTarget.parentElement);
-  var $last = $parentSlide
+  const $prevSlide = $parentSlide
     .removeClass('is-open')
-    .prevAll('.is-open')
-    .last()
-    .focus()
+    .prev('.is-open')
   ;
+  window.location.hash = $prevSlide.elements[0].id;
   setTimeout(() => $parentSlide.addClass('hide'), 500);
 });
 

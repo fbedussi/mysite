@@ -15,7 +15,8 @@ const vjQuery = {
     },
     query: function(query) {
         var element;
-        if (query instanceof HTMLElement) {
+        if (query instanceof HTMLElement || query === window
+        ) {
             this.elements = [query];
         } else if (typeof query === 'string') {
             this.elements = [].slice.call(document.querySelectorAll(query));
@@ -105,11 +106,15 @@ const vjQuery = {
         
         return this;
     },
-    prev: function() {
-        if (!this.elements[0] || !this.elements[0].nextElementSibling) {
+    prev: function(selector) {
+        if (!this.elements[0] || !this.elements[0].previousElementSibling) {
             this.elements = [];
             this.length = 0;
             return this;
+        }
+
+        if (selector) {
+            return this.prevAll(selector).last();
         }
 
         return renew(this.elements[0].prevElementSibling);
