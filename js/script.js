@@ -5,20 +5,26 @@ const $menuButton = $('.menuButton');
 const $overlay = $('.overlay');
 const $menu = $('.mainMenu');
 const $body = $(document.body);
+const transitionDuration = 500;
 
 function openSlide($target) {
-  $(document.body).removeClass('menuOpen');
+  $body.removeClass('menuOpen');
   const $img = $target
-    .removeClass('hide')
     .find('img')
   ;
   if ($img.length) {
-    $img.elements[0].src = $img.elements[0].dataset.src;
-    $img.elements[0].srcset = $img.elements[0].dataset.srcset;
+    $img.attr('src', $img.data('src'));
+    $img.attr('srcset', $img.data('srcset'));
   }
-  $('.is-open').removeClass('is-open');
-  setTimeout(() => $target.addClass('is-open'), 10);
-  setTimeout(() => $target.focus(), 500);
+
+  $target
+    .removeClass('hide')
+    .nextAll('.is-open:not(#home)')
+    .removeClass('is-open')
+  ;
+  
+  setTimeout(() => $target.addClass('is-open'), 50);
+  setTimeout(() => $target.focus(), transitionDuration);
 }
 
 $menuButton.on('click', (e) => $body.toggleClass('menuOpen'));
@@ -50,9 +56,10 @@ $backButtons.on('click', (e) => {
   const $parentSlide = $(e.currentTarget.parentElement);
   const $prevSlide = $parentSlide
     .removeClass('is-open')
-    .prev('.is-open')
+    .prevAll('.is-open')
+    .first()
   ;
-  window.location.hash = $prevSlide.elements[0].id;
+  window.location.hash = $prevSlide.attr('id');
   setTimeout(() => $parentSlide.addClass('hide'), 500);
 });
 

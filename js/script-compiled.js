@@ -7,6 +7,25 @@ var $menuButton = $('.menuButton');
 var $overlay = $('.overlay');
 var $menu = $('.mainMenu');
 var $body = $(document.body);
+var transitionDuration = 500;
+
+function openSlide($target) {
+  $body.removeClass('menuOpen');
+  var $img = $target.find('img');
+  if ($img.length) {
+    $img.attr('src', $img.data('src'));
+    $img.attr('srcset', $img.data('srcset'));
+  }
+
+  $target.removeClass('hide').nextAll('.is-open:not(#home)').removeClass('is-open');
+
+  setTimeout(function () {
+    return $target.addClass('is-open');
+  }, 50);
+  setTimeout(function () {
+    return $target.focus();
+  }, transitionDuration);
+}
 
 $menuButton.on('click', function (e) {
   return $body.toggleClass('menuOpen');
@@ -16,30 +35,31 @@ $overlay.on('click', function (e) {
   return $body.removeClass('menuOpen');
 });
 
+//Open slide at landging
+if (window.location.hash.length) {
+  openSlide($(window.location.hash));
+}
+
+$(window).on("hashchange", function () {
+  var $target;
+  if (window.location.hash.length) {
+    $target = $(window.location.hash);
+  } else {
+    $target = $('#home');
+  }
+  openSlide($target);
+});
+
 $internalLinks.on('click', function (e) {
   e.preventDefault();
-  var $target = $(e.currentTarget.hash);
-  $body.removeClass('menuOpen');
-  var $img = $target.removeClass('hide').find('img');
-
-  if ($img.length) {
-    $img.attr('src', $img.data('src'));
-    $img.attr('srcset', $img.data('srcset'));
-  }
-
-  $target.nextAll('.is-open').removeClass('is-open');
-  setTimeout(function () {
-    return $target.addClass('is-open');
-  }, 10);
-  setTimeout(function () {
-    return $target.focus();
-  }, 500);
+  window.location.hash = e.currentTarget.hash;
 });
 
 $backButtons.on('click', function (e) {
   e.preventDefault();
   var $parentSlide = $(e.currentTarget.parentElement);
-  var $last = $parentSlide.removeClass('is-open').prevAll('.is-open').last().focus();
+  var $prevSlide = $parentSlide.removeClass('is-open').prevAll('.is-open').first();
+  window.location.hash = $prevSlide.attr('id');
   setTimeout(function () {
     return $parentSlide.addClass('hide');
   }, 500);
