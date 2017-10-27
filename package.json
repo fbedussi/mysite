@@ -1,0 +1,36 @@
+{
+  "name": "francescobedussi.it",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "index.js",
+  "dependencies": {
+    "postcss-cli": "^4.1.1",
+    "postcss-cssnext": "^3.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "postcss-cli": "^4.1.1",
+    "postcss-cssnext": "^3.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildCss": "postcss style.css --use postcss-cssnext -o style-dist.css -w",
+    "buildJs": "./node_modules/.bin/babel js/script.js --watch --out-file js/script-compiled.js --presets=env"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "ie 11"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fbedussi/mysite.git"
+  },
+  "author": "Francesco Bedussi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fbedussi/mysite/issues"
+  },
+  "homepage": "https://github.com/fbedussi/mysite#readme"
+}

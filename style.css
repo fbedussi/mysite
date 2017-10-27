@@ -33,7 +33,7 @@ input {
     -ms-progress-appearance: none;
     -webkit-appearance: none;
     appearance: none;
-    background: inherit;
+    background-color: transparent;
     color: inherit;
     font-size: inherit;
     border: none;
