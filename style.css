@@ -303,6 +303,7 @@ li:first-child .slideSubtitle2 {
 .imageAndDatasheet {
     position: relative;
     display: inline-block;
+    width: 100%;
 }
 
 .dataSheet {
