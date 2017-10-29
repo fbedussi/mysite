@@ -1,4 +1,3 @@
-var $;
 (function() {
 const renew = (elements) => Object.create(vjQuery)._init(elements);
 const vjQuery = {
@@ -89,7 +88,9 @@ const vjQuery = {
         return this;
     },
     trigger: function(event) {
-
+        var e = new Event(event);
+        
+        this.elements.forEach((element) => elememt.dispatchEvent(e));
     },
     click: function(cb) {
         if (cb) {
@@ -117,38 +118,62 @@ const vjQuery = {
             return this.prevAll(selector).last();
         }
 
-        return renew(this.elements[0].prevElementSibling);
+        return renew(this.elements[0].previousElementSibling);
+    },
+    _getSiblings: function(selector) {
+        return selector ? this.elements[0].parentElement.querySelectorAll(':scope > ' + selector) : this.elements[0].parentElement.children;
     },
     siblings: function(selector) {
         if (!this.elements[0]) {
             return this;
         }
-        var siblings = selector ? this.elements[0].parentElement.querySelectorAll(':scope > ' + selector) : this.elements[0].parentElement.children;
+        var siblings = this._getSiblings(selector);
 
         return renew([].filer.call(siblings, (el) => el != this.elements[0]));
     },
-    prevAll: function(selector) {
-        if (!this.elements[0]) {
-            return this;
-        }
-        var siblings = selector ? this.elements[0].parentElement.querySelectorAll(':scope > ' + selector) : this.elements[0].parentElement.children;
+    _getSiblingsAndCurrentElPos: function(selector) {
+        var siblings = this._getSiblings(selector);
         var currentElHit = false;
         var i=0;
-        while (!currentElHit) {
+        while (siblings.length && !currentElHit) {
             if (i === siblings.length - 1 || siblings[i] === this.elements[0] || siblings[i].compareDocumentPosition(this.elements[0]) === 2) {
                 currentElHit = true;
             }
             i++;
         }
-        var prevAll = [].slice.call(siblings, 0, i);
+        return {
+            siblings,
+            currentElPos: i
+        }
+    },
+    prevAll: function(selector) {
+        if (!this.elements[0]) {
+            return this;
+        }
+        
+        const {siblings, currentElPos} = this._getSiblingsAndCurrentElPos(selector);
+        var prevAll = [].slice.call(siblings, 0, currentElPos);
         
         return renew(prevAll);
     },
-    next: function() {
+    nextAll: function(selector) {
+        if (!this.elements[0]) {
+            return this;
+        }
+        const {siblings, currentElPos} = this._getSiblingsAndCurrentElPos(selector);        
+        var nextAll = [].slice.call(siblings, currentElPos + 1);
+        
+        return renew(nextAll);
+    },
+    next: function(selector) {
         if (!this.elements[0] || !this.elements[0].nextElementSibling) {
             this.elements = [];
             this.length = 0;
             return this;
+        }
+
+        if (selector) {
+            return this.nextAll(selector).first();
         }
 
         return renew(this.elements[0].nextElementSibling);
@@ -159,7 +184,10 @@ const vjQuery = {
         }
 
         return renew(this.elements[0].querySelectorAll(selector));
+    },
+    get: function(index) {
+        return this.elements[index];
     }
 }
-$ = (selector) => Object.create(vjQuery).query(selector);
+window.$ = (selector) => Object.create(vjQuery).query(selector);
 })()

@@ -13,8 +13,9 @@ function openSlide($target) {
     .find('img')
   ;
   if ($img.length) {
-    $img.attr('src', $img.data('src'));
-    $img.attr('srcset', $img.data('srcset'));
+    const img = $img.get(0);
+    img.src = img.dataset.src;
+    img.srcset = img.dataset.srcset;
   }
 
   $target
@@ -59,13 +60,13 @@ $backButtons.on('click', (e) => {
     .prevAll('.is-open')
     .first()
   ;
-  window.location.hash = $prevSlide.attr('id');
+  window.location.hash = $prevSlide.get(0).id;
   setTimeout(() => $parentSlide.addClass('hide'), 500);
 });
 
 $body
   .on('keyup', (e) => {
-    if (e.keyCode = 9) {
+    if (e.keyCode === 9) {
       $body.addClass('keyboardNavigation')
     }
   })
