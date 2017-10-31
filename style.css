@@ -245,7 +245,7 @@ p + p {
 
 .headline {
     font-size: calc(2rem + 1vw);
-    transform: translateY(calc(60vh - 100%));
+    transform: translateY(60vh);
 }
 
 .slide {

@@ -15,7 +15,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "buildCss": "postcss style.css --use postcss-cssnext -o style-dist.css -w",
+    "buildCss": "postcss style.css -o style-dist.css -w",
     "buildJs": "./node_modules/.bin/babel js/script.js --watch --out-file js/script-compiled.js --presets=env"
   },
   "browserslist": [
