@@ -746,7 +746,7 @@
             </div>
         </div>
 
-        <div tabindex="-1" class="slide hide" id="about">
+        <div tabindex="-1" class="slide hide about" id="about">
             <button class="icon backIcon">
                 <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="#backIcon" />
@@ -754,6 +754,13 @@
                 <span class="visuallyHidden">back</span>
             </button>
             <h2 class="slideTitle">About me</h2>
+            <img 
+                sizes="(max-width: 1600px) calc(100vw - 6.5rem), 1600px"
+                data-srcset="
+                media/francesco_bedussi_qrrq5e_c_scale,w_190.jpg 190w,
+                media/francesco_bedussi_qrrq5e_c_scale,w_1094.jpg 1094w,
+                media/francesco_bedussi_qrrq5e_c_scale,w_1600.jpg 1600w"
+                data-src="media/francesco_bedussi.jpg" alt="Francesco Bedussi">
             <ul>
                 <li>
                     I am a senior front end and JavaScript developer with 7 years experience.
@@ -768,12 +775,12 @@
                 </li>
             </ul>
 
-            <h3 class="slideSubtitle" id="expertise">Expertise</h3>
+            <h3 class="slideSubtitle">Expertise</h3>
             <p>I work in the web industry since 2002. At first as a project leader, then, from 2007 to 2010 as a web designer and web master, from 2011 to 2014 as a freelance web
                 developer. Since 2015 I am a full time interface developer/Front end developer at Yoox Net-A-Porter Group.
             </p>
 
-            <h3 class="slideSubtitle" id="skills">Skills</h3>
+            <h3 class="slideSubtitle">Skills</h3>
             <ul>
                 <li>Front-end development: JavaScript, ES6, Redux.js, React.js, jQuery, HTML5, CSS3, Sass, Bootstrap, Foundation,
                     AJAX, SVG, Material UI, indexedDb</li>
@@ -784,49 +791,55 @@
                 <li>Tools: Git, Mercurial, Webpack, npm, ESlint, Postcss</li>
             </ul>
 
-            <h3 class="slideSubtitle" id="languages">Languages</h3>
+            <h3 class="slideSubtitle">Languages</h3>
             <ul>
                 <li>Italian: mother tongue</li>
                 <li>English: advanced (Cambridge Certificate in Advanced English, grade A)</li>
             </ul>
 
-            <h3 class="slideSubtitle" id="work-experience">Work experience</h3>
+            <h3 class="slideSubtitle">Work experience</h3>
             <ul>
                 <li>
-                    <h4 class="slideSubtitle2" id="interface-developer">Interface Developer/Front end developer (
-                        <strong>2015 &gt; Today</strong>)</h4>
-                    <p>Yoox Net-A-Porter Group, Via Nannetti 1, Zola Predosa (BO).
-                        <br/>Key responsibilities: front-end development for monobrand web sites. Development of the corporate
-                        framework for functional automated testing. Accessibility evangelist.</p>
+                    <h4 class="slideSubtitle2">Front end developer/JavaScript Developer (2015 &gt; Today)</h4>
+                    <p><em>Yoox Net-A-Porter Group, Via Nannetti 1, Zola Predosa (BO)</em></p>
+                    <p>I am member of a cross functional team of 15 people (5 of which are devs). Using the agile methodology, iteration after iteration, we find the best way to transform the creativity of designers into actually working web sites.</p>
+                    <p>While we are committed to support as many browsers as possible, we try hard to use the latest technologies. We currently use CSS3 + postCss + autoprefixer and ES6 + Webpack + Babel to support older browsers as well as newer ones.</p>
+                    <p>Since we care about performance we use responsive images and lazy load them, use HTTP2 and its best practices and exploit caching as much as possible.</p>
+                    <p>We are part of a big corporate that runs 40+ e-stores, so, obviously, we rely on a front end platform (custom developed in .NET MVC) that is a middleware between the API and the actual front end. We can also leverage a corporate JavaScript framework, based on the pub/sub pattern, that takes care of some common tasks, such as cart management or form validation. This platform allows a fairly wide degree of customization that we exploit to meet the ever challenging clients’ requests.</p>
+                    <p>Since we are in charge of maintenance for the web sites we build, we take a great care in the scalability and maintainability of every single line of code we write.</p>
+                    <p>Besides web sites I am also an active contributor to several internal tools, such as the internal functional test automation platform, build upon Nightwatch.js and Cucumber and the sites configuration console, written in Electron + React + Redux.</p>
                 </li>
                 <li>
-                    <h4 class="slideSubtitle2" id="web-developer--web-marketing-consultant">Web developer (2011 &gt; 2014)</h4>
-                    <p>Free lance. Key clients: Viro Spa, Centro Anatartide, Sviluppi Urbani Srl, Big srl.
-                        <br/>Key responsibilities: design and development of web sites based on Joomla! and WordPress.</p>
+                    <h4 class="slideSubtitle2">Web Marketing Consultant (2008 &gt; 2015)</h4>
+                    <p><em>Viro Spa, Zola Predosa (Bo)</em></p>
+                    <p>For a sector leader I designed and implemented the corporate web marketing strategy. I created, developed and edited for 3 years the corporate blog <a href="http://www.virosecurityclub.com/" target="_blank">www.virosecurityclub.com</a>, with weekly updates in 4 languages, as a powerful tool of content marketing.</p>
+                    <p>As the social media manager I run the Facebook, Twitter and Google+ corporate accounts. As the on-line community manager I dealt with communities, such as forums and newsgroups, related to mechanical security topics.</p>
                 </li>
                 <li>
-                    <h4 class="slideSubtitle2" id="web-developer--web-marketing-consultant">Communication Manager and web master (2007 &gt; 2014)</h4>
-                    <p>Centro Anatartide.
-                        <br/>Key responsibilities: design of communication campaigns and events, graphic design for printed meterials and web sites, web sites managment, copywriting.</p>
+                    <h4 class="slideSubtitle2">Web Developer Freelance (2011 &gt; 2014)</h4>
+                    <p>As a front end developer I created web sites with a special attention for usability, SEO and performance.</p>
+                    <p>I relayed over the open source CMS Joomla! and Wordpress as a backend, on top of which I developed customized themes and templates.</p>
                 </li>
                 <li>
-                    <h4 class="slideSubtitle2" id="co-founder">Co-founder
-                        <strong>(2004 &gt;2007)</strong>
-                    </h4>
-                    <p>Caffe Network Scarl, Bologna, Italy, an agency specialised in the set up, fine tuning, monitoring and
-                        management of distribution networks for free press editorial initiatives and for ambient advertising
-                        solutions.
-                        <br/>Key responsibilities: start-up, business development, marketing manager.</p>
+                    <h4 class="slideSubtitle2">Communication Manager/Web Master (2007 &gt; 2014)</h4>
+                    <p><em>Centro Anatartide, Bologna</em></p>
+                    <p>As a communication manager I co-designed and co-managed the national raising awareness campaigns on road safety Vacanze coi fiocchi and Siamo tutti pedoni.</p>
+                    <p>As a graphic designer I authored posters, leaflets and booklets for several center’s projects, like the EU funded project on water saving Wataclick, while as a web master I published and edited several web sites, mainly based on Joomla! and Wordpress CMS, related to different center’s projects.</p>
                 </li>
                 <li>
-                    <h4 class="slideSubtitle2" id="project-leader">Project leader
-                        <strong>(2002 &gt; 2003)</strong>
-                    </h4>
-                    <p>O-one, Reggio Emilia, web agency.
-                        <br/>Key responsibilities: business development, project management.</p>
+                    <h4 class="slideSubtitle2">Co-founder and CEO (2004 &gt;2008)</h4>
+                    <p><em>Caffe Network Scarl, Bologna</em></p>
+                    <p>I was co-founder and CEO of Caffè Network, an agency specialized in the set-up, fine tuning and monitoring of distribution networks for free press projects.</p>
+                    <p>We worked for some of the biggest players in the industry, like the newspaper City and the magazine Urban, both edited by RCS Media Group.</p>
+                    <p>We also edited a monthly free press magazine, “l’ammazzacaffè”, printed on table mats and distributed in pubs and restaurants.</p>
+                </li>
+                <li>
+                    <h4 class="slideSubtitle2">Account/Project Leader (2002 &gt; 2003)</h4>
+                    <p><em>O-one, Reggio Emilia</em></p>
+                    <p>I was an account and project leader of a medium-sized web agency that worked with clients like Berloni, Kerakoll and Vodafone. My role dealt with customer relationships, business development and project management.</p>
                 </li>
             </ul>
-            <h3 class="slideSubtitle" id="education">Education</h3>
+            <h3 class="slideSubtitle">Education</h3>
 
             <ul>
                 <li>
