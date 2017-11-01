@@ -18,14 +18,18 @@ function openSlide($target) {
     img.srcset = img.dataset.srcset;
   }
 
-  $target
-    .removeClass('hide')
-    .nextAll('.is-open:not(#home)')
+  $target.removeClass('hide');
+
+  const $nextOpen = $target
+    .nextAll('.is-open')
     .removeClass('is-open')
   ;
   
   setTimeout(() => $target.addClass('is-open'), 50);
-  setTimeout(() => $target.focus(), transitionDuration);
+  setTimeout(() => {
+    $target.focus();
+    $nextOpen.addClass('hide');
+  }, transitionDuration);
 }
 
 $menuButton.on('click', (e) => $body.toggleClass('menuOpen'));
@@ -58,7 +62,7 @@ $backButtons.on('click', (e) => {
   const $prevSlide = $parentSlide
     .removeClass('is-open')
     .prevAll('.is-open')
-    .first()
+    .last()
   ;
   window.location.hash = $prevSlide.get(0).id;
   setTimeout(() => $parentSlide.addClass('hide'), 500);
