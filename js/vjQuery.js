@@ -4,7 +4,7 @@ const vjQuery = {
     elements: [],    
     length: 0,
     _init: function(elements) {
-        if (elements.length !== undefined) {
+        if (elements && elements.length !== undefined) {
             elements = [].slice.call(elements);
         }
         this.elements = [].concat(elements);
@@ -136,10 +136,14 @@ const vjQuery = {
         var currentElHit = false;
         var i=0;
         while (siblings.length && !currentElHit) {
-            if (i === siblings.length - 1 || siblings[i] === this.elements[0] || siblings[i].compareDocumentPosition(this.elements[0]) === 2) {
+            if (i === siblings.length || siblings[i].compareDocumentPosition(this.elements[0]) === 2) {
                 currentElHit = true;
+            } else if (siblings[i] === this.elements[0]) {            
+                currentElHit = true;                
+                i++;
+            } else {
+                i++;                
             }
-            i++;
         }
         return {
             siblings,
@@ -161,7 +165,7 @@ const vjQuery = {
             return this;
         }
         const {siblings, currentElPos} = this._getSiblingsAndCurrentElPos(selector);        
-        var nextAll = [].slice.call(siblings, currentElPos + 1);
+        var nextAll = [].slice.call(siblings, currentElPos);
         
         return renew(nextAll);
     },
