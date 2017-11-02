@@ -254,6 +254,8 @@ p + p {
     font-size: calc(2rem + 1vw);
     -webkit-transform: translateY(60vh);
             transform: translateY(60vh);
+    -webkit-transform: translateY(calc(60vh - 80%));
+            transform: translateY(calc(60vh - 80%));
 }
 
 .slide {
