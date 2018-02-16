@@ -1,7 +1,7 @@
 # Francesco Bedussi
 Senior front end and JavaScript developer. 
 
-Born in Brescia, Italy on the 12th of August 1976
+Born in Brescia, Italy, on the 12th of August 1976
 
 [francesco@francescobedussi.it](mailto:francesco@francescobedussi.it) | [www.francescobedussi.it](http://www.francescobedussi.it) | +39 329 2172735
 
@@ -14,7 +14,7 @@ In my personal development projects I like to explore using JavaScript outside t
 I work in the web industry since 2002. At first as a project leader, then, from 2007 to 2010 as a web designer and web master, from 2011 to 2014 as a freelance web developer. Since 2015 I am a full time interface developer/Front end developer at Yoox Net-A-Porter Group.
 
 ## Skills
-- Front-end development: JavaScript, ES6, Redux.js, React.js, Elm, jQuery, HTML5, CSS3, Sass, Bootstrap, Foundation, AJAX, SVG, Material UI, indexedDb
+- Front-end development: JavaScript, ES6, Redux.js, React.js, Jest, Elm, jQuery, HTML5, CSS3, Sass, Bootstrap, Foundation, AJAX, SVG, Material UI, indexedDb
 - Back-end development: Node.Js, Electron, Firebase, C#, .NET MVC, PHP
 - Programming paradigms: OOP, functional programming
 - CMS: Joomla!, Wordpress
