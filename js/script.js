@@ -15,7 +15,9 @@ function openSlide($target) {
   if ($img.length) {
     const img = $img.get(0);
     img.src = img.dataset.src;
-    img.srcset = img.dataset.srcset;
+    if (img.dataset.srcset) {
+      img.srcset = img.dataset.srcset;
+    }
   }
 
   $target.removeClass('hide');

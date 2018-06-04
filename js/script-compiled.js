@@ -13,17 +13,23 @@ function openSlide($target) {
   $body.removeClass('menuOpen');
   var $img = $target.find('img');
   if ($img.length) {
-    $img.attr('src', $img.data('src'));
-    $img.attr('srcset', $img.data('srcset'));
+    var img = $img.get(0);
+    img.src = img.dataset.src;
+    if (img.dataset.srcset) {
+      img.srcset = img.dataset.srcset;
+    }
   }
 
-  $target.removeClass('hide').nextAll('.is-open:not(#home)').removeClass('is-open');
+  $target.removeClass('hide');
+
+  var $nextOpen = $target.nextAll('.is-open').removeClass('is-open');
 
   setTimeout(function () {
     return $target.addClass('is-open');
   }, 50);
   setTimeout(function () {
-    return $target.focus();
+    $target.focus();
+    $nextOpen.addClass('hide');
   }, transitionDuration);
 }
 
@@ -58,15 +64,15 @@ $internalLinks.on('click', function (e) {
 $backButtons.on('click', function (e) {
   e.preventDefault();
   var $parentSlide = $(e.currentTarget.parentElement);
-  var $prevSlide = $parentSlide.removeClass('is-open').prevAll('.is-open').first();
-  window.location.hash = $prevSlide.attr('id');
+  var $prevSlide = $parentSlide.removeClass('is-open').prevAll('.is-open').last();
+  window.location.hash = $prevSlide.get(0).id;
   setTimeout(function () {
     return $parentSlide.addClass('hide');
   }, 500);
 });
 
 $body.on('keyup', function (e) {
-  if (e.keyCode = 9) {
+  if (e.keyCode === 9) {
     $body.addClass('keyboardNavigation');
   }
 }).on('click', function () {

@@ -88,6 +88,7 @@ I was an account and project leader of a medium-sized web agency that worked wit
 - 2001 Graduated in Communication Sciences with 110 cum laude (maximum grade) from the University of Bologna, Italy
 
 ## Portfolio
+- [DSquared2 e-store, 2018](https://www.dsquared2.com)
 - [tTracker, a time tracking web app for freelancers, 2017](http://www.francescobedussi.it/#ttracker)
 - [Just Cavalli e-store, 2017](http://www.francescobedussi.it/#cavalli)
 - [APL configurator, 2017](http://www.francescobedussi.it/#apl)
