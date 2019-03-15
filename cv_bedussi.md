@@ -14,7 +14,7 @@ In my personal development projects I like to explore using JavaScript outside t
 I work in the web industry since 2002. At first as a project leader, then, from 2007 to 2010 as a web designer and web master, from 2011 to 2014 as a freelance web developer. Since 2015 I am a full time interface developer/Front end developer at Yoox Net-A-Porter Group.
 
 ## Skills
-- Front-end development: JavaScript, ES6, Redux.js, React.js, Jest, Elm, jQuery, HTML5, CSS3, Sass, Bootstrap, Foundation, AJAX, SVG, Material UI, indexedDb
+- Front-end development: JavaScript, ES6, Redux.js, React.js, Web Components, Jest, Elm, jQuery, HTML5, CSS3, Sass, Stylus, Bootstrap, Foundation, AJAX, SVG, Material UI, indexedDb
 - Back-end development: Node.Js, Electron, Firebase, C#, .NET MVC, PHP
 - Programming paradigms: OOP, functional programming
 - CMS: Joomla!, Wordpress
@@ -26,24 +26,25 @@ I work in the web industry since 2002. At first as a project leader, then, from 
 - English: advanced (Cambridge Certificate in Advanced English, grade A)
 
 ## Work experience
-
-### Front end developer/JavaScript Developer (2015 > Today)
+### Tech lead/Senior JavaScript Developer (2018 > Today) - Front end developer/JavaScript Developer (2015 > 2018)
 
 Yoox Net-A-Porter Group, Via Nannetti 1, Zola Predosa (BO)
 
-I am member of a cross functional team of 15 people (5 of which are devs). Using the agile methodology, iteration after iteration, we find the best way to transform the creativity of designers into actually working web sites.
+I am member of a cross functional team of 15 people (5 of which are devs). Using the agile methodology, iteration after iteration, we find the best way to transform the creativity of designers into working web sites.
+
+As a senior developer I am fully involved in the team's development process. As a tech lead I help the other team's developer to be more productive. I mentor junior devs end help the more skilled ones to share their knowledge. I try to remove techical obstacles that can hurt or slow down the development process. I'm responsible for the final quality and coerence of the code base, both rooted in the quality and cohesion of the development team. I help the team to come up with the technical and architectural decisions under its domain and I am the contact point for other teams when technical matters are at stake. 
 
 While we are committed to support as many browsers as possible, we try hard to use the latest technologies. We currently use CSS3 + postCss + autoprefixer and ES6 + Webpack + Babel to support older browsers as well as newer ones.
 
 Since we care about performance we use responsive images and lazy load them, use HTTP2 and its best practices and exploit caching as much as possible.
 
-We are part of a big corporate that runs 40+ e-stores, so, obviously, we rely on a front end platform (custom developed in .NET MVC) that is a middleware between the API and the actual front end. We can also leverage a corporate JavaScript framework, based on the pub/sub pattern, that takes care of some common tasks, such as cart management or form validation. This platform allows a fairly wide degree of customization that we exploit to meet the ever challenging clients’ requests.
+We are part of a big corporate that runs 35+ e-stores, so, obviously, we rely on a front end platform (custom developed in .NET MVC) that is a middleware between the API and the actual front end. We can also leverage a corporate JavaScript framework, based on the pub/sub pattern, that takes care of some common tasks, such as cart management or form validation. This platform allows a fairly wide degree of customization that we exploit to meet the ever challenging clients’ requests.
 
 Since we are in charge of maintenance for the web sites we build, we take a great care in the scalability and maintainability of every single line of code we write.
 
 Besides web sites I am also an active contributor to several internal tools, such as the internal functional test automation platform, build upon Nightwatch.js and Cucumber and the sites configuration console, written in Electron + React + Redux.
 
-### Front end Developer Freelance (2011 > 2014)
+### Freelance Front end Developer (2011 > 2014)
 
 As a front end developer I created web sites with a special attention for usability, SEO and performance.
 
@@ -59,9 +60,9 @@ As the social media manager I run the Facebook, Twitter and Google+ corporate ac
 
 ### Communication Manager/Web Master (2007 > 2014)
 
-Centro Anatartide, Bologna
+Centro Antartide, Bologna
 
-As a communication manager I co-designed and co-managed the national raising awareness campaigns on road safety Vacanze coi fiocchi and Siamo tutti pedoni.
+As a communication manager I co-designed and co-managed the national raising awareness campaigns on road safety "Vacanze coi fiocchi" and "Siamo tutti pedoni".
 
 As a graphic designer I authored posters, leaflets and booklets for several center’s projects, like the EU funded project on water saving Wataclick, while as a web master I published and edited several web sites, mainly based on Joomla! and Wordpress CMS, related to different center’s projects.
 
