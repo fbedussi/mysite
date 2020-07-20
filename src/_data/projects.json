@@ -1,0 +1,334 @@
+[
+  {
+    "id": "telo",
+    "name": "Teleoptometry, a tele medicine system",
+    "year": 2020,
+    "srcset": "media/telo_f5kkkf_c_scale,w_200.jpg 200w, media/telo_f5kkkf_c_scale,w_856.jpg 856w, media/telo_f5kkkf_c_scale,w_1350.jpg 1350w, media/telo_f5kkkf_c_scale,w_1400.jpg 1400w",
+    "src": "media/telo_f5kkkf_c_scale,w_1400.jpg",
+    "details": [
+      "Frontend: React + Redux + TypeScript + Formik + Material.UI + Styled Components",
+      "Backend: microservices architecture, Node + Fastify + TypeScript + MongoDB + Redis"
+    ]
+  },
+  {
+    "id": "bangle",
+    "link": "https://github.com/espruino/BangleApps/tree/master/apps/largeclock",
+    "name": "Apps for the smartwatch Bangle.js",
+    "year": 2020,
+    "srcset": "media/bangle_svehe3_c_scale,w_200.jpg 200w, media/bangle_svehe3_c_scale,w_519.jpg 519w, media/bangle_svehe3_c_scale,w_748.jpg 748w, media/bangle_svehe3_c_scale,w_936.jpg 936w, media/bangle_svehe3_c_scale,w_1120.jpg 1120w, media/bangle_svehe3_c_scale,w_1273.jpg 1273w, media/bangle_svehe3_c_scale,w_1400.jpg 1400w",
+    "src": "media/bangle_svehe3_c_scale,w_1400.jpg",
+    "details": [
+      "Written in JS"
+    ]
+  },
+  {
+    "id": "redcarpet",
+    "name": "Redcarpet, a B2B  marketplace",
+    "year": 2019,
+    "srcset": "media/redcarpet_kifhiz_c_scale,w_200.jpg 200w, media/redcarpet_kifhiz_c_scale,w_468.jpg 468w, media/redcarpet_kifhiz_c_scale,w_690.jpg 690w, media/redcarpet_kifhiz_c_scale,w_868.jpg 868w, media/redcarpet_kifhiz_c_scale,w_1054.jpg 1054w, media/redcarpet_kifhiz_c_scale,w_1138.jpg 1138w",
+    "src": "media/redcarpet_kifhiz_c_scale,w_1138.jpg",
+    "details": [
+      "Frontend: React + Redux + Socket.io",
+      "Backend: Node + Express + TypeScript + MongoDB + Redis"
+    ]
+  },
+  {
+    "id": "dinamco",
+    "name": "Dinamco",
+    "year": 2019,
+    "srcset": "media/dinamco_wxm5zk_c_scale,w_200.jpg 200w, media/dinamco_wxm5zk_c_scale,w_541.jpg 541w, media/dinamco_wxm5zk_c_scale,w_778.jpg 778w, media/dinamco_wxm5zk_c_scale,w_976.jpg 976w, media/dinamco_wxm5zk_c_scale,w_1170.jpg 1170w, media/dinamco_wxm5zk_c_scale,w_1343.jpg 1343w, media/dinamco_wxm5zk_c_scale,w_1400.jpg 1400w",
+    "src": "media/dinamco_wxm5zk_c_scale,w_1400.jpg",
+    "details": [
+      "Web components",
+      "Hyperapp",
+      "Google maps"
+    ]
+  },
+  {
+    "id": "pigbirth",
+    "name": "Pigbirth, a pig birth control system",
+    "year": 2019,
+    "srcset": "media/pigbirth_yn3jqo_c_scale,w_200.jpg 200w, media/pigbirth_yn3jqo_c_scale,w_502.jpg 502w, media/pigbirth_yn3jqo_c_scale,w_727.jpg 727w, media/pigbirth_yn3jqo_c_scale,w_934.jpg 934w, media/pigbirth_yn3jqo_c_scale,w_1103.jpg 1103w, media/pigbirth_yn3jqo_c_scale,w_1286.jpg 1286w, media/pigbirth_yn3jqo_c_scale,w_1400.jpg 1400w",
+    "src": "media/pigbirth_yn3jqo_c_scale,w_1400.jpg",
+    "details": [
+      "Frontend: React + Redux + TypeScript",
+      "Backend: Node + Hapi + MySql"
+    ]
+  },
+  {
+    "id": "armani",
+    "link": "https://www.armani.com",
+    "name": "Armani e-store",
+    "year": 2019,
+    "srcset": "media/armani_tpyx9l_c_scale,w_200.png 200w, media/armani_tpyx9l_c_scale,w_538.png 538w, media/armani_tpyx9l_c_scale,w_762.png 762w, media/armani_tpyx9l_c_scale,w_944.png 944w, media/armani_tpyx9l_c_scale,w_1117.png 1117w, media/armani_tpyx9l_c_scale,w_1287.png 1287w, media/armani_tpyx9l_c_scale,w_1400.png 1400w",
+    "src": "armani_tpyx9l_c_scale,w_1400.png",
+    "details": [
+      "Accessibility retrofit"
+    ]
+  },
+  {
+    "id": "flyfeed",
+    "link": "https://rss-reader-19af4.firebaseapp.com",
+    "name": "flyFeed, a simple RSS reader",
+    "year": 2018,
+    "srcset": "media/flyfeed_qtr4sb_c_scale,w_677.jpg 677w, media/flyfeed_qtr4sb_c_scale,w_973.jpg 973w, media/flyfeed_qtr4sb_c_scale,w_1249.jpg 1249w, media/flyfeed_qtr4sb_c_scale,w_200.jpg 200w, media/flyfeed_qtr4sb_c_scale,w_1400.jpg 1400w",
+    "src": "media/flyfeed_qtr4sb_c_scale,w_1400.jpg",
+    "details": [
+      "Written in Elm",
+      "Fully responsive",
+      "Backed by Firebase",
+      "CSS in Elm"
+    ]
+  },
+  {
+    "id": "dsquared2",
+    "link": "https://www.dsquared2.com",
+    "name": "Dsquared2 e-store",
+    "year": 2018,
+    "srcset": "media/dsquared2_vk5nms_c_scale,w_190.jpg 190w, media/dsquared2_vk5nms_c_scale,w_586.jpg 586w, media/dsquared2_vk5nms_c_scale,w_870.jpg 870w, media/dsquared2_vk5nms_c_scale,w_1108.jpg 1108w, media/dsquared2_vk5nms_c_scale,w_1303.jpg 1303w, media/dsquared2_vk5nms_c_scale,w_1500.jpg 1500w, media/dsquared2_vk5nms_c_scale,w_1600.jpg 1600w",
+    "src": "media/dsquared2_vk5nms_c_scale,w_1600.jpg",
+    "details": [
+      "Accessible website",
+      "Responsive images",
+      "ES-6 + webpack",
+      "SASS + PostCss",
+      "Fully responsive",
+      "Wordpress integration for editorial content",
+      "Based on a .NET MVC custom front-end platform",
+      "Based on custom js pub-sub framework"
+    ]
+  },
+  {
+    "id": "elm15",
+    "link": "https://puzzle-f9d67.firebaseapp.com",
+    "name": "15 puzzle",
+    "year": 2018,
+    "src": "media/elm15.png",
+    "details": [
+      "Progressive Web App",
+      "Written in Elm",
+      "Fully responsive"
+    ],
+    "cta": "play the game"
+  },
+  {
+    "id": "cavalli",
+    "link": "https: //www.justcavalli.com",
+    "name": "Just Cavalli e-store",
+    "year": 2017,
+    "srcset": "media/cavalli_oot11k_c_scale,w_375.jpg 375w, media/cavalli_oot11k_c_scale,w_630.jpg 630w, media/cavalli_oot11k_c_scale,w_841.jpg 841w, media/cavalli_oot11k_c_scale,w_1020.jpg 1020w, media/cavalli_oot11k_c_scale,w_1176.jpg 1176w, media/cavalli_oot11k_c_scale,w_1584.jpg 1584w",
+    "src": "media/cavalli_oot11k_c_scale,w_1584.jpg",
+    "details": [
+      "Fully accessible website compliant with WCAG 2.0 level A requirements",
+      "Responsive images",
+      "ES-6 + webpack",
+      "SASS + PostCss",
+      "Mobile &amp; desktop versions, with a shared core and different heads",
+      "Wordpress integration for editorial content",
+      "Based on a .NET MVC custom front-end platform",
+      "Based on custom js pub-sub framework"
+    ]
+  },
+  {
+    "id": "apl",
+    "link": "http://www.ledpedestriancrossing.com/configuratore/index.html",
+    "name": "APL configurator",
+    "year": 2017,
+    "srcset": "media/apl_ap5awf_c_scale,w_375.jpg 375w, media/apl_ap5awf_c_scale,w_789.jpg 789w, media/apl_ap5awf_c_scale,w_1119.jpg 1119w, media/apl_ap5awf_c_scale,w_1437.jpg 1437w, media/apl_ap5awf_c_scale,w_1581.jpg 1581w",
+    "src": "media/apl_ap5awf_c_scale,w_1581.jpg",
+    "details": [
+      "React + Redux + Jest",
+      "Dynamic content loading via json file",
+      "Fluid layout"
+    ]
+  },
+  {
+    "id": "mangiamusica",
+    "link": "https://github.com/fbedussi/mangiamusica",
+    "name": "Mangiamusica, a music player for toddlers - WIP",
+    "year": 2017,
+    "srcset": "media/margiela_wrbdud_c_scale,w_375.jpg 375w, media/margiela_wrbdud_c_scale,w_629.jpg 629w, media/margiela_wrbdud_c_scale,w_842.jpg 842w, media/margiela_wrbdud_c_scale,w_1018.jpg 1018w, media/margiela_wrbdud_c_scale,w_1174.jpg 1174w, media/margiela_wrbdud_c_scale,w_1583.jpg 1583w",
+    "src": "media/margiela_wrbdud_c_scale,w_1583.jpg",
+    "details": [
+      "React Native",
+      "Redux",
+      "Jest",
+      "Material.Ui"
+    ],
+    "cta": "take a look at the project"
+  },
+  {
+    "id": "ttracker",
+    "link": "https://github.com/fbedussi/ttracker",
+    "name": "tTracker, a time tracking web app for freelancers",
+    "year": 2017,
+    "srcset": "media/ttracker_reb2ea_c_scale,w_375.jpg 375w, media/ttracker_reb2ea_c_scale,w_1049.jpg 1049w, media/ttracker_reb2ea_c_scale,w_1598.jpg 1598w",
+    "src": "media/ttracker_reb2ea_c_scale,w_1598.jpg",
+    "details": [
+      "React + Redux + Jest + Material.Ui",
+      "Test Driven Developed",
+      "Optimistic interface",
+      "Support for multiple databases: services for indexedDb and firebase are included, more can be added"
+    ]
+  },
+  {
+    "id": "margiela",
+    "link": "https://www.maisonmargiela.com",
+    "name": "Maison Margiela e-store",
+    "year": 2016,
+    "srcset": "media/margiela_wrbdud_c_scale,w_375.jpg 375w, media/margiela_wrbdud_c_scale,w_629.jpg 629w, media/margiela_wrbdud_c_scale,w_842.jpg 842w, media/margiela_wrbdud_c_scale,w_1018.jpg 1018w, media/margiela_wrbdud_c_scale,w_1174.jpg 1174w, media/margiela_wrbdud_c_scale,w_1583.jpg 1583w",
+    "src": "media/margiela_wrbdud_c_scale,w_1583.jpg",
+    "details": [
+      "Fully responsive",
+      "ES-6 + webpack",
+      "SASS + PostCss + Foundation",
+      "Integration with third party CMS",
+      "Based on a .NET MVC custom front-end platform",
+      "Based on custom js pub-sub framework"
+    ]
+  },
+  {
+    "id": "remedi",
+    "link": "https://github.com/fbedussi/reveal-js-editor",
+    "name": "ReMEdi reveal.js markdown editor",
+    "year": 2016,
+    "srcset": "media/remedi_tzlvts_c_scale,w_375.jpg 375w, media/remedi_tzlvts_c_scale,w_725.jpg 725w, media/remedi_tzlvts_c_scale,w_984.jpg 984w, media/remedi_tzlvts_c_scale,w_1218.jpg 1218w, media/remedi_tzlvts_c_scale,w_1414.jpg 1414w, media/remedi_tzlvts_c_scale,w_1649.jpg 1649w, media/remedi_tzlvts_c_scale,w_1794.jpg 1794w, media/remedi_tzlvts_c_scale,w_1920.jpg 1920w",
+    "src": "media/remedi_tzlvts_c_scale,w_1920.jpg",
+    "details": [
+      "Electron + React + Redux",
+      "Themable UI",
+      "Multilanguage"
+    ],
+    "cta": "take a look at the project"
+  },
+  {
+    "id": "y3",
+    "link": "http://store.y-3.com",
+    "name": "Y-3 e-store",
+    "year": 2016,
+    "srcset": "media/y3_iy5cyn_c_scale,w_375.jpg 375w, media/y3_iy5cyn_c_scale,w_547.jpg 547w, media/y3_iy5cyn_c_scale,w_694.jpg 694w, media/y3_iy5cyn_c_scale,w_825.jpg 825w, media/y3_iy5cyn_c_scale,w_956.jpg 956w, media/y3_iy5cyn_c_scale,w_1069.jpg 1069w, media/y3_iy5cyn_c_scale,w_1177.jpg 1177w, media/y3_iy5cyn_c_scale,w_1280.jpg 1280w, media/y3_iy5cyn_c_scale,w_1377.jpg 1377w, media/y3_iy5cyn_c_scale,w_1602.jpg 1602w",
+    "src": "media/y3_iy5cyn_c_scale,w_1602.jpg",
+    "details": [
+      "Desktop &amp; Mobile versions",
+      "SASS",
+      "XSLT",
+      "Based on custom js pub-sub framework"
+    ]
+  },
+  {
+    "id": "nightwatchGui",
+    "link": "https://github.com/fbedussi/nightwatchGui",
+    "name": "nightwatchGui, a Graphical User Interface for the test automation framework nightwatch-cucumber",
+    "year": 2016,
+    "srcset": " media/nightwatchgui_pp7e2f_c_scale,w_375.jpg 375w, media/nightwatchgui_pp7e2f_c_scale,w_778.jpg 778w, media/nightwatchgui_pp7e2f_c_scale,w_1000.jpg 1000w",
+    "src": "media/nightwatchgui_pp7e2f_c_scale,w_1000.jpg",
+    "details": [
+      "Node.js + Express",
+      "Vanilla Js"
+    ],
+    "cta": "take a look at the project"
+  },
+  {
+    "id": "gpp",
+    "link": "https://github.com/fbedussi/nightwatchGui",
+    "name": "Gherkin/Cucumber file preprocessor",
+    "year": 2016,
+    "srcset": "media/gpp_qac3kl_c_scale,w_375.jpg 375w, media/gpp_qac3kl_c_scale,w_819.jpg 819w",
+    "src": "media/gpp_qac3kl_c_scale,w_819.jpg",
+    "details": [
+      "Node.js",
+      "Watch mode",
+      "File partials",
+      "Conditional rendering"
+    ],
+    "cta": "take a look at the project"
+  },
+  {
+    "id": "lagerfeld",
+    "link": "https://www.karl.com",
+    "name": "Karl Lagerfeld e-store",
+    "year": 2015,
+    "srcset": "media/karl_lps9c7_c_scale,w_375.jpg 375w, media/karl_lps9c7_c_scale,w_548.jpg 548w, media/karl_lps9c7_c_scale,w_692.jpg 692w, media/karl_lps9c7_c_scale,w_821.jpg 821w, media/karl_lps9c7_c_scale,w_947.jpg 947w, media/karl_lps9c7_c_scale,w_1055.jpg 1055w, media/karl_lps9c7_c_scale,w_1163.jpg 1163w, media/karl_lps9c7_c_scale,w_1276.jpg 1276w, media/karl_lps9c7_c_scale,w_1396.jpg 1396w, media/karl_lps9c7_c_scale,w_1581.jpg 1581w",
+    "src": "media/karl_lps9c7_c_scale,w_1581.jpg",
+    "details": [
+      "Desktop &amp; Mobile versions",
+      "SASS + Compass",
+      "Wordpress integration for editorial content",
+      "Based on a .NET MVC custom front-end platform",
+      "Based on custom js pub-sub framework"
+    ]
+  },
+  {
+    "id": "addressbook",
+    "link": "http://www.francescobedussi.it/addressbook",
+    "name": "Addressbook",
+    "year": 2014,
+    "srcset": "media/addressbook_bc9bng_c_scale,w_200.jpg 200w, media/addressbook_bc9bng_c_scale,w_695.jpg 695w, media/addressbook_bc9bng_c_scale,w_1040.jpg 1040w, media/addressbook_bc9bng_c_scale,w_1280.jpg 1280w",
+    "src": "media/addressbook_bc9bng_c_scale,w_1280.jpg",
+    "details": [
+      "PHP",
+      "Bootstrap"
+    ]
+  },
+  {
+    "id": "nextOpening",
+    "link": "http://nextopeningfood.it",
+    "name": "Next Opening Food website",
+    "year": 2014,
+    "srcset": "media/nextOpening_elmmlh_c_scale,w_375.jpg 375w, media/nextOpening_elmmlh_c_scale,w_590.jpg 590w, media/nextOpening_elmmlh_c_scale,w_763.jpg 763w, media/nextOpening_elmmlh_c_scale,w_934.jpg 934w, media/nextOpening_elmmlh_c_scale,w_1080.jpg 1080w, media/nextOpening_elmmlh_c_scale,w_1227.jpg 1227w, media/nextOpening_elmmlh_c_scale,w_1359.jpg 1359w, media/nextOpening_elmmlh_c_scale,w_1596.jpg 1596w",
+    "src": "media/nextOpening_elmmlh_c_scale,w_1596.jpg",
+    "details": [
+      "Joomla! CMS"
+    ]
+  },
+  {
+    "id": "bicigeneratori",
+    "link": "http://www.bicigeneratori.it",
+    "name": "Bicigeneratori website",
+    "year": 2014,
+    "srcset": "media/bicigeneratori_ukwbjg_c_scale,w_375.jpg 375w, media/bicigeneratori_ukwbjg_c_scale,w_528.jpg 528w, media/bicigeneratori_ukwbjg_c_scale,w_655.jpg 655w, media/bicigeneratori_ukwbjg_c_scale,w_783.jpg 783w, media/bicigeneratori_ukwbjg_c_scale,w_909.jpg 909w, media/bicigeneratori_ukwbjg_c_scale,w_1011.jpg 1011w, media/bicigeneratori_ukwbjg_c_scale,w_1114.jpg 1114w, media/bicigeneratori_ukwbjg_c_scale,w_1219.jpg 1219w, media/bicigeneratori_ukwbjg_c_scale,w_1317.jpg 1317w, media/bicigeneratori_ukwbjg_c_scale,w_1449.jpg 1449w, media/bicigeneratori_ukwbjg_c_scale,w_1583.jpg 1583w",
+    "src": "media/bicigeneratori_ukwbjg_c_scale,w_1583.jpg",
+    "details": [
+      "Fully responsive",
+      "Joomla! CMS",
+      "Custom template"
+    ]
+  },
+  {
+    "id": "viro",
+    "link": "http://clubsicurezza.viro.it",
+    "name": "Club Viro della Sicurezza blog",
+    "year": 2013,
+    "srcset": "media/viro_zh9kd4_c_scale,w_375.jpg 375w, media/viro_zh9kd4_c_scale,w_482.jpg 482w, media/viro_zh9kd4_c_scale,w_576.jpg 576w, media/viro_zh9kd4_c_scale,w_659.jpg 659w, media/viro_zh9kd4_c_scale,w_737.jpg 737w, media/viro_zh9kd4_c_scale,w_808.jpg 808w, media/viro_zh9kd4_c_scale,w_883.jpg 883w, media/viro_zh9kd4_c_scale,w_963.jpg 963w, media/viro_zh9kd4_c_scale,w_1023.jpg 1023w, media/viro_zh9kd4_c_scale,w_1082.jpg 1082w, media/viro_zh9kd4_c_scale,w_1145.jpg 1145w, media/viro_zh9kd4_c_scale,w_1203.jpg 1203w, media/viro_zh9kd4_c_scale,w_1267.jpg 1267w, media/viro_zh9kd4_c_scale,w_1333.jpg 1333w, media/viro_zh9kd4_c_scale,w_1387.jpg 1387w, media/viro_zh9kd4_c_scale,w_1443.jpg 1443w, media/viro_zh9kd4_c_scale,w_1580.jpg 1580w",
+    "src": "media/viro_zh9kd4_c_scale,w_1580.jpg",
+    "details": [
+      "Fully responsive",
+      "Wordpress CMS",
+      "Custom template"
+    ]
+  },
+  {
+    "id": "legambiente",
+    "name": "Legambiente Bologna website",
+    "year": 2013,
+    "srcset": "media/legambiente_htczlp_c_scale,w_375.jpg 375w, media/legambiente_htczlp_c_scale,w_499.jpg 499w, media/legambiente_htczlp_c_scale,w_605.jpg 605w, media/legambiente_htczlp_c_scale,w_697.jpg 697w, media/legambiente_htczlp_c_scale,w_774.jpg 774w, media/legambiente_htczlp_c_scale,w_866.jpg 866w, media/legambiente_htczlp_c_scale,w_952.jpg 952w, media/legambiente_htczlp_c_scale,w_1017.jpg 1017w, media/legambiente_htczlp_c_scale,w_1087.jpg 1087w, media/legambiente_htczlp_c_scale,w_1153.jpg 1153w, media/legambiente_htczlp_c_scale,w_1236.jpg 1236w, media/legambiente_htczlp_c_scale,w_1298.jpg 1298w, media/legambiente_htczlp_c_scale,w_1343.jpg 1343w, media/legambiente_htczlp_c_scale,w_1491.jpg 1491w, media/legambiente_htczlp_c_scale,w_1498.jpg 1498w, media/legambiente_htczlp_c_scale,w_1581.jpg 1581w",
+    "src": "media/legambiente_htczlp_c_scale,w_1581.jpg",
+    "details": [
+      "Fully responsive",
+      "Joomla! CMS",
+      "Custom template"
+    ]
+  },
+  {
+    "id": "carisma",
+    "link": "http://carismarct.com",
+    "name": "Carisma website",
+    "year": 2012,
+    "srcset": "media/carisma_s25suo_c_scale,w_375.jpg 375w, media/carisma_s25suo_c_scale,w_624.jpg 624w, media/carisma_s25suo_c_scale,w_822.jpg 822w, media/carisma_s25suo_c_scale,w_1004.jpg 1004w, media/carisma_s25suo_c_scale,w_1168.jpg 1168w, media/carisma_s25suo_c_scale,w_1320.jpg 1320w, media/carisma_s25suo_c_scale,w_1582.jpg 1582w",
+    "src": "media/carisma_s25suo_c_scale,w_1582.jpg",
+    "details": [
+      "Joomla! CMS",
+      "Custom template"
+    ]
+  }
+]
