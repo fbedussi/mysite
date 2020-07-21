@@ -127,7 +127,7 @@
                         {% for detail in proj.details %}<li>{{detail}}</li>
                         {% endfor %}
                     </ul>
-                    {% if proj.link%}
+                    {% if proj.link %}
                     <a class="btn" href="{{proj.link}}" target="_blank">{% if proj.cta %}{{proj.cta}}{% else %}visit the site{% endif %}</a>
                     {% endif %}
                 </div>
@@ -186,89 +186,19 @@
 
             <h3 class="slideSubtitle">Work experience</h3>
             <ul>
+                {% for job in jobs %}
                 <li>
-                    <h4 class="slideSubtitle2">Full stack Developer (2019 &gt; Today)</h4>
+                    <h4 class="slideSubtitle2">{{job.name}}</h4>
+                    {% if job.company %}
                     <p>
-                        <em>Abstract, Via Broletto 43, Milano</em>
+                        <em>{{job.company}}</em>
                     </p>
-                    <p>I am a senior member of a tightly knitted and highly skilled team. Following the agile practices we develop and deliver highly interactive web based apps. We are currently focused on E-stores, in-store apps and b2b marketplaces for some of the major players in the fashion industry.<p> 
-                    <p>We use use JavaScript as our main programming language, both on server and client side. Depending on the project we can complement vanilla Node.js and JavaScript with powerful companion like TypeScript and React.</p>
+                    {% endif %}
+                    {% for paragraph in job.description %}
+                        <p>{{paragraph}}</p>
+                    {% endfor %}
                 </li>
-                <li>
-                    <h4 class="slideSubtitle2">Front end developer/JavaScript Developer (2015 &gt; 2019)</h4>
-                    <p>
-                        <em>Yoox Net-A-Porter Group, Via Nannetti 1, Zola Predosa (BO)</em>
-                    </p>
-                    <p>I am member of a cross functional team of 15 people (5 of which are devs). Using the agile methodology,
-                        iteration after iteration, we find the best way to transform the creativity of designers into actually
-                        working web sites.</p>
-                    <p>While we are committed to support as many browsers as possible, we try hard to use the latest technologies.
-                        We currently use CSS3 + postCss + autoprefixer and ES6 + Webpack + Babel to support older browsers
-                        as well as newer ones.</p>
-                    <p>Since we care about performance we use responsive images and lazy load them, use HTTP2 and its best practices
-                        and exploit caching as much as possible.</p>
-                    <p>We are part of a big corporate that runs 40+ e-stores, so, obviously, we rely on a front end platform
-                        (custom developed in .NET MVC) that is a middleware between the API and the actual front end. We
-                        can also leverage a corporate JavaScript framework, based on the pub/sub pattern, that takes care
-                        of some common tasks, such as cart management or form validation. This platform allows a fairly wide
-                        degree of customization that we exploit to meet the ever challenging clients’ requests.</p>
-                    <p>Since we are in charge of maintenance for the web sites we build, we take a great care in the scalability
-                        and maintainability of every single line of code we write.</p>
-                    <p>Besides web sites I am also an active contributor to several internal tools, such as the internal functional
-                        test automation platform, build upon Nightwatch.js and Cucumber and the sites configuration console,
-                        written in Electron + React + Redux.</p>
-                </li>
-                <li>
-                    <h4 class="slideSubtitle2">Front end Developer Freelance (2011 &gt; 2014)</h4>
-                    <p>As a front end developer I created web sites with a special attention for usability, SEO and performance.</p>
-                    <p>I relayed over the open source CMS Joomla! and Wordpress as a backend, on top of which I developed customized
-                        themes and templates.</p>
-                </li>
-                <li>
-                    <h4 class="slideSubtitle2">Web Marketing Consultant (2008 &gt; 2014)</h4>
-                    <p>
-                        <em>Viro Spa, Zola Predosa (Bo)</em>
-                    </p>
-                    <p>For a sector leader I designed and implemented the corporate web marketing strategy. I created, developed
-                        and edited for 3 years the corporate blog
-                        <a href="http://www.virosecurityclub.com/" target="_blank">www.virosecurityclub.com</a>, with weekly updates in 4 languages, as a powerful tool of content marketing.</p>
-                    <p>As the social media manager I run the Facebook, Twitter and Google+ corporate accounts. As the on-line
-                        community manager I dealt with communities, such as forums and newsgroups, related to mechanical
-                        security topics.</p>
-                </li>
-                <li>
-                    <h4 class="slideSubtitle2">Communication Manager/Web Master (2007 &gt; 2014)</h4>
-                    <p>
-                        <em>Centro Anatartide, Bologna</em>
-                    </p>
-                    <p>As a communication manager I co-designed and co-managed the national raising awareness campaigns on road
-                        safety Vacanze coi fiocchi and Siamo tutti pedoni.</p>
-                    <p>As a graphic designer I authored posters, leaflets and booklets for several center’s projects, like the
-                        EU funded project on water saving Wataclick, while as a web master I published and edited several
-                        web sites, mainly based on Joomla! and Wordpress CMS, related to different center’s projects.</p>
-                </li>
-                <li>
-                    <h4 class="slideSubtitle2">Co-founder and CEO (2004 &gt;2008)</h4>
-                    <p>
-                        <em>Caffe Network Scarl, Bologna</em>
-                    </p>
-                    <p>I was co-founder and CEO of Caffè Network, an agency specialized in the set-up, fine tuning and monitoring
-                        of distribution networks for free press projects.</p>
-                    <p>We worked for some of the biggest players in the industry, like the newspaper City and the magazine Urban,
-                        both edited by RCS Media Group.</p>
-                    <p>We also edited a monthly free press magazine, “l’ammazzacaffè”, printed on table mats and distributed
-                        in pubs and restaurants.</p>
-                </li>
-                <li>
-                    <h4 class="slideSubtitle2">Account/Project Leader (2002 &gt; 2003)</h4>
-                    <p>
-                        <em>O-one, Reggio Emilia</em>
-                    </p>
-                    <p>I was an account and project leader of a medium-sized web agency that worked with clients like Berloni,
-                        Kerakoll and Vodafone. My role dealt with customer relationships, business development and project
-                        management.
-                    </p>
-                </li>
+                {% endfor %}
             </ul>
             <h3 class="slideSubtitle">Education</h3>
 

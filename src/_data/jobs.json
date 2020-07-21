@@ -1,0 +1,61 @@
+[
+  {
+    "name": "Full stack Developer (2019 &gt; Today)",
+    "company": "Abstract, Via Broletto 43, Milano",
+    "description": [
+      "I am a senior member of a tightly knitted and highly skilled team. Following the agile practices we develop and deliver highly interactive web based apps. We are currently focused on E-stores, in-store apps and b2b marketplaces for some of the major players in the fashion industry.",
+      "We use use JavaScript as our main programming language, both on server and client side. Depending on the project we can complement vanilla Node.js and JavaScript with powerful companion like TypeScript and React."
+    ]
+  },
+  {
+    "name": "Front end developer/JavaScript Developer (2015 &gt; 2019)",
+    "company": "Yoox Net-A-Porter Group, Via Nannetti 1, Zola Predosa (BO)",
+    "description": [
+      "I was a member of a cross functional team of 15 people (5 of which were devs). Using the agile methodology, iteration after iteration, we found the best way to transform the creativity of designers into actually working web sites.",
+      "While we were committed to support as many browsers as possible, we tried hard to use the latest technologies. We used CSS3 + postCss + autoprefixer and ES6 + Webpack + Babel to support older browsers as well as newer ones.",
+      "Since we cared about performance we used responsive images and lazy load them, used HTTP2 and its best practices and exploited caching as much as possible.",
+      "We were part of a big corporate that runs 40+ e-stores, so, obviously, we relied on a front end platform (custom developed in .NET MVC) that was a middleware between the API and the actual front end. We could also leverage a corporate JavaScript framework, based on the pub/sub pattern, that took care of some common tasks, such as cart management or form validation. This platform allowed a fairly wide degree of customization that we exploited to meet the ever challenging clients’ requests.",
+      "Since we were in charge of maintenance for the web sites we build, we took a great care in the scalability and maintainability of every single line of code we wrote.",
+      "Besides web sites I was also an active contributor to several internal tools, such as the internal functional test automation platform, build upon Nightwatch.js and Cucumber and the sites configuration console, written in Electron + React + Redux."
+    ]
+  },
+  {
+    "name": "Front end Developer Freelance (2011 &gt; 2014)",
+    "description": [
+      "As a front end developer I created web sites with a special attention for usability, SEO and performance.",
+      "I relayed over the open source CMS Joomla! and Wordpress as a backend, on top of which I developed customized themes and templates."
+    ]
+  },
+  {
+    "name": "Web Marketing Consultant (2008 &gt; 2014)",
+    "company": "Viro Spa, Zola Predosa (Bo)",
+    "description": [
+      "For a sector leader I designed and implemented the corporate web marketing strategy. I created, developed and edited for 3 years the corporate blog <a href=\"http://www.virosecurityclub.com/\" target=\"_blank\">www.virosecurityclub.com</a>, with weekly updates in 4 languages, as a powerful tool of content marketing.",
+      "As the social media manager I run the Facebook, Twitter and Google+ corporate accounts. As the on-line community manager I dealt with communities, such as forums and newsgroups, related to mechanical security topics."
+    ]
+  },
+  {
+    "name": "Communication Manager/Web Master (2007 &gt; 2014)",
+    "company": "Centro Anatartide, Bologna",
+    "description": [
+      "As a communication manager I co-designed and co-managed the national raising awareness campaigns on road safety Vacanze coi fiocchi and Siamo tutti pedoni.",
+      "As a graphic designer I authored posters, leaflets and booklets for several center’s projects, like the EU funded project on water saving Wataclick, while as a web master I published and edited several web sites, mainly based on Joomla! and Wordpress CMS, related to different center’s projects."
+    ]
+  },
+  {
+    "name": "Co-founder and CEO (2004 &gt;2008)",
+    "company": "Caffe Network Scarl, Bologna",
+    "description": [
+      "I was co-founder and CEO of Caffè Network, an agency specialized in the set-up, fine tuning and monitoring of distribution networks for free press projects.",
+      "We worked for some of the biggest players in the industry, like the newspaper City and the magazine Urban, both edited by RCS Media Group.",
+      "We also edited a monthly free press magazine, “l’ammazzacaffè”, printed on table mats and distributed in pubs and restaurants."
+    ]
+  },
+  {
+    "name": "Account/Project Leader (2002 &gt; 2003)",
+    "company": "O-one, Reggio Emilia",
+    "description": [
+      "I was an account and project leader of a medium-sized web agency that worked with clients like Berloni, Kerakoll and Vodafone. My role dealt with customer relationships, business development and project management."
+    ]
+  }
+]
