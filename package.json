@@ -19,6 +19,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "buildCss": "postcss src/style.css -o dist/style.css -w",
     "buildJs": "cp src/script.js dist/js && ./node_modules/.bin/babel src/script.js --watch --out-file dist/js/script-compiled.js --presets=env",
+    "buildCss:ci": "postcss src/style.css -o dist/style.css",
+    "buildJs:ci": "cp src/script.js dist/js && ./node_modules/.bin/babel src/script.js --out-file dist/js/script-compiled.js --presets=env",
     "11ty": "eleventy --input=./src/index.liquid --output=./dist",
     "start": "eleventy --input=./src/index.liquid --output=./dist --serve",
     "deploy": "node deploy"

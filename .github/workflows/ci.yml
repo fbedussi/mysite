@@ -28,8 +28,8 @@ jobs:
 
     - name: Build the site
       run: npm i
-    - run: npm run buildCss
-    - run: npm run buildJs
+    - run: npm run buildCss:ci
+    - run: npm run buildJs:ci
     - run: npm run 11ty
 
     - name: Build and push Docker images
