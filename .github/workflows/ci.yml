@@ -10,36 +10,33 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it  
-    # - name: Checkout code
-    #   uses: actions/checkout@v2
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-    # - name: Use Node.js 12
-    #   uses: actions/setup-node@v1
-    #   with:
-    #     node-version: '12.x'
+    - name: Use Node.js 12
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
 
-    # - name: Build the site
-    #   run: npm i
-    # - run: npm run buildCss:ci
-    # - run: npm run buildJs:ci
-    # - run: npm run 11ty
+    - name: Build the site
+      run: npm i
+    - run: npm run buildCss:ci
+    - run: npm run buildJs:ci
+    - run: npm run 11ty
 
-    # - name: Build and push Docker images
-    #   uses: docker/build-push-action@v1
-    #   with:
-    #     username: ${{ secrets.DOCKER_USERNAME }}
-    #     password: ${{ secrets.DOCKER_PASSWORD }}
-    #     repository: fbedussi/mysite
-    #     tag_with_ref: true
-    #     tag_with_sha: true
+    - name: Build and push Docker images
+      uses: docker/build-push-action@v1
+      with:
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+        repository: fbedussi/mysite
+        tag_with_ref: true
+        tag_with_sha: true
     
     - name: Update the server container
       uses: appleboy/ssh-action@master
