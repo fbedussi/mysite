@@ -41,12 +41,23 @@ jobs:
         tag_with_ref: true
         tag_with_sha: true
     
-    # Runs a single command using the runners shell
-    - name: Run a one-line script
-      run: echo Hello, world!
-
-    # Runs a set of commands using the runners shell
-    - name: Run a multi-line script
+    - name: Configure SSH
       run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+        mkdir -p ~/.ssh/
+        echo "$SSH_KEY" > ~/.ssh/production.key
+        chmod 600 ~/.ssh/production.key
+        cat >>~/.ssh/config <<END
+        Host production
+          HostName $SSH_HOST
+          User $SSH_USER
+          IdentityFile ~/.ssh/producion.key
+          StrictHostKeyChecking no
+        END
+      env:
+        SSH_USER: ${{ secrets.SSH_USER }}
+        SSH_KEY: ${{ secrets.SSH_KEY }}
+        SSH_HOST: ${{ secrets.SSH_HOST }}
+
+    - name: Update the server container
+      run: ssh production 'docker stop mysite && docker rm mysite && docker pull fbedussi/mysite:docker && docker run --name mysite -p 8081:80 -d fbedussi/mysite:docker'
+
