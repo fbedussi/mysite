@@ -47,4 +47,4 @@ jobs:
         host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_USER }}
         password: ${{ secrets.SSH_PASSWORD }}
-        script: docker stop mysite && docker rm mysite && docker pull fbedussi/mysite:docker && docker run --name mysite -p 8081:80 -d fbedussi/mysite:docker
+        script: /snap/bin/docker stop mysite && docker rm mysite && docker pull fbedussi/mysite:docker && docker run --name mysite -p 8081:80 -d fbedussi/mysite:docker
