@@ -43,8 +43,6 @@ jobs:
     
     - name: Configure SSH
       run: |
-        echo "$SSH_USER"
-        echo "$SSH_HOST"
         mkdir -p ~/.ssh/
         echo "$SSH_KEY" > ~/.ssh/production.key
         chmod 600 ~/.ssh/production.key
@@ -55,6 +53,7 @@ jobs:
           IdentityFile ~/.ssh/production.key
           StrictHostKeyChecking no
         END
+        cat ~/.ssh/config
       env:
         SSH_USER: ${{ secrets.SSH_USER }}
         SSH_KEY: ${{ secrets.SSH_KEY }}
