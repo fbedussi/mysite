@@ -50,7 +50,7 @@ jobs:
         Host production
           HostName $SSH_HOST
           User $SSH_USER
-          IdentityFile ~/.ssh/producion.key
+          IdentityFile ~/.ssh/production.key
           StrictHostKeyChecking no
         END
       env:
