@@ -21,6 +21,17 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: Use Node.js 12
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+
+    - name: Build the site
+      run: npm i
+    - run: npm run buildCss
+    - run: npm run buildJs
+    - run: npm run 11ty
+
     - name: Build and push Docker images
       uses: docker/build-push-action@v1
       with:
