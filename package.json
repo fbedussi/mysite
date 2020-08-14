@@ -4,6 +4,7 @@
   "description": "My personal website",
   "main": "index.js",
   "dependencies": {
+    "@11ty/eleventy": "^0.11.0",
     "postcss-cli": "^4.1.1",
     "postcss-cssnext": "^3.0.2"
   },
@@ -21,8 +22,8 @@
     "buildJs": "cp src/script.js dist/js && ./node_modules/.bin/babel src/script.js --watch --out-file dist/js/script-compiled.js --presets=env",
     "buildCss:ci": "postcss src/style.css -o dist/style.css",
     "buildJs:ci": "cp src/script.js dist/js && ./node_modules/.bin/babel src/script.js --out-file dist/js/script-compiled.js --presets=env",
-    "11ty": "eleventy --input=./src/index.liquid --output=./dist",
-    "start": "eleventy --input=./src/index.liquid --output=./dist --serve",
+    "11ty": "./node_modules/.bin/eleventy --input=./src/index.liquid --output=./dist",
+    "start": "./node_modules/.bin/eleventy --input=./src/index.liquid --output=./dist --serve",
     "deploy": "node deploy"
   },
   "browserslist": [
