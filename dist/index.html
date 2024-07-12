@@ -2,1391 +2,1871 @@
 
 <html lang="en">
 
-<head>
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Francesco Bedussi, full stack JavaScript developer</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8">
-    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
-    <script nomodule src="js/promises.min.js" type="text/javascript"></script>
+    <link
+      rel='shortcut icon'
+      type='image/x-icon'
+      href='/favicon.ico' />
+    <script
+      nomodule
+      src="js/promises.min.js"
+      type="text/javascript"></script>
     <script src="js/fontfaceobserver.js" type="text/javascript"></script>
-</head>
+  </head>
 
-<body>
-    <svg width="0" height="0" class="hide">
-        <defs>
-            <g id="backIcon">
-                <path d="M7.41 10.59L2.83 6l4.58-4.59L6 0 0 6l6 6z" />
-                <path d="M-8-6h24v24H-8z" fill="none" />
-            </g>
+  <body>
+    <svg
+      width="0"
+      height="0"
+      class="hide">
+      <defs>
+        <g id="backIcon">
+          <path d="M7.41 10.59L2.83 6l4.58-4.59L6 0 0 6l6 6z" />
+          <path d="M-8-6h24v24H-8z" fill="none" />
+        </g>
 
-        </defs>
+      </defs>
     </svg>
 
     <div class="menuWrapper">
-        <button class="menuButton">
-            <span class="icon menuIcon">
-                <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                    xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" id="svg2" class="menuButton-icon"
-                    viewBox="0 0 39 29" height="29" width="39" preserveAspectRatio="xMidYMid">
+      <button class="menuButton">
+        <span class="icon menuIcon">
+          <svg
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:cc="http://creativecommons.org/ns#"
+            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns:svg="http://www.w3.org/2000/svg"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            id="svg2"
+            class="menuButton-icon"
+            viewBox="0 0 39 29"
+            height="29"
+            width="39"
+            preserveAspectRatio="xMidYMid">
 
-                    <rect ry="0" class="menuIconPart" y="0.0159767" x="-0.0043927" height="2.96842" width="38.9892" id="menuIconTop" style="stroke-width: 0; stroke-miterlimit: 4; stroke-dasharray: none"
-                    />
-                    <rect style="stroke-width: 0; stroke-miterlimit: 4; stroke-dasharray: none" class="menuIconPart" id="menuIconMiddle" width="38.9892"
-                        height="2.96842" x="-0.0043927" y="13.016" ry="0" />
-                    <rect style="stroke-width: 0; stroke-miterlimit: 4; stroke-dasharray: none" class="menuIconPart" id="menuIconMiddle2" width="38.9892"
-                        height="2.96842" x="-0.0043927" y="13.016" ry="0" />
-                    <rect ry="0" class="menuIconPart" y="26.016" x="-0.0043927" height="2.96842" width="38.9892" id="menuIconBottom" style="stroke-width: 0; stroke-miterlimit: 4; stroke-dasharray: none"
-                    />
-                </svg>
-                <span class="visuallyHidden">Menu</span>
-            </span>
-        </button>
-        <div class="menuInner">
-            <nav class="mainMenu">
-                <ul>
-                    <li>
-                        <a class="underlineIn" href="#about">About me</a>
-                    </li>
-                    <li>
-                        <a class="underlineIn" href="#contact">Contact me</a>
-                    </li>
-                </ul>
-            </nav>
-            <ul class="social">
-                <li>
-                    <a class="underlineIn" href="https://www.linkedin.com/in/francescobedussi/" target="_blank">Linkedin</a>
-                </li>
-                <li>
-                    <a class="underlineIn" href="https://twitter.com/fbedussi" target="_blank">Twitter</a>
-                </li>
-                <li>
-                    <a class="underlineIn" href="https://github.com/fbedussi" target="_blank">Github</a>
-                </li>
-            </ul>
-        </div>
+            <rect
+              ry="0"
+              class="menuIconPart"
+              y="0.0159767"
+              x="-0.0043927"
+              height="2.96842"
+              width="38.9892"
+              id="menuIconTop"
+              style="stroke-width: 0; stroke-miterlimit: 4; stroke-dasharray: none" />
+            <rect
+              style="stroke-width: 0; stroke-miterlimit: 4; stroke-dasharray: none"
+              class="menuIconPart"
+              id="menuIconMiddle"
+              width="38.9892"
+              height="2.96842"
+              x="-0.0043927"
+              y="13.016"
+              ry="0" />
+            <rect
+              style="stroke-width: 0; stroke-miterlimit: 4; stroke-dasharray: none"
+              class="menuIconPart"
+              id="menuIconMiddle2"
+              width="38.9892"
+              height="2.96842"
+              x="-0.0043927"
+              y="13.016"
+              ry="0" />
+            <rect
+              ry="0"
+              class="menuIconPart"
+              y="26.016"
+              x="-0.0043927"
+              height="2.96842"
+              width="38.9892"
+              id="menuIconBottom"
+              style="stroke-width: 0; stroke-miterlimit: 4; stroke-dasharray: none" />
+          </svg>
+          <span class="visuallyHidden">Menu</span>
+        </span>
+      </button>
+      <div class="menuInner">
+        <nav class="mainMenu">
+          <ul>
+            <li><a class="underlineIn" href="#about">About me</a></li>
+            <li><a class="underlineIn" href="#contact">Contact me</a></li>
+          </ul>
+        </nav>
+        <ul class="social">
+          <li>
+            <a
+              class="underlineIn"
+              href="https://fbedussi.github.io/blog"
+              target="_blank">My blog: no sterss front end</a>
+          </li>
+          <li>
+            <a
+              class="underlineIn"
+              href="https://www.linkedin.com/in/francescobedussi"
+              target="_blank">Linkedin</a>
+          </li>
+          <li>
+            <a
+              class="underlineIn"
+              href="https://twitter.com/fbedussi"
+              target="_blank">Twitter</a>
+          </li>
+          <li>
+            <a
+              class="underlineIn"
+              href="https://github.com/fbedussi"
+              target="_blank">Github</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <main class="content">
-        <div class="overlay"></div>
-        <div tabindex="-1" class="slide is-open" id="home">
-            <h1 class="headline">I am a
-                <a class="link" href="#jsPortfolio">full stack JavaScript developer</a>.
-            </h1>
-        </div>
+      <div class="overlay"></div>
+      <div
+        tabindex="-1"
+        class="slide is-open"
+        id="home">
+        <h1 class="headline">I am a
+          <a class="link" href="#jsPortfolio">full stack JavaScript developer</a>.
+        </h1>
+      </div>
 
-        <div tabindex="-1" class="slide hide" id="jsPortfolio">
-            <button class="icon backIcon">
-                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#backIcon" />
-                </svg>
-                <span class="visuallyHidden">back</span>
-            </button>
-            <h2 class="slideTitle">Portfolio</h2>
-            <ul>
-                
-                <li>
-                    <a href="#telo" class="underlineIn">
-                        <span class="portfolioItem">Teleoptometry, a tele medicine system</span>
-                        <span class="portfolioDate">2020</span>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="#bangle" class="underlineIn">
-                        <span class="portfolioItem">Apps for the smartwatch Bangle.js</span>
-                        <span class="portfolioDate">2020</span>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="#redcarpet" class="underlineIn">
-                        <span class="portfolioItem">Redcarpet, a B2B  marketplace</span>
-                        <span class="portfolioDate">2019</span>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="#dinamco" class="underlineIn">
-                        <span class="portfolioItem">Dinamco</span>
-                        <span class="portfolioDate">2019</span>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="#pigbirth" class="underlineIn">
-                        <span class="portfolioItem">Pigbirth, a pig birth control system</span>
-                        <span class="portfolioDate">2019</span>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="#armani" class="underlineIn">
-                        <span class="portfolioItem">Armani e-store</span>
-                        <span class="portfolioDate">2019</span>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="#flyfeed" class="underlineIn">
-                        <span class="portfolioItem">flyFeed, a simple RSS reader</span>
-                        <span class="portfolioDate">2018</span>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="#dsquared2" class="underlineIn">
-                        <span class="portfolioItem">Dsquared2 e-store</span>
-                        <span class="portfolioDate">2018</span>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="#elm15" class="underlineIn">
-                        <span class="portfolioItem">15 puzzle</span>
-                        <span class="portfolioDate">2018</span>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="#cavalli" class="underlineIn">
-                        <span class="portfolioItem">Just Cavalli e-store</span>
-                        <span class="portfolioDate">2017</span>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="#apl" class="underlineIn">
-                        <span class="portfolioItem">APL configurator</span>
-                        <span class="portfolioDate">2017</span>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="#mangiamusica" class="underlineIn">
-                        <span class="portfolioItem">Mangiamusica, a music player for toddlers - WIP</span>
-                        <span class="portfolioDate">2017</span>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="#ttracker" class="underlineIn">
-                        <span class="portfolioItem">tTracker, a time tracking web app for freelancers</span>
-                        <span class="portfolioDate">2017</span>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="#margiela" class="underlineIn">
-                        <span class="portfolioItem">Maison Margiela e-store</span>
-                        <span class="portfolioDate">2016</span>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="#remedi" class="underlineIn">
-                        <span class="portfolioItem">ReMEdi reveal.js markdown editor</span>
-                        <span class="portfolioDate">2016</span>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="#y3" class="underlineIn">
-                        <span class="portfolioItem">Y-3 e-store</span>
-                        <span class="portfolioDate">2016</span>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="#nightwatchGui" class="underlineIn">
-                        <span class="portfolioItem">nightwatchGui, a Graphical User Interface for the test automation framework nightwatch-cucumber</span>
-                        <span class="portfolioDate">2016</span>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="#gpp" class="underlineIn">
-                        <span class="portfolioItem">Gherkin/Cucumber file preprocessor</span>
-                        <span class="portfolioDate">2016</span>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="#lagerfeld" class="underlineIn">
-                        <span class="portfolioItem">Karl Lagerfeld e-store</span>
-                        <span class="portfolioDate">2015</span>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="#addressbook" class="underlineIn">
-                        <span class="portfolioItem">Addressbook</span>
-                        <span class="portfolioDate">2014</span>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="#nextOpening" class="underlineIn">
-                        <span class="portfolioItem">Next Opening Food website</span>
-                        <span class="portfolioDate">2014</span>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="#bicigeneratori" class="underlineIn">
-                        <span class="portfolioItem">Bicigeneratori website</span>
-                        <span class="portfolioDate">2014</span>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="#viro" class="underlineIn">
-                        <span class="portfolioItem">Club Viro della Sicurezza blog</span>
-                        <span class="portfolioDate">2013</span>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="#legambiente" class="underlineIn">
-                        <span class="portfolioItem">Legambiente Bologna website</span>
-                        <span class="portfolioDate">2013</span>
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="#carisma" class="underlineIn">
-                        <span class="portfolioItem">Carisma website</span>
-                        <span class="portfolioDate">2012</span>
-                    </a>
-                </li>
-                         
-            </ul>
-        </div>
+      <div
+        tabindex="-1"
+        class="slide hide"
+        id="jsPortfolio">
+        <button class="icon backIcon">
+          <svg
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="#backIcon" />
+          </svg>
+          <span class="visuallyHidden">back</span>
+        </button>
+        <h2 class="slideTitle">Portfolio</h2>
+        <ul>
+          
+            <li>
+              <a href="#ben" class="underlineIn">
+                <span class="portfolioItem">Rainbow room, a tool to showcase new collections to retailers</span>
+                <span class="portfolioDate">2022</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#telo" class="underlineIn">
+                <span class="portfolioItem">Teleoptometry, a tele medicine system</span>
+                <span class="portfolioDate">2020</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#bangle" class="underlineIn">
+                <span class="portfolioItem">Apps for the smartwatch Bangle.js</span>
+                <span class="portfolioDate">2020</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#redcarpet" class="underlineIn">
+                <span class="portfolioItem">Redcarpet, a B2B  marketplace</span>
+                <span class="portfolioDate">2019</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#dinamco" class="underlineIn">
+                <span class="portfolioItem">Dinamco</span>
+                <span class="portfolioDate">2019</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#pigbirth" class="underlineIn">
+                <span class="portfolioItem">Pigbirth, a pig birth control system</span>
+                <span class="portfolioDate">2019</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#armani" class="underlineIn">
+                <span class="portfolioItem">Armani e-store</span>
+                <span class="portfolioDate">2019</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#flyfeed" class="underlineIn">
+                <span class="portfolioItem">flyFeed, a simple RSS reader</span>
+                <span class="portfolioDate">2018</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#dsquared2" class="underlineIn">
+                <span class="portfolioItem">Dsquared2 e-store</span>
+                <span class="portfolioDate">2018</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#elm15" class="underlineIn">
+                <span class="portfolioItem">15 puzzle</span>
+                <span class="portfolioDate">2018</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#cavalli" class="underlineIn">
+                <span class="portfolioItem">Just Cavalli e-store</span>
+                <span class="portfolioDate">2017</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#apl" class="underlineIn">
+                <span class="portfolioItem">APL configurator</span>
+                <span class="portfolioDate">2017</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#mangiamusica" class="underlineIn">
+                <span class="portfolioItem">Mangiamusica, a music player for toddlers - WIP</span>
+                <span class="portfolioDate">2017</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#ttracker" class="underlineIn">
+                <span class="portfolioItem">tTracker, a time tracking web app for freelancers</span>
+                <span class="portfolioDate">2017</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#margiela" class="underlineIn">
+                <span class="portfolioItem">Maison Margiela e-store</span>
+                <span class="portfolioDate">2016</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#remedi" class="underlineIn">
+                <span class="portfolioItem">ReMEdi reveal.js markdown editor</span>
+                <span class="portfolioDate">2016</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#y3" class="underlineIn">
+                <span class="portfolioItem">Y-3 e-store</span>
+                <span class="portfolioDate">2016</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#nightwatchGui" class="underlineIn">
+                <span class="portfolioItem">nightwatchGui, a Graphical User Interface for the test automation framework nightwatch-cucumber</span>
+                <span class="portfolioDate">2016</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#gpp" class="underlineIn">
+                <span class="portfolioItem">Gherkin/Cucumber file preprocessor</span>
+                <span class="portfolioDate">2016</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#lagerfeld" class="underlineIn">
+                <span class="portfolioItem">Karl Lagerfeld e-store</span>
+                <span class="portfolioDate">2015</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#addressbook" class="underlineIn">
+                <span class="portfolioItem">Addressbook</span>
+                <span class="portfolioDate">2014</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#nextOpening" class="underlineIn">
+                <span class="portfolioItem">Next Opening Food website</span>
+                <span class="portfolioDate">2014</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#bicigeneratori" class="underlineIn">
+                <span class="portfolioItem">Bicigeneratori website</span>
+                <span class="portfolioDate">2014</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#viro" class="underlineIn">
+                <span class="portfolioItem">Club Viro della Sicurezza blog</span>
+                <span class="portfolioDate">2013</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#legambiente" class="underlineIn">
+                <span class="portfolioItem">Legambiente Bologna website</span>
+                <span class="portfolioDate">2013</span>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#carisma" class="underlineIn">
+                <span class="portfolioItem">Carisma website</span>
+                <span class="portfolioDate">2012</span>
+              </a>
+            </li>
+          
+        </ul>
+      </div>
 
-         
-        <div tabindex="-1" class="slide hide" id="telo">
-            <button class="icon backIcon">
-                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#backIcon" />
-                </svg>
-                <span class="visuallyHidden">back</span>
-            </button>
-            <h2 class="slideTitle">
-                
-                <span>Teleoptometry, a tele medicine system</span>
-                
-            </h2>
-            <div class="imageAndDatasheet">
-                <img
-                    sizes="(max-width: 1400px) 100vw, 1400px"
-                    
-                    srcset="media/telo_f5kkkf_c_scale,w_200.jpg 200w, media/telo_f5kkkf_c_scale,w_856.jpg 856w, media/telo_f5kkkf_c_scale,w_1350.jpg 1350w, media/telo_f5kkkf_c_scale,w_1400.jpg 1400w"
-                    
-                    data-src="media/telo_f5kkkf_c_scale,w_1400.jpg"
-                    loading="lazy"
-                    alt="">
+      
+        <div
+          tabindex="-1"
+          class="slide hide"
+          id="ben">
+          <button class="icon backIcon">
+            <svg
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#backIcon" />
+            </svg>
+            <span class="visuallyHidden">back</span>
+          </button>
+          <h2 class="slideTitle">
+            
+              <span>Rainbow room, a tool to showcase new collections to retailers</span>
+            
+          </h2>
+          <div class="imageAndDatasheet">
+            <img
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              
+              srcset="media/Screenshot_2023-02-26_at_19.32.24_q2umee_c_scale,w_200.jpg 200w, media/Screenshot_2023-02-26_at_19.32.24_q2umee_c_scale,w_674.jpg 674w, media/Screenshot_2023-02-26_at_19.32.24_q2umee_c_scale,w_1092.jpg 1092w, media/Screenshot_2023-02-26_at_19.32.24_q2umee_c_scale,w_1400.jpg 1400w"
+              
+              data-src="media/Screenshot_2023-02-26_at_19.32.24_q2umee_c_scale,w_1400.jpg"
+              loading="lazy"
+              alt="">
 
-                <div class="dataSheet">
-                    <h3 class="dataSheet-title">Technical details</h3>
-                    <ul class="dataSheet-list">
-                        <li>Frontend: React + Redux + TypeScript + Formik + Material.UI + Styled Components</li>
-                        <li>Backend: microservices architecture, Node + Fastify + TypeScript + MongoDB + Redis</li>
-                        
-                    </ul>
-                    
-                </div>
+            <div class="dataSheet">
+              <h3 class="dataSheet-title">Technical details</h3>
+              <ul class="dataSheet-list">
+                
+                  <li>Frontend: React + Redux + TypeScript + Styled Components</li>
+                
+                  <li>Backend: Node + Express + TypeScript + MongoDB</li>
+                
+              </ul>
+              
             </div>
+          </div>
         </div>
-         
-        <div tabindex="-1" class="slide hide" id="bangle">
-            <button class="icon backIcon">
-                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#backIcon" />
-                </svg>
-                <span class="visuallyHidden">back</span>
-            </button>
-            <h2 class="slideTitle">
-                
-                <a href="https://github.com/espruino/BangleApps/tree/master/apps/largeclock" target="_blank">Apps for the smartwatch Bangle.js</a>
-                
-            </h2>
-            <div class="imageAndDatasheet">
-                <img
-                    sizes="(max-width: 1400px) 100vw, 1400px"
-                    
-                    srcset="media/bangle_svehe3_c_scale,w_200.jpg 200w, media/bangle_svehe3_c_scale,w_519.jpg 519w, media/bangle_svehe3_c_scale,w_748.jpg 748w, media/bangle_svehe3_c_scale,w_936.jpg 936w, media/bangle_svehe3_c_scale,w_1120.jpg 1120w, media/bangle_svehe3_c_scale,w_1273.jpg 1273w, media/bangle_svehe3_c_scale,w_1400.jpg 1400w"
-                    
-                    data-src="media/bangle_svehe3_c_scale,w_1400.jpg"
-                    loading="lazy"
-                    alt="">
+      
+        <div
+          tabindex="-1"
+          class="slide hide"
+          id="telo">
+          <button class="icon backIcon">
+            <svg
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#backIcon" />
+            </svg>
+            <span class="visuallyHidden">back</span>
+          </button>
+          <h2 class="slideTitle">
+            
+              <span>Teleoptometry, a tele medicine system</span>
+            
+          </h2>
+          <div class="imageAndDatasheet">
+            <img
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              
+              srcset="media/telo_f5kkkf_c_scale,w_200.jpg 200w, media/telo_f5kkkf_c_scale,w_856.jpg 856w, media/telo_f5kkkf_c_scale,w_1350.jpg 1350w, media/telo_f5kkkf_c_scale,w_1400.jpg 1400w"
+              
+              data-src="media/telo_f5kkkf_c_scale,w_1400.jpg"
+              loading="lazy"
+              alt="">
 
-                <div class="dataSheet">
-                    <h3 class="dataSheet-title">Technical details</h3>
-                    <ul class="dataSheet-list">
-                        <li>Written in JS</li>
-                        
-                    </ul>
-                    
-                    <a class="btn" href="https://github.com/espruino/BangleApps/tree/master/apps/largeclock" target="_blank">visit the site</a>
-                    
-                </div>
+            <div class="dataSheet">
+              <h3 class="dataSheet-title">Technical details</h3>
+              <ul class="dataSheet-list">
+                
+                  <li>Frontend: React + Redux + TypeScript + Formik + Material.UI + Styled Components</li>
+                
+                  <li>Backend: microservices architecture, Node + Fastify + TypeScript + MongoDB + Redis</li>
+                
+              </ul>
+              
             </div>
+          </div>
         </div>
-         
-        <div tabindex="-1" class="slide hide" id="redcarpet">
-            <button class="icon backIcon">
-                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#backIcon" />
-                </svg>
-                <span class="visuallyHidden">back</span>
-            </button>
-            <h2 class="slideTitle">
-                
-                <span>Redcarpet, a B2B  marketplace</span>
-                
-            </h2>
-            <div class="imageAndDatasheet">
-                <img
-                    sizes="(max-width: 1400px) 100vw, 1400px"
-                    
-                    srcset="media/redcarpet_kifhiz_c_scale,w_200.jpg 200w, media/redcarpet_kifhiz_c_scale,w_468.jpg 468w, media/redcarpet_kifhiz_c_scale,w_690.jpg 690w, media/redcarpet_kifhiz_c_scale,w_868.jpg 868w, media/redcarpet_kifhiz_c_scale,w_1054.jpg 1054w, media/redcarpet_kifhiz_c_scale,w_1138.jpg 1138w"
-                    
-                    data-src="media/redcarpet_kifhiz_c_scale,w_1138.jpg"
-                    loading="lazy"
-                    alt="">
+      
+        <div
+          tabindex="-1"
+          class="slide hide"
+          id="bangle">
+          <button class="icon backIcon">
+            <svg
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#backIcon" />
+            </svg>
+            <span class="visuallyHidden">back</span>
+          </button>
+          <h2 class="slideTitle">
+            
+              <a href="https://github.com/espruino/BangleApps/tree/master/apps/largeclock" target="_blank">Apps for the smartwatch Bangle.js</a>
+            
+          </h2>
+          <div class="imageAndDatasheet">
+            <img
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              
+              srcset="media/bangle_svehe3_c_scale,w_200.jpg 200w, media/bangle_svehe3_c_scale,w_519.jpg 519w, media/bangle_svehe3_c_scale,w_748.jpg 748w, media/bangle_svehe3_c_scale,w_936.jpg 936w, media/bangle_svehe3_c_scale,w_1120.jpg 1120w, media/bangle_svehe3_c_scale,w_1273.jpg 1273w, media/bangle_svehe3_c_scale,w_1400.jpg 1400w"
+              
+              data-src="media/bangle_svehe3_c_scale,w_1400.jpg"
+              loading="lazy"
+              alt="">
 
-                <div class="dataSheet">
-                    <h3 class="dataSheet-title">Technical details</h3>
-                    <ul class="dataSheet-list">
-                        <li>Frontend: React + Redux + Socket.io</li>
-                        <li>Backend: Node + Express + TypeScript + MongoDB + Redis</li>
-                        
-                    </ul>
-                    
-                </div>
+            <div class="dataSheet">
+              <h3 class="dataSheet-title">Technical details</h3>
+              <ul class="dataSheet-list">
+                
+                  <li>Written in JS</li>
+                
+              </ul>
+              
+                <a
+                  class="btn"
+                  href="https://github.com/espruino/BangleApps/tree/master/apps/largeclock"
+                  target="_blank">
+                  visit the site
+                </a>
+              
             </div>
+          </div>
         </div>
-         
-        <div tabindex="-1" class="slide hide" id="dinamco">
-            <button class="icon backIcon">
-                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#backIcon" />
-                </svg>
-                <span class="visuallyHidden">back</span>
-            </button>
-            <h2 class="slideTitle">
-                
-                <span>Dinamco</span>
-                
-            </h2>
-            <div class="imageAndDatasheet">
-                <img
-                    sizes="(max-width: 1400px) 100vw, 1400px"
-                    
-                    srcset="media/dinamco_wxm5zk_c_scale,w_200.jpg 200w, media/dinamco_wxm5zk_c_scale,w_541.jpg 541w, media/dinamco_wxm5zk_c_scale,w_778.jpg 778w, media/dinamco_wxm5zk_c_scale,w_976.jpg 976w, media/dinamco_wxm5zk_c_scale,w_1170.jpg 1170w, media/dinamco_wxm5zk_c_scale,w_1343.jpg 1343w, media/dinamco_wxm5zk_c_scale,w_1400.jpg 1400w"
-                    
-                    data-src="media/dinamco_wxm5zk_c_scale,w_1400.jpg"
-                    loading="lazy"
-                    alt="">
+      
+        <div
+          tabindex="-1"
+          class="slide hide"
+          id="redcarpet">
+          <button class="icon backIcon">
+            <svg
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#backIcon" />
+            </svg>
+            <span class="visuallyHidden">back</span>
+          </button>
+          <h2 class="slideTitle">
+            
+              <span>Redcarpet, a B2B  marketplace</span>
+            
+          </h2>
+          <div class="imageAndDatasheet">
+            <img
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              
+              srcset="media/redcarpet_kifhiz_c_scale,w_200.jpg 200w, media/redcarpet_kifhiz_c_scale,w_468.jpg 468w, media/redcarpet_kifhiz_c_scale,w_690.jpg 690w, media/redcarpet_kifhiz_c_scale,w_868.jpg 868w, media/redcarpet_kifhiz_c_scale,w_1054.jpg 1054w, media/redcarpet_kifhiz_c_scale,w_1138.jpg 1138w"
+              
+              data-src="media/redcarpet_kifhiz_c_scale,w_1138.jpg"
+              loading="lazy"
+              alt="">
 
-                <div class="dataSheet">
-                    <h3 class="dataSheet-title">Technical details</h3>
-                    <ul class="dataSheet-list">
-                        <li>Web components</li>
-                        <li>Hyperapp</li>
-                        <li>Google maps</li>
-                        
-                    </ul>
-                    
-                </div>
+            <div class="dataSheet">
+              <h3 class="dataSheet-title">Technical details</h3>
+              <ul class="dataSheet-list">
+                
+                  <li>Frontend: React + Redux + Socket.io</li>
+                
+                  <li>Backend: Node + Express + TypeScript + MongoDB + Redis</li>
+                
+              </ul>
+              
             </div>
+          </div>
         </div>
-         
-        <div tabindex="-1" class="slide hide" id="pigbirth">
-            <button class="icon backIcon">
-                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#backIcon" />
-                </svg>
-                <span class="visuallyHidden">back</span>
-            </button>
-            <h2 class="slideTitle">
-                
-                <span>Pigbirth, a pig birth control system</span>
-                
-            </h2>
-            <div class="imageAndDatasheet">
-                <img
-                    sizes="(max-width: 1400px) 100vw, 1400px"
-                    
-                    srcset="media/pigbirth_yn3jqo_c_scale,w_200.jpg 200w, media/pigbirth_yn3jqo_c_scale,w_502.jpg 502w, media/pigbirth_yn3jqo_c_scale,w_727.jpg 727w, media/pigbirth_yn3jqo_c_scale,w_934.jpg 934w, media/pigbirth_yn3jqo_c_scale,w_1103.jpg 1103w, media/pigbirth_yn3jqo_c_scale,w_1286.jpg 1286w, media/pigbirth_yn3jqo_c_scale,w_1400.jpg 1400w"
-                    
-                    data-src="media/pigbirth_yn3jqo_c_scale,w_1400.jpg"
-                    loading="lazy"
-                    alt="">
+      
+        <div
+          tabindex="-1"
+          class="slide hide"
+          id="dinamco">
+          <button class="icon backIcon">
+            <svg
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#backIcon" />
+            </svg>
+            <span class="visuallyHidden">back</span>
+          </button>
+          <h2 class="slideTitle">
+            
+              <span>Dinamco</span>
+            
+          </h2>
+          <div class="imageAndDatasheet">
+            <img
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              
+              srcset="media/dinamco_wxm5zk_c_scale,w_200.jpg 200w, media/dinamco_wxm5zk_c_scale,w_541.jpg 541w, media/dinamco_wxm5zk_c_scale,w_778.jpg 778w, media/dinamco_wxm5zk_c_scale,w_976.jpg 976w, media/dinamco_wxm5zk_c_scale,w_1170.jpg 1170w, media/dinamco_wxm5zk_c_scale,w_1343.jpg 1343w, media/dinamco_wxm5zk_c_scale,w_1400.jpg 1400w"
+              
+              data-src="media/dinamco_wxm5zk_c_scale,w_1400.jpg"
+              loading="lazy"
+              alt="">
 
-                <div class="dataSheet">
-                    <h3 class="dataSheet-title">Technical details</h3>
-                    <ul class="dataSheet-list">
-                        <li>Frontend: React + Redux + TypeScript</li>
-                        <li>Backend: Node + Hapi + MySql</li>
-                        
-                    </ul>
-                    
-                </div>
+            <div class="dataSheet">
+              <h3 class="dataSheet-title">Technical details</h3>
+              <ul class="dataSheet-list">
+                
+                  <li>Web components</li>
+                
+                  <li>Hyperapp</li>
+                
+                  <li>Google maps</li>
+                
+              </ul>
+              
             </div>
+          </div>
         </div>
-         
-        <div tabindex="-1" class="slide hide" id="armani">
-            <button class="icon backIcon">
-                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#backIcon" />
-                </svg>
-                <span class="visuallyHidden">back</span>
-            </button>
-            <h2 class="slideTitle">
-                
-                <a href="https://www.armani.com" target="_blank">Armani e-store</a>
-                
-            </h2>
-            <div class="imageAndDatasheet">
-                <img
-                    sizes="(max-width: 1400px) 100vw, 1400px"
-                    
-                    srcset="media/armani_tpyx9l_c_scale,w_200.png 200w, media/armani_tpyx9l_c_scale,w_538.png 538w, media/armani_tpyx9l_c_scale,w_762.png 762w, media/armani_tpyx9l_c_scale,w_944.png 944w, media/armani_tpyx9l_c_scale,w_1117.png 1117w, media/armani_tpyx9l_c_scale,w_1287.png 1287w, media/armani_tpyx9l_c_scale,w_1400.png 1400w"
-                    
-                    data-src="armani_tpyx9l_c_scale,w_1400.png"
-                    loading="lazy"
-                    alt="">
+      
+        <div
+          tabindex="-1"
+          class="slide hide"
+          id="pigbirth">
+          <button class="icon backIcon">
+            <svg
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#backIcon" />
+            </svg>
+            <span class="visuallyHidden">back</span>
+          </button>
+          <h2 class="slideTitle">
+            
+              <span>Pigbirth, a pig birth control system</span>
+            
+          </h2>
+          <div class="imageAndDatasheet">
+            <img
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              
+              srcset="media/pigbirth_yn3jqo_c_scale,w_200.jpg 200w, media/pigbirth_yn3jqo_c_scale,w_502.jpg 502w, media/pigbirth_yn3jqo_c_scale,w_727.jpg 727w, media/pigbirth_yn3jqo_c_scale,w_934.jpg 934w, media/pigbirth_yn3jqo_c_scale,w_1103.jpg 1103w, media/pigbirth_yn3jqo_c_scale,w_1286.jpg 1286w, media/pigbirth_yn3jqo_c_scale,w_1400.jpg 1400w"
+              
+              data-src="media/pigbirth_yn3jqo_c_scale,w_1400.jpg"
+              loading="lazy"
+              alt="">
 
-                <div class="dataSheet">
-                    <h3 class="dataSheet-title">Technical details</h3>
-                    <ul class="dataSheet-list">
-                        <li>Accessibility retrofit</li>
-                        
-                    </ul>
-                    
-                    <a class="btn" href="https://www.armani.com" target="_blank">visit the site</a>
-                    
-                </div>
+            <div class="dataSheet">
+              <h3 class="dataSheet-title">Technical details</h3>
+              <ul class="dataSheet-list">
+                
+                  <li>Frontend: React + Redux + TypeScript</li>
+                
+                  <li>Backend: Node + Hapi + MySql</li>
+                
+              </ul>
+              
             </div>
+          </div>
         </div>
-         
-        <div tabindex="-1" class="slide hide" id="flyfeed">
-            <button class="icon backIcon">
-                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#backIcon" />
-                </svg>
-                <span class="visuallyHidden">back</span>
-            </button>
-            <h2 class="slideTitle">
-                
-                <a href="https://rss-reader-19af4.firebaseapp.com" target="_blank">flyFeed, a simple RSS reader</a>
-                
-            </h2>
-            <div class="imageAndDatasheet">
-                <img
-                    sizes="(max-width: 1400px) 100vw, 1400px"
-                    
-                    srcset="media/flyfeed_qtr4sb_c_scale,w_677.jpg 677w, media/flyfeed_qtr4sb_c_scale,w_973.jpg 973w, media/flyfeed_qtr4sb_c_scale,w_1249.jpg 1249w, media/flyfeed_qtr4sb_c_scale,w_200.jpg 200w, media/flyfeed_qtr4sb_c_scale,w_1400.jpg 1400w"
-                    
-                    data-src="media/flyfeed_qtr4sb_c_scale,w_1400.jpg"
-                    loading="lazy"
-                    alt="">
+      
+        <div
+          tabindex="-1"
+          class="slide hide"
+          id="armani">
+          <button class="icon backIcon">
+            <svg
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#backIcon" />
+            </svg>
+            <span class="visuallyHidden">back</span>
+          </button>
+          <h2 class="slideTitle">
+            
+              <a href="https://www.armani.com" target="_blank">Armani e-store</a>
+            
+          </h2>
+          <div class="imageAndDatasheet">
+            <img
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              
+              srcset="media/armani_tpyx9l_c_scale,w_200.png 200w, media/armani_tpyx9l_c_scale,w_538.png 538w, media/armani_tpyx9l_c_scale,w_762.png 762w, media/armani_tpyx9l_c_scale,w_944.png 944w, media/armani_tpyx9l_c_scale,w_1117.png 1117w, media/armani_tpyx9l_c_scale,w_1287.png 1287w, media/armani_tpyx9l_c_scale,w_1400.png 1400w"
+              
+              data-src="armani_tpyx9l_c_scale,w_1400.png"
+              loading="lazy"
+              alt="">
 
-                <div class="dataSheet">
-                    <h3 class="dataSheet-title">Technical details</h3>
-                    <ul class="dataSheet-list">
-                        <li>Written in Elm</li>
-                        <li>Fully responsive</li>
-                        <li>Backed by Firebase</li>
-                        <li>CSS in Elm</li>
-                        
-                    </ul>
-                    
-                    <a class="btn" href="https://rss-reader-19af4.firebaseapp.com" target="_blank">visit the site</a>
-                    
-                </div>
+            <div class="dataSheet">
+              <h3 class="dataSheet-title">Technical details</h3>
+              <ul class="dataSheet-list">
+                
+                  <li>Accessibility retrofit</li>
+                
+              </ul>
+              
+                <a
+                  class="btn"
+                  href="https://www.armani.com"
+                  target="_blank">
+                  visit the site
+                </a>
+              
             </div>
+          </div>
         </div>
-         
-        <div tabindex="-1" class="slide hide" id="dsquared2">
-            <button class="icon backIcon">
-                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#backIcon" />
-                </svg>
-                <span class="visuallyHidden">back</span>
-            </button>
-            <h2 class="slideTitle">
-                
-                <a href="https://www.dsquared2.com" target="_blank">Dsquared2 e-store</a>
-                
-            </h2>
-            <div class="imageAndDatasheet">
-                <img
-                    sizes="(max-width: 1400px) 100vw, 1400px"
-                    
-                    srcset="media/dsquared2_vk5nms_c_scale,w_190.jpg 190w, media/dsquared2_vk5nms_c_scale,w_586.jpg 586w, media/dsquared2_vk5nms_c_scale,w_870.jpg 870w, media/dsquared2_vk5nms_c_scale,w_1108.jpg 1108w, media/dsquared2_vk5nms_c_scale,w_1303.jpg 1303w, media/dsquared2_vk5nms_c_scale,w_1500.jpg 1500w, media/dsquared2_vk5nms_c_scale,w_1600.jpg 1600w"
-                    
-                    data-src="media/dsquared2_vk5nms_c_scale,w_1600.jpg"
-                    loading="lazy"
-                    alt="">
+      
+        <div
+          tabindex="-1"
+          class="slide hide"
+          id="flyfeed">
+          <button class="icon backIcon">
+            <svg
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#backIcon" />
+            </svg>
+            <span class="visuallyHidden">back</span>
+          </button>
+          <h2 class="slideTitle">
+            
+              <a href="https://rss-reader-19af4.firebaseapp.com" target="_blank">flyFeed, a simple RSS reader</a>
+            
+          </h2>
+          <div class="imageAndDatasheet">
+            <img
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              
+              srcset="media/flyfeed_qtr4sb_c_scale,w_677.jpg 677w, media/flyfeed_qtr4sb_c_scale,w_973.jpg 973w, media/flyfeed_qtr4sb_c_scale,w_1249.jpg 1249w, media/flyfeed_qtr4sb_c_scale,w_200.jpg 200w, media/flyfeed_qtr4sb_c_scale,w_1400.jpg 1400w"
+              
+              data-src="media/flyfeed_qtr4sb_c_scale,w_1400.jpg"
+              loading="lazy"
+              alt="">
 
-                <div class="dataSheet">
-                    <h3 class="dataSheet-title">Technical details</h3>
-                    <ul class="dataSheet-list">
-                        <li>Accessible website</li>
-                        <li>Responsive images</li>
-                        <li>ES-6 + webpack</li>
-                        <li>SASS + PostCss</li>
-                        <li>Fully responsive</li>
-                        <li>Wordpress integration for editorial content</li>
-                        <li>Based on a .NET MVC custom front-end platform</li>
-                        <li>Based on custom js pub-sub framework</li>
-                        
-                    </ul>
-                    
-                    <a class="btn" href="https://www.dsquared2.com" target="_blank">visit the site</a>
-                    
-                </div>
+            <div class="dataSheet">
+              <h3 class="dataSheet-title">Technical details</h3>
+              <ul class="dataSheet-list">
+                
+                  <li>Written in Elm</li>
+                
+                  <li>Fully responsive</li>
+                
+                  <li>Backed by Firebase</li>
+                
+                  <li>CSS in Elm</li>
+                
+              </ul>
+              
+                <a
+                  class="btn"
+                  href="https://rss-reader-19af4.firebaseapp.com"
+                  target="_blank">
+                  visit the site
+                </a>
+              
             </div>
+          </div>
         </div>
-         
-        <div tabindex="-1" class="slide hide" id="elm15">
-            <button class="icon backIcon">
-                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#backIcon" />
-                </svg>
-                <span class="visuallyHidden">back</span>
-            </button>
-            <h2 class="slideTitle">
-                
-                <a href="https://puzzle-f9d67.firebaseapp.com" target="_blank">15 puzzle</a>
-                
-            </h2>
-            <div class="imageAndDatasheet">
-                <img
-                    sizes="(max-width: 1400px) 100vw, 1400px"
-                    
-                    data-src="media/elm15.png"
-                    loading="lazy"
-                    alt="">
+      
+        <div
+          tabindex="-1"
+          class="slide hide"
+          id="dsquared2">
+          <button class="icon backIcon">
+            <svg
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#backIcon" />
+            </svg>
+            <span class="visuallyHidden">back</span>
+          </button>
+          <h2 class="slideTitle">
+            
+              <a href="https://www.dsquared2.com" target="_blank">Dsquared2 e-store</a>
+            
+          </h2>
+          <div class="imageAndDatasheet">
+            <img
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              
+              srcset="media/dsquared2_vk5nms_c_scale,w_190.jpg 190w, media/dsquared2_vk5nms_c_scale,w_586.jpg 586w, media/dsquared2_vk5nms_c_scale,w_870.jpg 870w, media/dsquared2_vk5nms_c_scale,w_1108.jpg 1108w, media/dsquared2_vk5nms_c_scale,w_1303.jpg 1303w, media/dsquared2_vk5nms_c_scale,w_1500.jpg 1500w, media/dsquared2_vk5nms_c_scale,w_1600.jpg 1600w"
+              
+              data-src="media/dsquared2_vk5nms_c_scale,w_1600.jpg"
+              loading="lazy"
+              alt="">
 
-                <div class="dataSheet">
-                    <h3 class="dataSheet-title">Technical details</h3>
-                    <ul class="dataSheet-list">
-                        <li>Progressive Web App</li>
-                        <li>Written in Elm</li>
-                        <li>Fully responsive</li>
-                        
-                    </ul>
-                    
-                    <a class="btn" href="https://puzzle-f9d67.firebaseapp.com" target="_blank">play the game</a>
-                    
-                </div>
+            <div class="dataSheet">
+              <h3 class="dataSheet-title">Technical details</h3>
+              <ul class="dataSheet-list">
+                
+                  <li>Accessible website</li>
+                
+                  <li>Responsive images</li>
+                
+                  <li>ES-6 + webpack</li>
+                
+                  <li>SASS + PostCss</li>
+                
+                  <li>Fully responsive</li>
+                
+                  <li>Wordpress integration for editorial content</li>
+                
+                  <li>Based on a .NET MVC custom front-end platform</li>
+                
+                  <li>Based on custom js pub-sub framework</li>
+                
+              </ul>
+              
+                <a
+                  class="btn"
+                  href="https://www.dsquared2.com"
+                  target="_blank">
+                  visit the site
+                </a>
+              
             </div>
+          </div>
         </div>
-         
-        <div tabindex="-1" class="slide hide" id="cavalli">
-            <button class="icon backIcon">
-                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#backIcon" />
-                </svg>
-                <span class="visuallyHidden">back</span>
-            </button>
-            <h2 class="slideTitle">
-                
-                <a href="https: //www.justcavalli.com" target="_blank">Just Cavalli e-store</a>
-                
-            </h2>
-            <div class="imageAndDatasheet">
-                <img
-                    sizes="(max-width: 1400px) 100vw, 1400px"
-                    
-                    srcset="media/cavalli_oot11k_c_scale,w_375.jpg 375w, media/cavalli_oot11k_c_scale,w_630.jpg 630w, media/cavalli_oot11k_c_scale,w_841.jpg 841w, media/cavalli_oot11k_c_scale,w_1020.jpg 1020w, media/cavalli_oot11k_c_scale,w_1176.jpg 1176w, media/cavalli_oot11k_c_scale,w_1584.jpg 1584w"
-                    
-                    data-src="media/cavalli_oot11k_c_scale,w_1584.jpg"
-                    loading="lazy"
-                    alt="">
+      
+        <div
+          tabindex="-1"
+          class="slide hide"
+          id="elm15">
+          <button class="icon backIcon">
+            <svg
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#backIcon" />
+            </svg>
+            <span class="visuallyHidden">back</span>
+          </button>
+          <h2 class="slideTitle">
+            
+              <a href="https://puzzle-f9d67.firebaseapp.com" target="_blank">15 puzzle</a>
+            
+          </h2>
+          <div class="imageAndDatasheet">
+            <img
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              
+              data-src="media/elm15.png"
+              loading="lazy"
+              alt="">
 
-                <div class="dataSheet">
-                    <h3 class="dataSheet-title">Technical details</h3>
-                    <ul class="dataSheet-list">
-                        <li>Fully accessible website compliant with WCAG 2.0 level A requirements</li>
-                        <li>Responsive images</li>
-                        <li>ES-6 + webpack</li>
-                        <li>SASS + PostCss</li>
-                        <li>Mobile &amp; desktop versions, with a shared core and different heads</li>
-                        <li>Wordpress integration for editorial content</li>
-                        <li>Based on a .NET MVC custom front-end platform</li>
-                        <li>Based on custom js pub-sub framework</li>
-                        
-                    </ul>
-                    
-                    <a class="btn" href="https: //www.justcavalli.com" target="_blank">visit the site</a>
-                    
-                </div>
+            <div class="dataSheet">
+              <h3 class="dataSheet-title">Technical details</h3>
+              <ul class="dataSheet-list">
+                
+                  <li>Progressive Web App</li>
+                
+                  <li>Written in Elm</li>
+                
+                  <li>Fully responsive</li>
+                
+              </ul>
+              
+                <a
+                  class="btn"
+                  href="https://puzzle-f9d67.firebaseapp.com"
+                  target="_blank">
+                  
+                    play the game
+                </a>
+              
             </div>
+          </div>
         </div>
-         
-        <div tabindex="-1" class="slide hide" id="apl">
-            <button class="icon backIcon">
-                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#backIcon" />
-                </svg>
-                <span class="visuallyHidden">back</span>
-            </button>
-            <h2 class="slideTitle">
-                
-                <a href="http://www.ledpedestriancrossing.com/configuratore/index.html" target="_blank">APL configurator</a>
-                
-            </h2>
-            <div class="imageAndDatasheet">
-                <img
-                    sizes="(max-width: 1400px) 100vw, 1400px"
-                    
-                    srcset="media/apl_ap5awf_c_scale,w_375.jpg 375w, media/apl_ap5awf_c_scale,w_789.jpg 789w, media/apl_ap5awf_c_scale,w_1119.jpg 1119w, media/apl_ap5awf_c_scale,w_1437.jpg 1437w, media/apl_ap5awf_c_scale,w_1581.jpg 1581w"
-                    
-                    data-src="media/apl_ap5awf_c_scale,w_1581.jpg"
-                    loading="lazy"
-                    alt="">
+      
+        <div
+          tabindex="-1"
+          class="slide hide"
+          id="cavalli">
+          <button class="icon backIcon">
+            <svg
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#backIcon" />
+            </svg>
+            <span class="visuallyHidden">back</span>
+          </button>
+          <h2 class="slideTitle">
+            
+              <a href="https: //www.justcavalli.com" target="_blank">Just Cavalli e-store</a>
+            
+          </h2>
+          <div class="imageAndDatasheet">
+            <img
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              
+              srcset="media/cavalli_oot11k_c_scale,w_375.jpg 375w, media/cavalli_oot11k_c_scale,w_630.jpg 630w, media/cavalli_oot11k_c_scale,w_841.jpg 841w, media/cavalli_oot11k_c_scale,w_1020.jpg 1020w, media/cavalli_oot11k_c_scale,w_1176.jpg 1176w, media/cavalli_oot11k_c_scale,w_1584.jpg 1584w"
+              
+              data-src="media/cavalli_oot11k_c_scale,w_1584.jpg"
+              loading="lazy"
+              alt="">
 
-                <div class="dataSheet">
-                    <h3 class="dataSheet-title">Technical details</h3>
-                    <ul class="dataSheet-list">
-                        <li>React + Redux + Jest</li>
-                        <li>Dynamic content loading via json file</li>
-                        <li>Fluid layout</li>
-                        
-                    </ul>
-                    
-                    <a class="btn" href="http://www.ledpedestriancrossing.com/configuratore/index.html" target="_blank">visit the site</a>
-                    
-                </div>
+            <div class="dataSheet">
+              <h3 class="dataSheet-title">Technical details</h3>
+              <ul class="dataSheet-list">
+                
+                  <li>Fully accessible website compliant with WCAG 2.0 level A requirements</li>
+                
+                  <li>Responsive images</li>
+                
+                  <li>ES-6 + webpack</li>
+                
+                  <li>SASS + PostCss</li>
+                
+                  <li>Mobile &amp; desktop versions, with a shared core and different heads</li>
+                
+                  <li>Wordpress integration for editorial content</li>
+                
+                  <li>Based on a .NET MVC custom front-end platform</li>
+                
+                  <li>Based on custom js pub-sub framework</li>
+                
+              </ul>
+              
+                <a
+                  class="btn"
+                  href="https: //www.justcavalli.com"
+                  target="_blank">
+                  visit the site
+                </a>
+              
             </div>
+          </div>
         </div>
-         
-        <div tabindex="-1" class="slide hide" id="mangiamusica">
-            <button class="icon backIcon">
-                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#backIcon" />
-                </svg>
-                <span class="visuallyHidden">back</span>
-            </button>
-            <h2 class="slideTitle">
-                
-                <a href="https://github.com/fbedussi/mangiamusica" target="_blank">Mangiamusica, a music player for toddlers - WIP</a>
-                
-            </h2>
-            <div class="imageAndDatasheet">
-                <img
-                    sizes="(max-width: 1400px) 100vw, 1400px"
-                    
-                    srcset="media/margiela_wrbdud_c_scale,w_375.jpg 375w, media/margiela_wrbdud_c_scale,w_629.jpg 629w, media/margiela_wrbdud_c_scale,w_842.jpg 842w, media/margiela_wrbdud_c_scale,w_1018.jpg 1018w, media/margiela_wrbdud_c_scale,w_1174.jpg 1174w, media/margiela_wrbdud_c_scale,w_1583.jpg 1583w"
-                    
-                    data-src="media/margiela_wrbdud_c_scale,w_1583.jpg"
-                    loading="lazy"
-                    alt="">
+      
+        <div
+          tabindex="-1"
+          class="slide hide"
+          id="apl">
+          <button class="icon backIcon">
+            <svg
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#backIcon" />
+            </svg>
+            <span class="visuallyHidden">back</span>
+          </button>
+          <h2 class="slideTitle">
+            
+              <a href="http://www.ledpedestriancrossing.com/configuratore/index.html" target="_blank">APL configurator</a>
+            
+          </h2>
+          <div class="imageAndDatasheet">
+            <img
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              
+              srcset="media/apl_ap5awf_c_scale,w_375.jpg 375w, media/apl_ap5awf_c_scale,w_789.jpg 789w, media/apl_ap5awf_c_scale,w_1119.jpg 1119w, media/apl_ap5awf_c_scale,w_1437.jpg 1437w, media/apl_ap5awf_c_scale,w_1581.jpg 1581w"
+              
+              data-src="media/apl_ap5awf_c_scale,w_1581.jpg"
+              loading="lazy"
+              alt="">
 
-                <div class="dataSheet">
-                    <h3 class="dataSheet-title">Technical details</h3>
-                    <ul class="dataSheet-list">
-                        <li>React Native</li>
-                        <li>Redux</li>
-                        <li>Jest</li>
-                        <li>Material.Ui</li>
-                        
-                    </ul>
-                    
-                    <a class="btn" href="https://github.com/fbedussi/mangiamusica" target="_blank">take a look at the project</a>
-                    
-                </div>
+            <div class="dataSheet">
+              <h3 class="dataSheet-title">Technical details</h3>
+              <ul class="dataSheet-list">
+                
+                  <li>React + Redux + Jest</li>
+                
+                  <li>Dynamic content loading via json file</li>
+                
+                  <li>Fluid layout</li>
+                
+              </ul>
+              
+                <a
+                  class="btn"
+                  href="http://www.ledpedestriancrossing.com/configuratore/index.html"
+                  target="_blank">
+                  visit the site
+                </a>
+              
             </div>
+          </div>
         </div>
-         
-        <div tabindex="-1" class="slide hide" id="ttracker">
-            <button class="icon backIcon">
-                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#backIcon" />
-                </svg>
-                <span class="visuallyHidden">back</span>
-            </button>
-            <h2 class="slideTitle">
-                
-                <a href="https://github.com/fbedussi/ttracker" target="_blank">tTracker, a time tracking web app for freelancers</a>
-                
-            </h2>
-            <div class="imageAndDatasheet">
-                <img
-                    sizes="(max-width: 1400px) 100vw, 1400px"
-                    
-                    srcset="media/ttracker_reb2ea_c_scale,w_375.jpg 375w, media/ttracker_reb2ea_c_scale,w_1049.jpg 1049w, media/ttracker_reb2ea_c_scale,w_1598.jpg 1598w"
-                    
-                    data-src="media/ttracker_reb2ea_c_scale,w_1598.jpg"
-                    loading="lazy"
-                    alt="">
+      
+        <div
+          tabindex="-1"
+          class="slide hide"
+          id="mangiamusica">
+          <button class="icon backIcon">
+            <svg
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#backIcon" />
+            </svg>
+            <span class="visuallyHidden">back</span>
+          </button>
+          <h2 class="slideTitle">
+            
+              <a href="https://github.com/fbedussi/mangiamusica" target="_blank">Mangiamusica, a music player for toddlers - WIP</a>
+            
+          </h2>
+          <div class="imageAndDatasheet">
+            <img
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              
+              srcset="media/margiela_wrbdud_c_scale,w_375.jpg 375w, media/margiela_wrbdud_c_scale,w_629.jpg 629w, media/margiela_wrbdud_c_scale,w_842.jpg 842w, media/margiela_wrbdud_c_scale,w_1018.jpg 1018w, media/margiela_wrbdud_c_scale,w_1174.jpg 1174w, media/margiela_wrbdud_c_scale,w_1583.jpg 1583w"
+              
+              data-src="media/margiela_wrbdud_c_scale,w_1583.jpg"
+              loading="lazy"
+              alt="">
 
-                <div class="dataSheet">
-                    <h3 class="dataSheet-title">Technical details</h3>
-                    <ul class="dataSheet-list">
-                        <li>React + Redux + Jest + Material.Ui</li>
-                        <li>Test Driven Developed</li>
-                        <li>Optimistic interface</li>
-                        <li>Support for multiple databases: services for indexedDb and firebase are included, more can be added</li>
-                        
-                    </ul>
-                    
-                    <a class="btn" href="https://github.com/fbedussi/ttracker" target="_blank">visit the site</a>
-                    
-                </div>
+            <div class="dataSheet">
+              <h3 class="dataSheet-title">Technical details</h3>
+              <ul class="dataSheet-list">
+                
+                  <li>React Native</li>
+                
+                  <li>Redux</li>
+                
+                  <li>Jest</li>
+                
+                  <li>Material.Ui</li>
+                
+              </ul>
+              
+                <a
+                  class="btn"
+                  href="https://github.com/fbedussi/mangiamusica"
+                  target="_blank">
+                  
+                    take a look at the project
+                </a>
+              
             </div>
+          </div>
         </div>
-         
-        <div tabindex="-1" class="slide hide" id="margiela">
-            <button class="icon backIcon">
-                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#backIcon" />
-                </svg>
-                <span class="visuallyHidden">back</span>
-            </button>
-            <h2 class="slideTitle">
-                
-                <a href="https://www.maisonmargiela.com" target="_blank">Maison Margiela e-store</a>
-                
-            </h2>
-            <div class="imageAndDatasheet">
-                <img
-                    sizes="(max-width: 1400px) 100vw, 1400px"
-                    
-                    srcset="media/margiela_wrbdud_c_scale,w_375.jpg 375w, media/margiela_wrbdud_c_scale,w_629.jpg 629w, media/margiela_wrbdud_c_scale,w_842.jpg 842w, media/margiela_wrbdud_c_scale,w_1018.jpg 1018w, media/margiela_wrbdud_c_scale,w_1174.jpg 1174w, media/margiela_wrbdud_c_scale,w_1583.jpg 1583w"
-                    
-                    data-src="media/margiela_wrbdud_c_scale,w_1583.jpg"
-                    loading="lazy"
-                    alt="">
+      
+        <div
+          tabindex="-1"
+          class="slide hide"
+          id="ttracker">
+          <button class="icon backIcon">
+            <svg
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#backIcon" />
+            </svg>
+            <span class="visuallyHidden">back</span>
+          </button>
+          <h2 class="slideTitle">
+            
+              <a href="https://github.com/fbedussi/ttracker" target="_blank">tTracker, a time tracking web app for freelancers</a>
+            
+          </h2>
+          <div class="imageAndDatasheet">
+            <img
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              
+              srcset="media/ttracker_reb2ea_c_scale,w_375.jpg 375w, media/ttracker_reb2ea_c_scale,w_1049.jpg 1049w, media/ttracker_reb2ea_c_scale,w_1598.jpg 1598w"
+              
+              data-src="media/ttracker_reb2ea_c_scale,w_1598.jpg"
+              loading="lazy"
+              alt="">
 
-                <div class="dataSheet">
-                    <h3 class="dataSheet-title">Technical details</h3>
-                    <ul class="dataSheet-list">
-                        <li>Fully responsive</li>
-                        <li>ES-6 + webpack</li>
-                        <li>SASS + PostCss + Foundation</li>
-                        <li>Integration with third party CMS</li>
-                        <li>Based on a .NET MVC custom front-end platform</li>
-                        <li>Based on custom js pub-sub framework</li>
-                        
-                    </ul>
-                    
-                    <a class="btn" href="https://www.maisonmargiela.com" target="_blank">visit the site</a>
-                    
-                </div>
+            <div class="dataSheet">
+              <h3 class="dataSheet-title">Technical details</h3>
+              <ul class="dataSheet-list">
+                
+                  <li>React + Redux + Jest + Material.Ui</li>
+                
+                  <li>Test Driven Developed</li>
+                
+                  <li>Optimistic interface</li>
+                
+                  <li>Support for multiple databases: services for indexedDb and firebase are included, more can be added</li>
+                
+              </ul>
+              
+                <a
+                  class="btn"
+                  href="https://github.com/fbedussi/ttracker"
+                  target="_blank">
+                  visit the site
+                </a>
+              
             </div>
+          </div>
         </div>
-         
-        <div tabindex="-1" class="slide hide" id="remedi">
-            <button class="icon backIcon">
-                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#backIcon" />
-                </svg>
-                <span class="visuallyHidden">back</span>
-            </button>
-            <h2 class="slideTitle">
-                
-                <a href="https://github.com/fbedussi/reveal-js-editor" target="_blank">ReMEdi reveal.js markdown editor</a>
-                
-            </h2>
-            <div class="imageAndDatasheet">
-                <img
-                    sizes="(max-width: 1400px) 100vw, 1400px"
-                    
-                    srcset="media/remedi_tzlvts_c_scale,w_375.jpg 375w, media/remedi_tzlvts_c_scale,w_725.jpg 725w, media/remedi_tzlvts_c_scale,w_984.jpg 984w, media/remedi_tzlvts_c_scale,w_1218.jpg 1218w, media/remedi_tzlvts_c_scale,w_1414.jpg 1414w, media/remedi_tzlvts_c_scale,w_1649.jpg 1649w, media/remedi_tzlvts_c_scale,w_1794.jpg 1794w, media/remedi_tzlvts_c_scale,w_1920.jpg 1920w"
-                    
-                    data-src="media/remedi_tzlvts_c_scale,w_1920.jpg"
-                    loading="lazy"
-                    alt="">
+      
+        <div
+          tabindex="-1"
+          class="slide hide"
+          id="margiela">
+          <button class="icon backIcon">
+            <svg
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#backIcon" />
+            </svg>
+            <span class="visuallyHidden">back</span>
+          </button>
+          <h2 class="slideTitle">
+            
+              <a href="https://www.maisonmargiela.com" target="_blank">Maison Margiela e-store</a>
+            
+          </h2>
+          <div class="imageAndDatasheet">
+            <img
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              
+              srcset="media/margiela_wrbdud_c_scale,w_375.jpg 375w, media/margiela_wrbdud_c_scale,w_629.jpg 629w, media/margiela_wrbdud_c_scale,w_842.jpg 842w, media/margiela_wrbdud_c_scale,w_1018.jpg 1018w, media/margiela_wrbdud_c_scale,w_1174.jpg 1174w, media/margiela_wrbdud_c_scale,w_1583.jpg 1583w"
+              
+              data-src="media/margiela_wrbdud_c_scale,w_1583.jpg"
+              loading="lazy"
+              alt="">
 
-                <div class="dataSheet">
-                    <h3 class="dataSheet-title">Technical details</h3>
-                    <ul class="dataSheet-list">
-                        <li>Electron + React + Redux</li>
-                        <li>Themable UI</li>
-                        <li>Multilanguage</li>
-                        
-                    </ul>
-                    
-                    <a class="btn" href="https://github.com/fbedussi/reveal-js-editor" target="_blank">take a look at the project</a>
-                    
-                </div>
+            <div class="dataSheet">
+              <h3 class="dataSheet-title">Technical details</h3>
+              <ul class="dataSheet-list">
+                
+                  <li>Fully responsive</li>
+                
+                  <li>ES-6 + webpack</li>
+                
+                  <li>SASS + PostCss + Foundation</li>
+                
+                  <li>Integration with third party CMS</li>
+                
+                  <li>Based on a .NET MVC custom front-end platform</li>
+                
+                  <li>Based on custom js pub-sub framework</li>
+                
+              </ul>
+              
+                <a
+                  class="btn"
+                  href="https://www.maisonmargiela.com"
+                  target="_blank">
+                  visit the site
+                </a>
+              
             </div>
+          </div>
         </div>
-         
-        <div tabindex="-1" class="slide hide" id="y3">
-            <button class="icon backIcon">
-                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#backIcon" />
-                </svg>
-                <span class="visuallyHidden">back</span>
-            </button>
-            <h2 class="slideTitle">
-                
-                <a href="http://store.y-3.com" target="_blank">Y-3 e-store</a>
-                
-            </h2>
-            <div class="imageAndDatasheet">
-                <img
-                    sizes="(max-width: 1400px) 100vw, 1400px"
-                    
-                    srcset="media/y3_iy5cyn_c_scale,w_375.jpg 375w, media/y3_iy5cyn_c_scale,w_547.jpg 547w, media/y3_iy5cyn_c_scale,w_694.jpg 694w, media/y3_iy5cyn_c_scale,w_825.jpg 825w, media/y3_iy5cyn_c_scale,w_956.jpg 956w, media/y3_iy5cyn_c_scale,w_1069.jpg 1069w, media/y3_iy5cyn_c_scale,w_1177.jpg 1177w, media/y3_iy5cyn_c_scale,w_1280.jpg 1280w, media/y3_iy5cyn_c_scale,w_1377.jpg 1377w, media/y3_iy5cyn_c_scale,w_1602.jpg 1602w"
-                    
-                    data-src="media/y3_iy5cyn_c_scale,w_1602.jpg"
-                    loading="lazy"
-                    alt="">
+      
+        <div
+          tabindex="-1"
+          class="slide hide"
+          id="remedi">
+          <button class="icon backIcon">
+            <svg
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#backIcon" />
+            </svg>
+            <span class="visuallyHidden">back</span>
+          </button>
+          <h2 class="slideTitle">
+            
+              <a href="https://github.com/fbedussi/reveal-js-editor" target="_blank">ReMEdi reveal.js markdown editor</a>
+            
+          </h2>
+          <div class="imageAndDatasheet">
+            <img
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              
+              srcset="media/remedi_tzlvts_c_scale,w_375.jpg 375w, media/remedi_tzlvts_c_scale,w_725.jpg 725w, media/remedi_tzlvts_c_scale,w_984.jpg 984w, media/remedi_tzlvts_c_scale,w_1218.jpg 1218w, media/remedi_tzlvts_c_scale,w_1414.jpg 1414w, media/remedi_tzlvts_c_scale,w_1649.jpg 1649w, media/remedi_tzlvts_c_scale,w_1794.jpg 1794w, media/remedi_tzlvts_c_scale,w_1920.jpg 1920w"
+              
+              data-src="media/remedi_tzlvts_c_scale,w_1920.jpg"
+              loading="lazy"
+              alt="">
 
-                <div class="dataSheet">
-                    <h3 class="dataSheet-title">Technical details</h3>
-                    <ul class="dataSheet-list">
-                        <li>Desktop &amp; Mobile versions</li>
-                        <li>SASS</li>
-                        <li>XSLT</li>
-                        <li>Based on custom js pub-sub framework</li>
-                        
-                    </ul>
-                    
-                    <a class="btn" href="http://store.y-3.com" target="_blank">visit the site</a>
-                    
-                </div>
+            <div class="dataSheet">
+              <h3 class="dataSheet-title">Technical details</h3>
+              <ul class="dataSheet-list">
+                
+                  <li>Electron + React + Redux</li>
+                
+                  <li>Themable UI</li>
+                
+                  <li>Multilanguage</li>
+                
+              </ul>
+              
+                <a
+                  class="btn"
+                  href="https://github.com/fbedussi/reveal-js-editor"
+                  target="_blank">
+                  
+                    take a look at the project
+                </a>
+              
             </div>
+          </div>
         </div>
-         
-        <div tabindex="-1" class="slide hide" id="nightwatchGui">
-            <button class="icon backIcon">
-                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#backIcon" />
-                </svg>
-                <span class="visuallyHidden">back</span>
-            </button>
-            <h2 class="slideTitle">
-                
-                <a href="https://github.com/fbedussi/nightwatchGui" target="_blank">nightwatchGui, a Graphical User Interface for the test automation framework nightwatch-cucumber</a>
-                
-            </h2>
-            <div class="imageAndDatasheet">
-                <img
-                    sizes="(max-width: 1400px) 100vw, 1400px"
-                    
-                    srcset=" media/nightwatchgui_pp7e2f_c_scale,w_375.jpg 375w, media/nightwatchgui_pp7e2f_c_scale,w_778.jpg 778w, media/nightwatchgui_pp7e2f_c_scale,w_1000.jpg 1000w"
-                    
-                    data-src="media/nightwatchgui_pp7e2f_c_scale,w_1000.jpg"
-                    loading="lazy"
-                    alt="">
+      
+        <div
+          tabindex="-1"
+          class="slide hide"
+          id="y3">
+          <button class="icon backIcon">
+            <svg
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#backIcon" />
+            </svg>
+            <span class="visuallyHidden">back</span>
+          </button>
+          <h2 class="slideTitle">
+            
+              <a href="http://store.y-3.com" target="_blank">Y-3 e-store</a>
+            
+          </h2>
+          <div class="imageAndDatasheet">
+            <img
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              
+              srcset="media/y3_iy5cyn_c_scale,w_375.jpg 375w, media/y3_iy5cyn_c_scale,w_547.jpg 547w, media/y3_iy5cyn_c_scale,w_694.jpg 694w, media/y3_iy5cyn_c_scale,w_825.jpg 825w, media/y3_iy5cyn_c_scale,w_956.jpg 956w, media/y3_iy5cyn_c_scale,w_1069.jpg 1069w, media/y3_iy5cyn_c_scale,w_1177.jpg 1177w, media/y3_iy5cyn_c_scale,w_1280.jpg 1280w, media/y3_iy5cyn_c_scale,w_1377.jpg 1377w, media/y3_iy5cyn_c_scale,w_1602.jpg 1602w"
+              
+              data-src="media/y3_iy5cyn_c_scale,w_1602.jpg"
+              loading="lazy"
+              alt="">
 
-                <div class="dataSheet">
-                    <h3 class="dataSheet-title">Technical details</h3>
-                    <ul class="dataSheet-list">
-                        <li>Node.js + Express</li>
-                        <li>Vanilla Js</li>
-                        
-                    </ul>
-                    
-                    <a class="btn" href="https://github.com/fbedussi/nightwatchGui" target="_blank">take a look at the project</a>
-                    
-                </div>
+            <div class="dataSheet">
+              <h3 class="dataSheet-title">Technical details</h3>
+              <ul class="dataSheet-list">
+                
+                  <li>Desktop &amp; Mobile versions</li>
+                
+                  <li>SASS</li>
+                
+                  <li>XSLT</li>
+                
+                  <li>Based on custom js pub-sub framework</li>
+                
+              </ul>
+              
+                <a
+                  class="btn"
+                  href="http://store.y-3.com"
+                  target="_blank">
+                  visit the site
+                </a>
+              
             </div>
+          </div>
         </div>
-         
-        <div tabindex="-1" class="slide hide" id="gpp">
-            <button class="icon backIcon">
-                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#backIcon" />
-                </svg>
-                <span class="visuallyHidden">back</span>
-            </button>
-            <h2 class="slideTitle">
-                
-                <a href="https://github.com/fbedussi/nightwatchGui" target="_blank">Gherkin/Cucumber file preprocessor</a>
-                
-            </h2>
-            <div class="imageAndDatasheet">
-                <img
-                    sizes="(max-width: 1400px) 100vw, 1400px"
-                    
-                    srcset="media/gpp_qac3kl_c_scale,w_375.jpg 375w, media/gpp_qac3kl_c_scale,w_819.jpg 819w"
-                    
-                    data-src="media/gpp_qac3kl_c_scale,w_819.jpg"
-                    loading="lazy"
-                    alt="">
+      
+        <div
+          tabindex="-1"
+          class="slide hide"
+          id="nightwatchGui">
+          <button class="icon backIcon">
+            <svg
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#backIcon" />
+            </svg>
+            <span class="visuallyHidden">back</span>
+          </button>
+          <h2 class="slideTitle">
+            
+              <a href="https://github.com/fbedussi/nightwatchGui" target="_blank">nightwatchGui, a Graphical User Interface for the test automation framework nightwatch-cucumber</a>
+            
+          </h2>
+          <div class="imageAndDatasheet">
+            <img
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              
+              srcset=" media/nightwatchgui_pp7e2f_c_scale,w_375.jpg 375w, media/nightwatchgui_pp7e2f_c_scale,w_778.jpg 778w, media/nightwatchgui_pp7e2f_c_scale,w_1000.jpg 1000w"
+              
+              data-src="media/nightwatchgui_pp7e2f_c_scale,w_1000.jpg"
+              loading="lazy"
+              alt="">
 
-                <div class="dataSheet">
-                    <h3 class="dataSheet-title">Technical details</h3>
-                    <ul class="dataSheet-list">
-                        <li>Node.js</li>
-                        <li>Watch mode</li>
-                        <li>File partials</li>
-                        <li>Conditional rendering</li>
-                        
-                    </ul>
-                    
-                    <a class="btn" href="https://github.com/fbedussi/nightwatchGui" target="_blank">take a look at the project</a>
-                    
-                </div>
+            <div class="dataSheet">
+              <h3 class="dataSheet-title">Technical details</h3>
+              <ul class="dataSheet-list">
+                
+                  <li>Node.js + Express</li>
+                
+                  <li>Vanilla Js</li>
+                
+              </ul>
+              
+                <a
+                  class="btn"
+                  href="https://github.com/fbedussi/nightwatchGui"
+                  target="_blank">
+                  
+                    take a look at the project
+                </a>
+              
             </div>
+          </div>
         </div>
-         
-        <div tabindex="-1" class="slide hide" id="lagerfeld">
-            <button class="icon backIcon">
-                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#backIcon" />
-                </svg>
-                <span class="visuallyHidden">back</span>
-            </button>
-            <h2 class="slideTitle">
-                
-                <a href="https://www.karl.com" target="_blank">Karl Lagerfeld e-store</a>
-                
-            </h2>
-            <div class="imageAndDatasheet">
-                <img
-                    sizes="(max-width: 1400px) 100vw, 1400px"
-                    
-                    srcset="media/karl_lps9c7_c_scale,w_375.jpg 375w, media/karl_lps9c7_c_scale,w_548.jpg 548w, media/karl_lps9c7_c_scale,w_692.jpg 692w, media/karl_lps9c7_c_scale,w_821.jpg 821w, media/karl_lps9c7_c_scale,w_947.jpg 947w, media/karl_lps9c7_c_scale,w_1055.jpg 1055w, media/karl_lps9c7_c_scale,w_1163.jpg 1163w, media/karl_lps9c7_c_scale,w_1276.jpg 1276w, media/karl_lps9c7_c_scale,w_1396.jpg 1396w, media/karl_lps9c7_c_scale,w_1581.jpg 1581w"
-                    
-                    data-src="media/karl_lps9c7_c_scale,w_1581.jpg"
-                    loading="lazy"
-                    alt="">
+      
+        <div
+          tabindex="-1"
+          class="slide hide"
+          id="gpp">
+          <button class="icon backIcon">
+            <svg
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#backIcon" />
+            </svg>
+            <span class="visuallyHidden">back</span>
+          </button>
+          <h2 class="slideTitle">
+            
+              <a href="https://github.com/fbedussi/nightwatchGui" target="_blank">Gherkin/Cucumber file preprocessor</a>
+            
+          </h2>
+          <div class="imageAndDatasheet">
+            <img
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              
+              srcset="media/gpp_qac3kl_c_scale,w_375.jpg 375w, media/gpp_qac3kl_c_scale,w_819.jpg 819w"
+              
+              data-src="media/gpp_qac3kl_c_scale,w_819.jpg"
+              loading="lazy"
+              alt="">
 
-                <div class="dataSheet">
-                    <h3 class="dataSheet-title">Technical details</h3>
-                    <ul class="dataSheet-list">
-                        <li>Desktop &amp; Mobile versions</li>
-                        <li>SASS + Compass</li>
-                        <li>Wordpress integration for editorial content</li>
-                        <li>Based on a .NET MVC custom front-end platform</li>
-                        <li>Based on custom js pub-sub framework</li>
-                        
-                    </ul>
-                    
-                    <a class="btn" href="https://www.karl.com" target="_blank">visit the site</a>
-                    
-                </div>
+            <div class="dataSheet">
+              <h3 class="dataSheet-title">Technical details</h3>
+              <ul class="dataSheet-list">
+                
+                  <li>Node.js</li>
+                
+                  <li>Watch mode</li>
+                
+                  <li>File partials</li>
+                
+                  <li>Conditional rendering</li>
+                
+              </ul>
+              
+                <a
+                  class="btn"
+                  href="https://github.com/fbedussi/nightwatchGui"
+                  target="_blank">
+                  
+                    take a look at the project
+                </a>
+              
             </div>
+          </div>
         </div>
-         
-        <div tabindex="-1" class="slide hide" id="addressbook">
-            <button class="icon backIcon">
-                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#backIcon" />
-                </svg>
-                <span class="visuallyHidden">back</span>
-            </button>
-            <h2 class="slideTitle">
-                
-                <a href="http://www.francescobedussi.it/addressbook" target="_blank">Addressbook</a>
-                
-            </h2>
-            <div class="imageAndDatasheet">
-                <img
-                    sizes="(max-width: 1400px) 100vw, 1400px"
-                    
-                    srcset="media/addressbook_bc9bng_c_scale,w_200.jpg 200w, media/addressbook_bc9bng_c_scale,w_695.jpg 695w, media/addressbook_bc9bng_c_scale,w_1040.jpg 1040w, media/addressbook_bc9bng_c_scale,w_1280.jpg 1280w"
-                    
-                    data-src="media/addressbook_bc9bng_c_scale,w_1280.jpg"
-                    loading="lazy"
-                    alt="">
+      
+        <div
+          tabindex="-1"
+          class="slide hide"
+          id="lagerfeld">
+          <button class="icon backIcon">
+            <svg
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#backIcon" />
+            </svg>
+            <span class="visuallyHidden">back</span>
+          </button>
+          <h2 class="slideTitle">
+            
+              <a href="https://www.karl.com" target="_blank">Karl Lagerfeld e-store</a>
+            
+          </h2>
+          <div class="imageAndDatasheet">
+            <img
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              
+              srcset="media/karl_lps9c7_c_scale,w_375.jpg 375w, media/karl_lps9c7_c_scale,w_548.jpg 548w, media/karl_lps9c7_c_scale,w_692.jpg 692w, media/karl_lps9c7_c_scale,w_821.jpg 821w, media/karl_lps9c7_c_scale,w_947.jpg 947w, media/karl_lps9c7_c_scale,w_1055.jpg 1055w, media/karl_lps9c7_c_scale,w_1163.jpg 1163w, media/karl_lps9c7_c_scale,w_1276.jpg 1276w, media/karl_lps9c7_c_scale,w_1396.jpg 1396w, media/karl_lps9c7_c_scale,w_1581.jpg 1581w"
+              
+              data-src="media/karl_lps9c7_c_scale,w_1581.jpg"
+              loading="lazy"
+              alt="">
 
-                <div class="dataSheet">
-                    <h3 class="dataSheet-title">Technical details</h3>
-                    <ul class="dataSheet-list">
-                        <li>PHP</li>
-                        <li>Bootstrap</li>
-                        
-                    </ul>
-                    
-                    <a class="btn" href="http://www.francescobedussi.it/addressbook" target="_blank">visit the site</a>
-                    
-                </div>
+            <div class="dataSheet">
+              <h3 class="dataSheet-title">Technical details</h3>
+              <ul class="dataSheet-list">
+                
+                  <li>Desktop &amp; Mobile versions</li>
+                
+                  <li>SASS + Compass</li>
+                
+                  <li>Wordpress integration for editorial content</li>
+                
+                  <li>Based on a .NET MVC custom front-end platform</li>
+                
+                  <li>Based on custom js pub-sub framework</li>
+                
+              </ul>
+              
+                <a
+                  class="btn"
+                  href="https://www.karl.com"
+                  target="_blank">
+                  visit the site
+                </a>
+              
             </div>
+          </div>
         </div>
-         
-        <div tabindex="-1" class="slide hide" id="nextOpening">
-            <button class="icon backIcon">
-                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#backIcon" />
-                </svg>
-                <span class="visuallyHidden">back</span>
-            </button>
-            <h2 class="slideTitle">
-                
-                <a href="http://nextopeningfood.it" target="_blank">Next Opening Food website</a>
-                
-            </h2>
-            <div class="imageAndDatasheet">
-                <img
-                    sizes="(max-width: 1400px) 100vw, 1400px"
-                    
-                    srcset="media/nextOpening_elmmlh_c_scale,w_375.jpg 375w, media/nextOpening_elmmlh_c_scale,w_590.jpg 590w, media/nextOpening_elmmlh_c_scale,w_763.jpg 763w, media/nextOpening_elmmlh_c_scale,w_934.jpg 934w, media/nextOpening_elmmlh_c_scale,w_1080.jpg 1080w, media/nextOpening_elmmlh_c_scale,w_1227.jpg 1227w, media/nextOpening_elmmlh_c_scale,w_1359.jpg 1359w, media/nextOpening_elmmlh_c_scale,w_1596.jpg 1596w"
-                    
-                    data-src="media/nextOpening_elmmlh_c_scale,w_1596.jpg"
-                    loading="lazy"
-                    alt="">
+      
+        <div
+          tabindex="-1"
+          class="slide hide"
+          id="addressbook">
+          <button class="icon backIcon">
+            <svg
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#backIcon" />
+            </svg>
+            <span class="visuallyHidden">back</span>
+          </button>
+          <h2 class="slideTitle">
+            
+              <a href="http://www.francescobedussi.it/addressbook" target="_blank">Addressbook</a>
+            
+          </h2>
+          <div class="imageAndDatasheet">
+            <img
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              
+              srcset="media/addressbook_bc9bng_c_scale,w_200.jpg 200w, media/addressbook_bc9bng_c_scale,w_695.jpg 695w, media/addressbook_bc9bng_c_scale,w_1040.jpg 1040w, media/addressbook_bc9bng_c_scale,w_1280.jpg 1280w"
+              
+              data-src="media/addressbook_bc9bng_c_scale,w_1280.jpg"
+              loading="lazy"
+              alt="">
 
-                <div class="dataSheet">
-                    <h3 class="dataSheet-title">Technical details</h3>
-                    <ul class="dataSheet-list">
-                        <li>Joomla! CMS</li>
-                        
-                    </ul>
-                    
-                    <a class="btn" href="http://nextopeningfood.it" target="_blank">visit the site</a>
-                    
-                </div>
+            <div class="dataSheet">
+              <h3 class="dataSheet-title">Technical details</h3>
+              <ul class="dataSheet-list">
+                
+                  <li>PHP</li>
+                
+                  <li>Bootstrap</li>
+                
+              </ul>
+              
+                <a
+                  class="btn"
+                  href="http://www.francescobedussi.it/addressbook"
+                  target="_blank">
+                  visit the site
+                </a>
+              
             </div>
+          </div>
         </div>
-         
-        <div tabindex="-1" class="slide hide" id="bicigeneratori">
-            <button class="icon backIcon">
-                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#backIcon" />
-                </svg>
-                <span class="visuallyHidden">back</span>
-            </button>
-            <h2 class="slideTitle">
-                
-                <a href="http://www.bicigeneratori.it" target="_blank">Bicigeneratori website</a>
-                
-            </h2>
-            <div class="imageAndDatasheet">
-                <img
-                    sizes="(max-width: 1400px) 100vw, 1400px"
-                    
-                    srcset="media/bicigeneratori_ukwbjg_c_scale,w_375.jpg 375w, media/bicigeneratori_ukwbjg_c_scale,w_528.jpg 528w, media/bicigeneratori_ukwbjg_c_scale,w_655.jpg 655w, media/bicigeneratori_ukwbjg_c_scale,w_783.jpg 783w, media/bicigeneratori_ukwbjg_c_scale,w_909.jpg 909w, media/bicigeneratori_ukwbjg_c_scale,w_1011.jpg 1011w, media/bicigeneratori_ukwbjg_c_scale,w_1114.jpg 1114w, media/bicigeneratori_ukwbjg_c_scale,w_1219.jpg 1219w, media/bicigeneratori_ukwbjg_c_scale,w_1317.jpg 1317w, media/bicigeneratori_ukwbjg_c_scale,w_1449.jpg 1449w, media/bicigeneratori_ukwbjg_c_scale,w_1583.jpg 1583w"
-                    
-                    data-src="media/bicigeneratori_ukwbjg_c_scale,w_1583.jpg"
-                    loading="lazy"
-                    alt="">
+      
+        <div
+          tabindex="-1"
+          class="slide hide"
+          id="nextOpening">
+          <button class="icon backIcon">
+            <svg
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#backIcon" />
+            </svg>
+            <span class="visuallyHidden">back</span>
+          </button>
+          <h2 class="slideTitle">
+            
+              <a href="http://nextopeningfood.it" target="_blank">Next Opening Food website</a>
+            
+          </h2>
+          <div class="imageAndDatasheet">
+            <img
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              
+              srcset="media/nextOpening_elmmlh_c_scale,w_375.jpg 375w, media/nextOpening_elmmlh_c_scale,w_590.jpg 590w, media/nextOpening_elmmlh_c_scale,w_763.jpg 763w, media/nextOpening_elmmlh_c_scale,w_934.jpg 934w, media/nextOpening_elmmlh_c_scale,w_1080.jpg 1080w, media/nextOpening_elmmlh_c_scale,w_1227.jpg 1227w, media/nextOpening_elmmlh_c_scale,w_1359.jpg 1359w, media/nextOpening_elmmlh_c_scale,w_1596.jpg 1596w"
+              
+              data-src="media/nextOpening_elmmlh_c_scale,w_1596.jpg"
+              loading="lazy"
+              alt="">
 
-                <div class="dataSheet">
-                    <h3 class="dataSheet-title">Technical details</h3>
-                    <ul class="dataSheet-list">
-                        <li>Fully responsive</li>
-                        <li>Joomla! CMS</li>
-                        <li>Custom template</li>
-                        
-                    </ul>
-                    
-                    <a class="btn" href="http://www.bicigeneratori.it" target="_blank">visit the site</a>
-                    
-                </div>
+            <div class="dataSheet">
+              <h3 class="dataSheet-title">Technical details</h3>
+              <ul class="dataSheet-list">
+                
+                  <li>Joomla! CMS</li>
+                
+              </ul>
+              
+                <a
+                  class="btn"
+                  href="http://nextopeningfood.it"
+                  target="_blank">
+                  visit the site
+                </a>
+              
             </div>
+          </div>
         </div>
-         
-        <div tabindex="-1" class="slide hide" id="viro">
-            <button class="icon backIcon">
-                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#backIcon" />
-                </svg>
-                <span class="visuallyHidden">back</span>
-            </button>
-            <h2 class="slideTitle">
-                
-                <a href="http://clubsicurezza.viro.it" target="_blank">Club Viro della Sicurezza blog</a>
-                
-            </h2>
-            <div class="imageAndDatasheet">
-                <img
-                    sizes="(max-width: 1400px) 100vw, 1400px"
-                    
-                    srcset="media/viro_zh9kd4_c_scale,w_375.jpg 375w, media/viro_zh9kd4_c_scale,w_482.jpg 482w, media/viro_zh9kd4_c_scale,w_576.jpg 576w, media/viro_zh9kd4_c_scale,w_659.jpg 659w, media/viro_zh9kd4_c_scale,w_737.jpg 737w, media/viro_zh9kd4_c_scale,w_808.jpg 808w, media/viro_zh9kd4_c_scale,w_883.jpg 883w, media/viro_zh9kd4_c_scale,w_963.jpg 963w, media/viro_zh9kd4_c_scale,w_1023.jpg 1023w, media/viro_zh9kd4_c_scale,w_1082.jpg 1082w, media/viro_zh9kd4_c_scale,w_1145.jpg 1145w, media/viro_zh9kd4_c_scale,w_1203.jpg 1203w, media/viro_zh9kd4_c_scale,w_1267.jpg 1267w, media/viro_zh9kd4_c_scale,w_1333.jpg 1333w, media/viro_zh9kd4_c_scale,w_1387.jpg 1387w, media/viro_zh9kd4_c_scale,w_1443.jpg 1443w, media/viro_zh9kd4_c_scale,w_1580.jpg 1580w"
-                    
-                    data-src="media/viro_zh9kd4_c_scale,w_1580.jpg"
-                    loading="lazy"
-                    alt="">
+      
+        <div
+          tabindex="-1"
+          class="slide hide"
+          id="bicigeneratori">
+          <button class="icon backIcon">
+            <svg
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#backIcon" />
+            </svg>
+            <span class="visuallyHidden">back</span>
+          </button>
+          <h2 class="slideTitle">
+            
+              <a href="http://www.bicigeneratori.it" target="_blank">Bicigeneratori website</a>
+            
+          </h2>
+          <div class="imageAndDatasheet">
+            <img
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              
+              srcset="media/bicigeneratori_ukwbjg_c_scale,w_375.jpg 375w, media/bicigeneratori_ukwbjg_c_scale,w_528.jpg 528w, media/bicigeneratori_ukwbjg_c_scale,w_655.jpg 655w, media/bicigeneratori_ukwbjg_c_scale,w_783.jpg 783w, media/bicigeneratori_ukwbjg_c_scale,w_909.jpg 909w, media/bicigeneratori_ukwbjg_c_scale,w_1011.jpg 1011w, media/bicigeneratori_ukwbjg_c_scale,w_1114.jpg 1114w, media/bicigeneratori_ukwbjg_c_scale,w_1219.jpg 1219w, media/bicigeneratori_ukwbjg_c_scale,w_1317.jpg 1317w, media/bicigeneratori_ukwbjg_c_scale,w_1449.jpg 1449w, media/bicigeneratori_ukwbjg_c_scale,w_1583.jpg 1583w"
+              
+              data-src="media/bicigeneratori_ukwbjg_c_scale,w_1583.jpg"
+              loading="lazy"
+              alt="">
 
-                <div class="dataSheet">
-                    <h3 class="dataSheet-title">Technical details</h3>
-                    <ul class="dataSheet-list">
-                        <li>Fully responsive</li>
-                        <li>Wordpress CMS</li>
-                        <li>Custom template</li>
-                        
-                    </ul>
-                    
-                    <a class="btn" href="http://clubsicurezza.viro.it" target="_blank">visit the site</a>
-                    
-                </div>
+            <div class="dataSheet">
+              <h3 class="dataSheet-title">Technical details</h3>
+              <ul class="dataSheet-list">
+                
+                  <li>Fully responsive</li>
+                
+                  <li>Joomla! CMS</li>
+                
+                  <li>Custom template</li>
+                
+              </ul>
+              
+                <a
+                  class="btn"
+                  href="http://www.bicigeneratori.it"
+                  target="_blank">
+                  visit the site
+                </a>
+              
             </div>
+          </div>
         </div>
-         
-        <div tabindex="-1" class="slide hide" id="legambiente">
-            <button class="icon backIcon">
-                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#backIcon" />
-                </svg>
-                <span class="visuallyHidden">back</span>
-            </button>
-            <h2 class="slideTitle">
-                
-                <span>Legambiente Bologna website</span>
-                
-            </h2>
-            <div class="imageAndDatasheet">
-                <img
-                    sizes="(max-width: 1400px) 100vw, 1400px"
-                    
-                    srcset="media/legambiente_htczlp_c_scale,w_375.jpg 375w, media/legambiente_htczlp_c_scale,w_499.jpg 499w, media/legambiente_htczlp_c_scale,w_605.jpg 605w, media/legambiente_htczlp_c_scale,w_697.jpg 697w, media/legambiente_htczlp_c_scale,w_774.jpg 774w, media/legambiente_htczlp_c_scale,w_866.jpg 866w, media/legambiente_htczlp_c_scale,w_952.jpg 952w, media/legambiente_htczlp_c_scale,w_1017.jpg 1017w, media/legambiente_htczlp_c_scale,w_1087.jpg 1087w, media/legambiente_htczlp_c_scale,w_1153.jpg 1153w, media/legambiente_htczlp_c_scale,w_1236.jpg 1236w, media/legambiente_htczlp_c_scale,w_1298.jpg 1298w, media/legambiente_htczlp_c_scale,w_1343.jpg 1343w, media/legambiente_htczlp_c_scale,w_1491.jpg 1491w, media/legambiente_htczlp_c_scale,w_1498.jpg 1498w, media/legambiente_htczlp_c_scale,w_1581.jpg 1581w"
-                    
-                    data-src="media/legambiente_htczlp_c_scale,w_1581.jpg"
-                    loading="lazy"
-                    alt="">
+      
+        <div
+          tabindex="-1"
+          class="slide hide"
+          id="viro">
+          <button class="icon backIcon">
+            <svg
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#backIcon" />
+            </svg>
+            <span class="visuallyHidden">back</span>
+          </button>
+          <h2 class="slideTitle">
+            
+              <a href="http://clubsicurezza.viro.it" target="_blank">Club Viro della Sicurezza blog</a>
+            
+          </h2>
+          <div class="imageAndDatasheet">
+            <img
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              
+              srcset="media/viro_zh9kd4_c_scale,w_375.jpg 375w, media/viro_zh9kd4_c_scale,w_482.jpg 482w, media/viro_zh9kd4_c_scale,w_576.jpg 576w, media/viro_zh9kd4_c_scale,w_659.jpg 659w, media/viro_zh9kd4_c_scale,w_737.jpg 737w, media/viro_zh9kd4_c_scale,w_808.jpg 808w, media/viro_zh9kd4_c_scale,w_883.jpg 883w, media/viro_zh9kd4_c_scale,w_963.jpg 963w, media/viro_zh9kd4_c_scale,w_1023.jpg 1023w, media/viro_zh9kd4_c_scale,w_1082.jpg 1082w, media/viro_zh9kd4_c_scale,w_1145.jpg 1145w, media/viro_zh9kd4_c_scale,w_1203.jpg 1203w, media/viro_zh9kd4_c_scale,w_1267.jpg 1267w, media/viro_zh9kd4_c_scale,w_1333.jpg 1333w, media/viro_zh9kd4_c_scale,w_1387.jpg 1387w, media/viro_zh9kd4_c_scale,w_1443.jpg 1443w, media/viro_zh9kd4_c_scale,w_1580.jpg 1580w"
+              
+              data-src="media/viro_zh9kd4_c_scale,w_1580.jpg"
+              loading="lazy"
+              alt="">
 
-                <div class="dataSheet">
-                    <h3 class="dataSheet-title">Technical details</h3>
-                    <ul class="dataSheet-list">
-                        <li>Fully responsive</li>
-                        <li>Joomla! CMS</li>
-                        <li>Custom template</li>
-                        
-                    </ul>
-                    
-                </div>
+            <div class="dataSheet">
+              <h3 class="dataSheet-title">Technical details</h3>
+              <ul class="dataSheet-list">
+                
+                  <li>Fully responsive</li>
+                
+                  <li>Wordpress CMS</li>
+                
+                  <li>Custom template</li>
+                
+              </ul>
+              
+                <a
+                  class="btn"
+                  href="http://clubsicurezza.viro.it"
+                  target="_blank">
+                  visit the site
+                </a>
+              
             </div>
+          </div>
         </div>
-         
-        <div tabindex="-1" class="slide hide" id="carisma">
-            <button class="icon backIcon">
-                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#backIcon" />
-                </svg>
-                <span class="visuallyHidden">back</span>
-            </button>
-            <h2 class="slideTitle">
-                
-                <a href="http://carismarct.com" target="_blank">Carisma website</a>
-                
-            </h2>
-            <div class="imageAndDatasheet">
-                <img
-                    sizes="(max-width: 1400px) 100vw, 1400px"
-                    
-                    srcset="media/carisma_s25suo_c_scale,w_375.jpg 375w, media/carisma_s25suo_c_scale,w_624.jpg 624w, media/carisma_s25suo_c_scale,w_822.jpg 822w, media/carisma_s25suo_c_scale,w_1004.jpg 1004w, media/carisma_s25suo_c_scale,w_1168.jpg 1168w, media/carisma_s25suo_c_scale,w_1320.jpg 1320w, media/carisma_s25suo_c_scale,w_1582.jpg 1582w"
-                    
-                    data-src="media/carisma_s25suo_c_scale,w_1582.jpg"
-                    loading="lazy"
-                    alt="">
+      
+        <div
+          tabindex="-1"
+          class="slide hide"
+          id="legambiente">
+          <button class="icon backIcon">
+            <svg
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#backIcon" />
+            </svg>
+            <span class="visuallyHidden">back</span>
+          </button>
+          <h2 class="slideTitle">
+            
+              <span>Legambiente Bologna website</span>
+            
+          </h2>
+          <div class="imageAndDatasheet">
+            <img
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              
+              srcset="media/legambiente_htczlp_c_scale,w_375.jpg 375w, media/legambiente_htczlp_c_scale,w_499.jpg 499w, media/legambiente_htczlp_c_scale,w_605.jpg 605w, media/legambiente_htczlp_c_scale,w_697.jpg 697w, media/legambiente_htczlp_c_scale,w_774.jpg 774w, media/legambiente_htczlp_c_scale,w_866.jpg 866w, media/legambiente_htczlp_c_scale,w_952.jpg 952w, media/legambiente_htczlp_c_scale,w_1017.jpg 1017w, media/legambiente_htczlp_c_scale,w_1087.jpg 1087w, media/legambiente_htczlp_c_scale,w_1153.jpg 1153w, media/legambiente_htczlp_c_scale,w_1236.jpg 1236w, media/legambiente_htczlp_c_scale,w_1298.jpg 1298w, media/legambiente_htczlp_c_scale,w_1343.jpg 1343w, media/legambiente_htczlp_c_scale,w_1491.jpg 1491w, media/legambiente_htczlp_c_scale,w_1498.jpg 1498w, media/legambiente_htczlp_c_scale,w_1581.jpg 1581w"
+              
+              data-src="media/legambiente_htczlp_c_scale,w_1581.jpg"
+              loading="lazy"
+              alt="">
 
-                <div class="dataSheet">
-                    <h3 class="dataSheet-title">Technical details</h3>
-                    <ul class="dataSheet-list">
-                        <li>Joomla! CMS</li>
-                        <li>Custom template</li>
-                        
-                    </ul>
-                    
-                    <a class="btn" href="http://carismarct.com" target="_blank">visit the site</a>
-                    
-                </div>
+            <div class="dataSheet">
+              <h3 class="dataSheet-title">Technical details</h3>
+              <ul class="dataSheet-list">
+                
+                  <li>Fully responsive</li>
+                
+                  <li>Joomla! CMS</li>
+                
+                  <li>Custom template</li>
+                
+              </ul>
+              
             </div>
+          </div>
         </div>
-        
+      
+        <div
+          tabindex="-1"
+          class="slide hide"
+          id="carisma">
+          <button class="icon backIcon">
+            <svg
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="#backIcon" />
+            </svg>
+            <span class="visuallyHidden">back</span>
+          </button>
+          <h2 class="slideTitle">
+            
+              <a href="http://carismarct.com" target="_blank">Carisma website</a>
+            
+          </h2>
+          <div class="imageAndDatasheet">
+            <img
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              
+              srcset="media/carisma_s25suo_c_scale,w_375.jpg 375w, media/carisma_s25suo_c_scale,w_624.jpg 624w, media/carisma_s25suo_c_scale,w_822.jpg 822w, media/carisma_s25suo_c_scale,w_1004.jpg 1004w, media/carisma_s25suo_c_scale,w_1168.jpg 1168w, media/carisma_s25suo_c_scale,w_1320.jpg 1320w, media/carisma_s25suo_c_scale,w_1582.jpg 1582w"
+              
+              data-src="media/carisma_s25suo_c_scale,w_1582.jpg"
+              loading="lazy"
+              alt="">
 
-        <div tabindex="-1" class="slide hide about" id="about">
-            <button class="icon backIcon">
-                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#backIcon" />
-                </svg>
-                <span class="visuallyHidden">back</span>
-            </button>
-            <h2 class="slideTitle">About me</h2>
-            <img 
-            sizes="(max-width: 1600px) calc(100vw - 6.5rem), 1600px" 
-            data-srcset="
-                media/francesco_bedussi_qrrq5e_c_scale,w_190.jpg 190w,
-                media/francesco_bedussi_qrrq5e_c_scale,w_1094.jpg 1094w,
-                media/francesco_bedussi_qrrq5e_c_scale,w_1600.jpg 1600w" 
-                data-src="media/francesco_bedussi.jpg" 
-                loading="lazy"
-                alt="Francesco Bedussi"
-            >
-            <div>
+            <div class="dataSheet">
+              <h3 class="dataSheet-title">Technical details</h3>
+              <ul class="dataSheet-list">
+                
+                  <li>Joomla! CMS</li>
+                
+                  <li>Custom template</li>
+                
+              </ul>
+              
+                <a
+                  class="btn"
+                  href="http://carismarct.com"
+                  target="_blank">
+                  visit the site
+                </a>
+              
+            </div>
+          </div>
+        </div>
+      
+
+      <div
+        tabindex="-1"
+        class="slide hide about"
+        id="about">
+        <button class="icon backIcon">
+          <svg
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="#backIcon" />
+          </svg>
+          <span class="visuallyHidden">back</span>
+        </button>
+        <h2 class="slideTitle">About me</h2>
+        <img
+          sizes="(max-width: 1600px) calc(100vw - 6.5rem), 1600px"
+          data-srcset="
+                                                                            media/francesco_bedussi_qrrq5e_c_scale,w_190.jpg 190w,
+                                                                            media/francesco_bedussi_qrrq5e_c_scale,w_1094.jpg 1094w,
+                                                                            media/francesco_bedussi_qrrq5e_c_scale,w_1600.jpg 1600w"
+          data-src="media/francesco_bedussi.jpg"
+          loading="lazy"
+          alt="Francesco Bedussi">
+        <div>
+          <p>
+            I am a senior full stack developer with 9 years experience.
+          </p>
+          <p>
+            I build rich and inclusive web sites and web apps, using HTML, CSS, JS and Node.js, both "vanilla" or choosing the right framework for the job at hand.
+          </p>
+        </div>
+
+        <h3 class="slideSubtitle">Expertise</h3>
+        <p>I work in the web industry since 2002. At first as a project leader, then as a web designer
+          and web master. In 2011 I switched to development and since then I've been a freelance, a full time front
+                                                                  end developer, a tech lead and then a full stack developer.
+        </p>
+
+        <h3 class="slideSubtitle">Skills</h3>
+        <ul>
+          <li>Front-end development: JavaScript, TypeScript, ES6, Redux.js, React.js, Jest, Elm, jQuery, HTML5, CSS3, Sass, Bootstrap,
+            Foundation, AJAX, SVG, Material UI, indexedDb</li>
+          <li>Back-end development: Node.Js, Hapi, Express, Fastify, MongoDb, MySql, Electron, Firebase, C#, .NET MVC</li>
+          <li>Programming paradigms: OOP, functional programming</li>
+          <li>OS: Linux, Windows, MacOs</li>
+          <li>Tools: Git, Mercurial, Webpack, npm, ESlint, Postcss</li>
+        </ul>
+
+        <h3 class="slideSubtitle">Languages</h3>
+        <ul>
+          <li>Italian: mother tongue</li>
+          <li>English: advanced (Cambridge Certificate in Advanced English, grade A)</li>
+        </ul>
+
+        <h3 class="slideSubtitle">Work experience</h3>
+        <ul>
+          
+            <li>
+              <h4 class="slideSubtitle2">Full stack Developer (2019 &gt; Today)</h4>
+              
                 <p>
-                    I am a senior full stack developer with 9 years experience.
+                  <em>Abstract, Via Broletto 43, Milano</em>
                 </p>
+              
+              
+                <p>I am a senior member of a tightly knitted and highly skilled team. Following the agile practices we develop and deliver highly interactive web based apps. We are currently focused on E-stores, in-store apps and b2b marketplaces for some of the major players in the fashion industry.</p>
+              
+                <p>We use use JavaScript as our main programming language, both on server and client side. Depending on the project we can complement vanilla Node.js and JavaScript with powerful companion like TypeScript and React.</p>
+              
+            </li>
+          
+            <li>
+              <h4 class="slideSubtitle2">Front end developer/JavaScript Developer (2015 &gt; 2019)</h4>
+              
                 <p>
-                    I build rich and inclusive web sites and web apps, using HTML, CSS, JS and Node.js, both "vanilla" or choosing the right framework for the job at hand. 
+                  <em>Yoox Net-A-Porter Group, Via Nannetti 1, Zola Predosa (BO)</em>
                 </p>
-            </div>
+              
+              
+                <p>I was a member of a cross functional team of 15 people (5 of which were devs). Using the agile methodology, iteration after iteration, we found the best way to transform the creativity of designers into actually working web sites.</p>
+              
+                <p>While we were committed to support as many browsers as possible, we tried hard to use the latest technologies. We used CSS3 + postCss + autoprefixer and ES6 + Webpack + Babel to support older browsers as well as newer ones.</p>
+              
+                <p>Since we cared about performance we used responsive images and lazy load them, used HTTP2 and its best practices and exploited caching as much as possible.</p>
+              
+                <p>We were part of a big corporate that runs 40+ e-stores, so, obviously, we relied on a front end platform (custom developed in .NET MVC) that was a middleware between the API and the actual front end. We could also leverage a corporate JavaScript framework, based on the pub/sub pattern, that took care of some common tasks, such as cart management or form validation. This platform allowed a fairly wide degree of customization that we exploited to meet the ever challenging clients’ requests.</p>
+              
+                <p>Since we were in charge of maintenance for the web sites we build, we took a great care in the scalability and maintainability of every single line of code we wrote.</p>
+              
+                <p>Besides web sites I was also an active contributor to several internal tools, such as the internal functional test automation platform, build upon Nightwatch.js and Cucumber and the sites configuration console, written in Electron + React + Redux.</p>
+              
+            </li>
+          
+            <li>
+              <h4 class="slideSubtitle2">Front end Developer Freelance (2011 &gt; 2014)</h4>
+              
+              
+                <p>As a front end developer I created web sites with a special attention for usability, SEO and performance.</p>
+              
+                <p>I relayed over the open source CMS Joomla! and Wordpress as a backend, on top of which I developed customized themes and templates.</p>
+              
+            </li>
+          
+            <li>
+              <h4 class="slideSubtitle2">Web Marketing Consultant (2008 &gt; 2014)</h4>
+              
+                <p>
+                  <em>Viro Spa, Zola Predosa (Bo)</em>
+                </p>
+              
+              
+                <p>For a sector leader I designed and implemented the corporate web marketing strategy. I created, developed and edited for 3 years the corporate blog <a href="http://www.virosecurityclub.com/" target="_blank">www.virosecurityclub.com</a>, with weekly updates in 4 languages, as a powerful tool of content marketing.</p>
+              
+                <p>As the social media manager I run the Facebook, Twitter and Google+ corporate accounts. As the on-line community manager I dealt with communities, such as forums and newsgroups, related to mechanical security topics.</p>
+              
+            </li>
+          
+            <li>
+              <h4 class="slideSubtitle2">Communication Manager/Web Master (2007 &gt; 2014)</h4>
+              
+                <p>
+                  <em>Centro Anatartide, Bologna</em>
+                </p>
+              
+              
+                <p>As a communication manager I co-designed and co-managed the national raising awareness campaigns on road safety Vacanze coi fiocchi and Siamo tutti pedoni.</p>
+              
+                <p>As a graphic designer I authored posters, leaflets and booklets for several center’s projects, like the EU funded project on water saving Wataclick, while as a web master I published and edited several web sites, mainly based on Joomla! and Wordpress CMS, related to different center’s projects.</p>
+              
+            </li>
+          
+            <li>
+              <h4 class="slideSubtitle2">Co-founder and CEO (2004 &gt;2008)</h4>
+              
+                <p>
+                  <em>Caffe Network Scarl, Bologna</em>
+                </p>
+              
+              
+                <p>I was co-founder and CEO of Caffè Network, an agency specialized in the set-up, fine tuning and monitoring of distribution networks for free press projects.</p>
+              
+                <p>We worked for some of the biggest players in the industry, like the newspaper City and the magazine Urban, both edited by RCS Media Group.</p>
+              
+                <p>We also edited a monthly free press magazine, “l’ammazzacaffè”, printed on table mats and distributed in pubs and restaurants.</p>
+              
+            </li>
+          
+            <li>
+              <h4 class="slideSubtitle2">Account/Project Leader (2002 &gt; 2003)</h4>
+              
+                <p>
+                  <em>O-one, Reggio Emilia</em>
+                </p>
+              
+              
+                <p>I was an account and project leader of a medium-sized web agency that worked with clients like Berloni, Kerakoll and Vodafone. My role dealt with customer relationships, business development and project management.</p>
+              
+            </li>
+          
+        </ul>
+        <h3 class="slideSubtitle">Education</h3>
 
-            <h3 class="slideSubtitle">Expertise</h3>
-            <p>I work in the web industry since 2002. At first as a project leader, then as a web designer
-                and web master. In 2011 I switched to development and since then I've been a freelance, a full time front
-                end developer, a tech lead and then a full stack developer.
-            </p>
+        <ul>
+          <li>
+            <strong>2015</strong>
+            Course “Agile Development”, a week long intensive course on Agile theory and practice followed
+            by a 2 week long boot camp.</li>
+          <li>
+            <strong>2014</strong>
+            Course on “Information and Communication Technologies: Opportunities for business and local
+            development“ - Spinner, Bologna, Italy</li>
+          <li>
+            <strong>2001</strong>
+            Graduated in Communication Sciences with 110 cum laude (maximum grade) from the University
+            of Bologna, Italy</li>
+        </ul>
+      </div>
 
-            <h3 class="slideSubtitle">Skills</h3>
-            <ul>
-                <li>Front-end development: JavaScript, TypeScript, ES6, Redux.js, React.js, Jest, Elm, jQuery, HTML5, CSS3, Sass, Bootstrap,
-                    Foundation, AJAX, SVG, Material UI, indexedDb</li>
-                <li>Back-end development: Node.Js, Hapi, Express, Fastify, MongoDb, MySql, Electron, Firebase, C#, .NET MVC</li>
-                <li>Programming paradigms: OOP, functional programming</li>
-                <li>OS: Linux, Windows, MacOs</li>
-                <li>Tools: Git, Mercurial, Webpack, npm, ESlint, Postcss</li>
-            </ul>
-
-            <h3 class="slideSubtitle">Languages</h3>
-            <ul>
-                <li>Italian: mother tongue</li>
-                <li>English: advanced (Cambridge Certificate in Advanced English, grade A)</li>
-            </ul>
-
-            <h3 class="slideSubtitle">Work experience</h3>
-            <ul>
-                
-                <li>
-                    <h4 class="slideSubtitle2">Full stack Developer (2019 &gt; Today)</h4>
-                    
-                    <p>
-                        <em>Abstract, Via Broletto 43, Milano</em>
-                    </p>
-                    
-                    
-                        <p>I am a senior member of a tightly knitted and highly skilled team. Following the agile practices we develop and deliver highly interactive web based apps. We are currently focused on E-stores, in-store apps and b2b marketplaces for some of the major players in the fashion industry.</p>
-                    
-                        <p>We use use JavaScript as our main programming language, both on server and client side. Depending on the project we can complement vanilla Node.js and JavaScript with powerful companion like TypeScript and React.</p>
-                    
-                </li>
-                
-                <li>
-                    <h4 class="slideSubtitle2">Front end developer/JavaScript Developer (2015 &gt; 2019)</h4>
-                    
-                    <p>
-                        <em>Yoox Net-A-Porter Group, Via Nannetti 1, Zola Predosa (BO)</em>
-                    </p>
-                    
-                    
-                        <p>I was a member of a cross functional team of 15 people (5 of which were devs). Using the agile methodology, iteration after iteration, we found the best way to transform the creativity of designers into actually working web sites.</p>
-                    
-                        <p>While we were committed to support as many browsers as possible, we tried hard to use the latest technologies. We used CSS3 + postCss + autoprefixer and ES6 + Webpack + Babel to support older browsers as well as newer ones.</p>
-                    
-                        <p>Since we cared about performance we used responsive images and lazy load them, used HTTP2 and its best practices and exploited caching as much as possible.</p>
-                    
-                        <p>We were part of a big corporate that runs 40+ e-stores, so, obviously, we relied on a front end platform (custom developed in .NET MVC) that was a middleware between the API and the actual front end. We could also leverage a corporate JavaScript framework, based on the pub/sub pattern, that took care of some common tasks, such as cart management or form validation. This platform allowed a fairly wide degree of customization that we exploited to meet the ever challenging clients’ requests.</p>
-                    
-                        <p>Since we were in charge of maintenance for the web sites we build, we took a great care in the scalability and maintainability of every single line of code we wrote.</p>
-                    
-                        <p>Besides web sites I was also an active contributor to several internal tools, such as the internal functional test automation platform, build upon Nightwatch.js and Cucumber and the sites configuration console, written in Electron + React + Redux.</p>
-                    
-                </li>
-                
-                <li>
-                    <h4 class="slideSubtitle2">Front end Developer Freelance (2011 &gt; 2014)</h4>
-                    
-                    
-                        <p>As a front end developer I created web sites with a special attention for usability, SEO and performance.</p>
-                    
-                        <p>I relayed over the open source CMS Joomla! and Wordpress as a backend, on top of which I developed customized themes and templates.</p>
-                    
-                </li>
-                
-                <li>
-                    <h4 class="slideSubtitle2">Web Marketing Consultant (2008 &gt; 2014)</h4>
-                    
-                    <p>
-                        <em>Viro Spa, Zola Predosa (Bo)</em>
-                    </p>
-                    
-                    
-                        <p>For a sector leader I designed and implemented the corporate web marketing strategy. I created, developed and edited for 3 years the corporate blog <a href="http://www.virosecurityclub.com/" target="_blank">www.virosecurityclub.com</a>, with weekly updates in 4 languages, as a powerful tool of content marketing.</p>
-                    
-                        <p>As the social media manager I run the Facebook, Twitter and Google+ corporate accounts. As the on-line community manager I dealt with communities, such as forums and newsgroups, related to mechanical security topics.</p>
-                    
-                </li>
-                
-                <li>
-                    <h4 class="slideSubtitle2">Communication Manager/Web Master (2007 &gt; 2014)</h4>
-                    
-                    <p>
-                        <em>Centro Anatartide, Bologna</em>
-                    </p>
-                    
-                    
-                        <p>As a communication manager I co-designed and co-managed the national raising awareness campaigns on road safety Vacanze coi fiocchi and Siamo tutti pedoni.</p>
-                    
-                        <p>As a graphic designer I authored posters, leaflets and booklets for several center’s projects, like the EU funded project on water saving Wataclick, while as a web master I published and edited several web sites, mainly based on Joomla! and Wordpress CMS, related to different center’s projects.</p>
-                    
-                </li>
-                
-                <li>
-                    <h4 class="slideSubtitle2">Co-founder and CEO (2004 &gt;2008)</h4>
-                    
-                    <p>
-                        <em>Caffe Network Scarl, Bologna</em>
-                    </p>
-                    
-                    
-                        <p>I was co-founder and CEO of Caffè Network, an agency specialized in the set-up, fine tuning and monitoring of distribution networks for free press projects.</p>
-                    
-                        <p>We worked for some of the biggest players in the industry, like the newspaper City and the magazine Urban, both edited by RCS Media Group.</p>
-                    
-                        <p>We also edited a monthly free press magazine, “l’ammazzacaffè”, printed on table mats and distributed in pubs and restaurants.</p>
-                    
-                </li>
-                
-                <li>
-                    <h4 class="slideSubtitle2">Account/Project Leader (2002 &gt; 2003)</h4>
-                    
-                    <p>
-                        <em>O-one, Reggio Emilia</em>
-                    </p>
-                    
-                    
-                        <p>I was an account and project leader of a medium-sized web agency that worked with clients like Berloni, Kerakoll and Vodafone. My role dealt with customer relationships, business development and project management.</p>
-                    
-                </li>
-                
-            </ul>
-            <h3 class="slideSubtitle">Education</h3>
-
-            <ul>
-                <li>
-                    <strong>2015</strong> Course “Agile Development”, a week long intensive course on Agile theory and practice followed
-                    by a 2 week long boot camp.</li>
-                <li>
-                    <strong>2014</strong> Course on “Information and Communication Technologies: Opportunities for business and local
-                    development“ - Spinner, Bologna, Italy</li>
-                <li>
-                    <strong>2001</strong> Graduated in Communication Sciences with 110 cum laude (maximum grade) from the University
-                    of Bologna, Italy</li>
-            </ul>
-        </div>
-
-        <div tabindex="-1" class="slide hide" id="contact">
-            <button class="icon backIcon">
-                <svg viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#backIcon" />
-                </svg>
-                <span class="visuallyHidden">back</span>
-            </button>
-            <h2 class="slideTitle">Contact me</h2>
-            <p>francesco [at] francescobedussi [.] it</p>
-            <p>
-                I live in Bologna, Italy. I work wherever internet arrives.
-            </p>
-            <ul class="social contact-social">
-                <li class="btn">
-                    <a href="https://www.linkedin.com/in/francescobedussi/" target="_blank">Linkedin</a>
-                </li>
-                <li class="btn">
-                    <a href="https://twitter.com/fbedussi" target="_blank">Twitter</a>
-                </li>
-                <li class="btn">
-                    <a href="https://github.com/fbedussi" target="_blank">Github</a>
-                </li>
-            </ul>
-        </div>
+      <div
+        tabindex="-1"
+        class="slide hide"
+        id="contact">
+        <button class="icon backIcon">
+          <svg
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="#backIcon" />
+          </svg>
+          <span class="visuallyHidden">back</span>
+        </button>
+        <h2 class="slideTitle">Contact me</h2>
+        <p>francesco [at] francescobedussi [.] it</p>
+        <p>
+          I live in Bologna, Italy. I work wherever internet arrives.
+        </p>
+        <ul class="social contact-social">
+          <li class="btn">
+            <a href="https://www.linkedin.com/in/francescobedussi/" target="_blank">Linkedin</a>
+          </li>
+          <li class="btn">
+            <a href="https://twitter.com/fbedussi" target="_blank">Twitter</a>
+          </li>
+          <li class="btn">
+            <a href="https://github.com/fbedussi" target="_blank">Github</a>
+          </li>
+        </ul>
+      </div>
 
     </main>
-    <script nomodule src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
-    <script type="module" src="js/vjQuery.js" type="text/javascript"></script>
-    <script type="module" src="js/script.js" type="text/javascript"></script>
-    <script nomodule src="js/script-compiled.js" type="text/javascript"></script>
-</body>
+    <script
+      nomodule
+      src="js/jquery-3.2.1.min.js"
+      type="text/javascript"></script>
+    <script
+      type="module"
+      src="js/vjQuery.js"
+      type="text/javascript"></script>
+    <script
+      type="module"
+      src="js/script.js"
+      type="text/javascript"></script>
+    <script
+      nomodule
+      src="js/script-compiled.js"
+      type="text/javascript"></script>
+  </body>
 
 </html>

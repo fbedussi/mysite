@@ -1,5 +1,16 @@
 [
   {
+    "id": "ben",
+    "name": "Rainbow room, a tool to showcase new collections to retailers",
+    "year": 2022,
+    "srcset": "media/Screenshot_2023-02-26_at_19.32.24_q2umee_c_scale,w_200.jpg 200w, media/Screenshot_2023-02-26_at_19.32.24_q2umee_c_scale,w_674.jpg 674w, media/Screenshot_2023-02-26_at_19.32.24_q2umee_c_scale,w_1092.jpg 1092w, media/Screenshot_2023-02-26_at_19.32.24_q2umee_c_scale,w_1400.jpg 1400w",
+    "src": "media/Screenshot_2023-02-26_at_19.32.24_q2umee_c_scale,w_1400.jpg",
+    "details": [
+      "Frontend: React + Redux + TypeScript + Styled Components",
+      "Backend: Node + Express + TypeScript + MongoDB"
+    ]
+  },
+  {
     "id": "telo",
     "name": "Teleoptometry, a tele medicine system",
     "year": 2020,
