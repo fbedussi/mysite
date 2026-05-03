@@ -30,15 +30,9 @@
             font-weight: 700;
             margin-bottom: 1rem;
             font-family: sans-serif;
-        }
 
-        .value-proposition {
-            font-size: 2rem;
-            border-left: 1rem solid var(--accent-color);
-            padding-left: 1rem;
-            
-            strong {
-                padding: 0rem 0.5rem 0.5rem;
+            span {
+                padding: 0rem 0.5rem;
                 font-weight: 100;
                 background-color: var(--accent-color);
                 color: white;
@@ -47,6 +41,12 @@
                 font-family: 'Times New Roman', Times, serif;
                 border-radius: 5px;
             }
+        }
+
+        .value-proposition {
+            font-size: 2rem;
+            border-left: 1rem solid var(--accent-color);
+            padding-left: 1rem;
         }
 
         .name,
@@ -59,7 +59,6 @@
             display: flex;
             gap: 2rem;
             align-items: center;
-            flex-wrap: wrap;
 
             img {
                 border-radius: 50%;
@@ -190,7 +189,7 @@
                 padding-left: 0;
                 display: grid;
                 gap: 1rem;
-                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
                 grid-auto-flow: dense;
             }
         }
@@ -212,12 +211,6 @@
             cursor: pointer;
             display: flex;
             margin-top: 0.75rem;
-        }
-
-        button[command="show-modal"] {
-            display: block;
-            overflow: hidden;
-            aspect-ratio: 2;
         }
 
         dialog {
@@ -280,23 +273,18 @@
             font-size: 1rem;
             line-height: 1;
         }
-
-        footer {
-            a,
-            a:visited {
-                color: inherit;
-                text-decoration: none;
-            }
-        }
     </style>
 
 </head>
 
 <body>
     <header class="boxed">
-        <p class="headline">Who am I?
-        <p>This page is my answer to this question, delivered the same way I approach any task: I chose the simplest solution that fully meets the requirements. In this case, a static HTML page, minimal CSS, no build complexity. Fast, secure, accessible, responsive and maintenance-free.
-        <p class="value-proposition">That's what I do: I cut through to the <strong>most effective solution</strong> for the job at hand.</p>
+        <p class="headline">This site has no frills <span>but</span>
+        <p>it is perfectly suited for its purpose: it's fast, accessible, responsive, secure, maintenance-free and it
+            does provide some info about me.
+        <p class="value-proposition">This is what I do: I understand the <strong>business requirements</strong> and
+            respond quickly
+            with the <strong>most effective solution</strong>.</p>
     </header>
 
     <div class="name">
@@ -310,45 +298,56 @@
     </div>
 
     <main class="boxed">
-        <h2>What I've done</h2> 
+        <h2>Who am I?</h2>
 
-        <p>I started programming as a child in the '80s and never stopped. I've been <strong>a professional in the web industry since 2001</strong>, covering various roles, from project manager to software developer and tech lead. 
-        <p>Over the years I've built up solid experience handling projects for <strong>major players</strong>, from leading e-commerce platforms to worldwide luxury brands and top-level insurance companies.
-        
+        <p>I started programming as a child in the '80s, and I've been <strong>a professional in the web industry since
+                2001</strong>,
+            covering
+            various roles, from project manager to software developer and tech lead.
+
+
+        <p>I have solid experience in handling projects for <strong>major players</strong>, from leading e-commerce
+            platforms to
+            worldwide
+            luxury brands and top-level insurance companies.
+
+
+        <h2>What I've done</h2>
         <ol class="experience">
             <li>
                 <div class="time-span"><time datetime="2024">2024-present</time></div>
-                <p><strong>Software Engineer at <a href="https://www.prima.it/" target="_blank" rel="noopener noreferrer">Prima</a></strong>
-                <p>I'm a senior Software Engineer in a team in charge of modernizing the legacy system of the largest motor insurance broker in Italy.
+                <p><strong>Software Engineer at <a href="https://www.prima.it/" target="_blank">Prima</a></strong>
+                <p>I'm a senior Software Engineer in a team in charge of modernizing the legacy system of the leading
+                    online insurance in Italy.
                 <p>What my team accomplished so far:</p>
                 <ul>
-                    <li><strong>rebuilt the internal knowledge</strong> on the implemented business logic that was lost
+                    <li><strong>rebuild the internal knowledge</strong> on the implemented business logic that went lost
                         due to the rapid
                         growth of the company</li>
-                    <li>set up a comprehensive suite of <strong>automated tests</strong> to serve as a guardrail for
+                    <li>setup a comprehensive suite of <strong>automated tests</strong> to serve as a guardrail for
                         later refactors</li>
-                    <li><strong>migrated</strong> the codebase from Elm to React to eliminate one language from the tech
+                    <li><strong>migrate</strong> the codebase from Elm to React to eliminate one language from the tech
                         stack, reduce the
                         cognitive load, simplify the hiring process and eliminate some risks of using a niche language
                     </li>
-                    <li><strong>simplified the architecture</strong>, eliminating unnecessary middleware</li>
+                    <li><strong>simplified the architecture</strong>, eliminating unnecessary middlewares</li>
                 </ul>
             </li>
 
             <li>
                 <div class="time-span"><time datetime="2019">2019</time>-<time datetime="2024">2024</time></div>
-                <p><strong>Tech lead at <a href="https://www.abstract.it/it" target="_blank" rel="noopener noreferrer">Abstract</a></strong>
+                <p><strong>Tech lead at <a href="https://www.abstract.it/it" target="_blank">Abstract</a></strong>
                 <p>In this consultancy firm, I was the tech lead of several projects for <strong>Luxottica</strong>, the
                     global market
                     leader
                     in the eyewear industry.
                 <p>Some projects we carried out:</p>
                 <ul>
-                    <li>Successfully bootstrapped a greenfield telemedicine system <strong>used by opticians in 3
+                    <li>Successfully bootstrapped a green field tele-medicine system <strong>used by opticians in 3
                             continents</strong>
                         to
                         handle remote eye visits</li>
-                    <li>Delivered a B2B e-commerce platform to effectively handle the pre-sale process during the
+                    <li>Delivered a b2b e-commerce platform to effectively handle the pre sale process during the
                         corporate
                         trade shows. The project featured a <strong>wow factor</strong> to match the positioning of the
                         luxury brands
@@ -358,7 +357,7 @@
 
             <li>
                 <div class="time-span"><time datetime="2015">2015</time>-<time datetime="2019">2019</time></div>
-                <p><strong>Developer and Tech lead at <a href="https://www.yoox.com" rel="noopener noreferrer"
+                <p><strong>Developer and Tech lead at <a href="https://www.yoox.com"
                             target="_blank">Yoox/YNAP</a></strong>
                 <p>My team and I launched and maintained several e-commerce websites for some of the top fashion
                     brands,
@@ -368,20 +367,20 @@
             <li>
                 <div class="time-span"><time datetime="2011">2011</time>-<time datetime="2015">2015</time></div>
                 <p><strong>Front end developer freelance</strong>
-                <p>I helped some local businesses and non-profit organizations to strengthen their online presence.
+                <p>I helped some local business and non profit organization to strengthen their online presence.
             </li>
 
             <li>
                 <div class="time-span"><time datetime="2008">2008</time>-<time datetime="2014">2014</time></div>
-                <p><strong>Web marketing consultant at <a href="https://www.viro.it" target="_blank" rel="noopener noreferrer">Viro</a></strong>
-                <p>For Viro, a market leader in the lock industry:
+                <p><strong>Web marketing consultant at <a href="https://www.viro.it" target="_blank">Viro</a></strong>
+                <p>For a company leader in the lock industry
                 <ul>
                     <li>I designed and implemented the corporate web marketing strategy.</li>
                     <li>I created, developed and edited for 3 years the corporate blog, with weekly updates in 4
                         languages, as
                         a
                         powerful tool of content marketing</li>
-                    <li>As the social media and community manager I dealt with online communities related to mechanical
+                    <li>as the social media and community manager I dealt with on-line communities related to mechanical
                         security
                         topics.</li>
                 </ul>
@@ -389,19 +388,19 @@
 
             <li>
                 <div class="time-span"><time datetime="2007">2007</time>-<time datetime="2014">2014</time></div>
-                <p><strong>Communication manager at <a href="https://centroantartide.it/" target="_blank" rel="noopener noreferrer">Centro
+                <p><strong>Communication manager at <a href="https://centroantartide.it/" target="_blank">Centro
                             Antartide</a></strong>
-                <p>We ran several national awareness-raising campaigns, among which:
+                <p>We ran several national raising awareness campaigns, among which:
                 <ul>
                     <li>Vacanze coi fiocchi and Siamo tutti pedoni on road safety</li>
-                    <li>the EU-funded project on water saving, Wataclick</li>
+                    <li>the EU funded project on water saving Wataclick</li>
                 </ul>
             </li>
 
             <li>
                 <div class="time-span"><time datetime="2004">2004</time>-<time datetime="2008">2008</time></div>
-                <p><strong>Co-founder of Caffè Network</strong>
-                <p>Caffè Network was an agency specialized in the set-up, fine-tuning and
+                <p><strong>Cofounder of Caffè Network</strong>
+                <p>I was co-founder of Caffè Network, an agency specialized in the set-up, fine tuning and
                     monitoring of distribution networks for free press projects.
                 <p>We worked for some of the biggest players in the industry, like the newspaper City and the magazine
                     Urban, both edited by RCS Media Group.
@@ -589,12 +588,12 @@
                     <figure>
                         <button commandfor="dialog-armani" command="show-modal">
                             <img sizes="(max-width: 1400px) 100vw, 1400px"  srcset="media/armani_tpyx9l_c_scale,w_200.png 200w, media/armani_tpyx9l_c_scale,w_538.png 538w, media/armani_tpyx9l_c_scale,w_762.png 762w, media/armani_tpyx9l_c_scale,w_944.png 944w, media/armani_tpyx9l_c_scale,w_1117.png 1117w, media/armani_tpyx9l_c_scale,w_1287.png 1287w, media/armani_tpyx9l_c_scale,w_1400.png 1400w"
-                                 src="media/armani_tpyx9l_c_scale,w_1400.png" loading="lazy" alt="Armani e-store screenshot">
+                                 src="armani_tpyx9l_c_scale,w_1400.png" loading="lazy" alt="Armani e-store screenshot">
                         </button>
                         <figcaption>Armani e-store <small>(2019)</small></figcaption>
                     </figure>
                     <dialog id="dialog-armani" closedby="any">
-                        <img sizes="(max-width: 1400px) 100vw, 1400px"  srcset="media/armani_tpyx9l_c_scale,w_200.png 200w, media/armani_tpyx9l_c_scale,w_538.png 538w, media/armani_tpyx9l_c_scale,w_762.png 762w, media/armani_tpyx9l_c_scale,w_944.png 944w, media/armani_tpyx9l_c_scale,w_1117.png 1117w, media/armani_tpyx9l_c_scale,w_1287.png 1287w, media/armani_tpyx9l_c_scale,w_1400.png 1400w"  src="media/armani_tpyx9l_c_scale,w_1400.png" loading="lazy" alt="Armani e-store screenshot">
+                        <img sizes="(max-width: 1400px) 100vw, 1400px"  srcset="media/armani_tpyx9l_c_scale,w_200.png 200w, media/armani_tpyx9l_c_scale,w_538.png 538w, media/armani_tpyx9l_c_scale,w_762.png 762w, media/armani_tpyx9l_c_scale,w_944.png 944w, media/armani_tpyx9l_c_scale,w_1117.png 1117w, media/armani_tpyx9l_c_scale,w_1287.png 1287w, media/armani_tpyx9l_c_scale,w_1400.png 1400w"  src="armani_tpyx9l_c_scale,w_1400.png" loading="lazy" alt="Armani e-store screenshot">
                         <button commandfor="dialog-armani" command="close">✕</button>
                     </dialog>
 
@@ -818,8 +817,8 @@
         <div class="boxed">
             <h2>Contacts</h2>
             <ul>
-                <li><a href="https://github.com/fbedussi" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/francescobedussi/" target="_blank"  rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://github.com/fbedussi" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/francescobedussi/" target="_blank">LinkedIn</a></li>
                 <li><a href="https://fbedussi.github.io/blog/" target="_blank">Frontend no stress, my
                         blog</a></li>
                 <li>francesco [at] francescobedussi [.] it</li>

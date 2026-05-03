@@ -1,5 +1,11 @@
 [
   {
+    "id": "prima",
+    "name": "Prima, the modernization of checkout flow",
+    "year": 2025,
+    "src": "media/prima.jpg"
+  },
+  {
     "id": "ben",
     "name": "Rainbow room, a tool to showcase new collections to retailers",
     "year": 2022,
@@ -72,23 +78,9 @@
     "name": "Armani e-store",
     "year": 2019,
     "srcset": "media/armani_tpyx9l_c_scale,w_200.png 200w, media/armani_tpyx9l_c_scale,w_538.png 538w, media/armani_tpyx9l_c_scale,w_762.png 762w, media/armani_tpyx9l_c_scale,w_944.png 944w, media/armani_tpyx9l_c_scale,w_1117.png 1117w, media/armani_tpyx9l_c_scale,w_1287.png 1287w, media/armani_tpyx9l_c_scale,w_1400.png 1400w",
-    "src": "armani_tpyx9l_c_scale,w_1400.png",
+    "src": "media/armani_tpyx9l_c_scale,w_1400.png",
     "details": [
       "Accessibility retrofit"
-    ]
-  },
-  {
-    "id": "flyfeed",
-    "link": "https://rss-reader-19af4.firebaseapp.com",
-    "name": "flyFeed, a simple RSS reader",
-    "year": 2018,
-    "srcset": "media/flyfeed_qtr4sb_c_scale,w_677.jpg 677w, media/flyfeed_qtr4sb_c_scale,w_973.jpg 973w, media/flyfeed_qtr4sb_c_scale,w_1249.jpg 1249w, media/flyfeed_qtr4sb_c_scale,w_200.jpg 200w, media/flyfeed_qtr4sb_c_scale,w_1400.jpg 1400w",
-    "src": "media/flyfeed_qtr4sb_c_scale,w_1400.jpg",
-    "details": [
-      "Written in Elm",
-      "Fully responsive",
-      "Backed by Firebase",
-      "CSS in Elm"
     ]
   },
   {
@@ -108,19 +100,6 @@
       "Based on a .NET MVC custom front-end platform",
       "Based on custom js pub-sub framework"
     ]
-  },
-  {
-    "id": "elm15",
-    "link": "https://puzzle-f9d67.firebaseapp.com",
-    "name": "15 puzzle",
-    "year": 2018,
-    "src": "media/elm15.png",
-    "details": [
-      "Progressive Web App",
-      "Written in Elm",
-      "Fully responsive"
-    ],
-    "cta": "play the game"
   },
   {
     "id": "cavalli",
@@ -152,21 +131,6 @@
       "Dynamic content loading via json file",
       "Fluid layout"
     ]
-  },
-  {
-    "id": "mangiamusica",
-    "link": "https://github.com/fbedussi/mangiamusica",
-    "name": "Mangiamusica, a music player for toddlers - WIP",
-    "year": 2017,
-    "srcset": "media/margiela_wrbdud_c_scale,w_375.jpg 375w, media/margiela_wrbdud_c_scale,w_629.jpg 629w, media/margiela_wrbdud_c_scale,w_842.jpg 842w, media/margiela_wrbdud_c_scale,w_1018.jpg 1018w, media/margiela_wrbdud_c_scale,w_1174.jpg 1174w, media/margiela_wrbdud_c_scale,w_1583.jpg 1583w",
-    "src": "media/margiela_wrbdud_c_scale,w_1583.jpg",
-    "details": [
-      "React Native",
-      "Redux",
-      "Jest",
-      "Material.Ui"
-    ],
-    "cta": "take a look at the project"
   },
   {
     "id": "ttracker",
@@ -225,34 +189,6 @@
       "XSLT",
       "Based on custom js pub-sub framework"
     ]
-  },
-  {
-    "id": "nightwatchGui",
-    "link": "https://github.com/fbedussi/nightwatchGui",
-    "name": "nightwatchGui, a Graphical User Interface for the test automation framework nightwatch-cucumber",
-    "year": 2016,
-    "srcset": " media/nightwatchgui_pp7e2f_c_scale,w_375.jpg 375w, media/nightwatchgui_pp7e2f_c_scale,w_778.jpg 778w, media/nightwatchgui_pp7e2f_c_scale,w_1000.jpg 1000w",
-    "src": "media/nightwatchgui_pp7e2f_c_scale,w_1000.jpg",
-    "details": [
-      "Node.js + Express",
-      "Vanilla Js"
-    ],
-    "cta": "take a look at the project"
-  },
-  {
-    "id": "gpp",
-    "link": "https://github.com/fbedussi/nightwatchGui",
-    "name": "Gherkin/Cucumber file preprocessor",
-    "year": 2016,
-    "srcset": "media/gpp_qac3kl_c_scale,w_375.jpg 375w, media/gpp_qac3kl_c_scale,w_819.jpg 819w",
-    "src": "media/gpp_qac3kl_c_scale,w_819.jpg",
-    "details": [
-      "Node.js",
-      "Watch mode",
-      "File partials",
-      "Conditional rendering"
-    ],
-    "cta": "take a look at the project"
   },
   {
     "id": "lagerfeld",
