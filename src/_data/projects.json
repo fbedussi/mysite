@@ -124,7 +124,7 @@
     "link": "http://www.ledpedestriancrossing.com/configuratore/index.html",
     "name": "APL configurator",
     "year": 2017,
-    "srcset": "media/apl_ap5awf_c_scale,w_375.jpg 375w, media/apl_ap5awf_c_scale,w_789.jpg 789w, media/apl_ap5awf_c_scale,w_1119.jpg 1119w, media/apl_ap5awf_c_scale,w_1437.jpg 1437w, media/apl_ap5awf_c_scale,w_1581.jpg 1581w",
+    "srcset": "media/apl_ap5awf_c_scale,w_375.jpg 375w, media/apl_ap5awf_c_scale,w_789.jpg 789w, media/apl_ap5awf_c_scale,w_1437.jpg 1437w, media/apl_ap5awf_c_scale,w_1581.jpg 1581w",
     "src": "media/apl_ap5awf_c_scale,w_1581.jpg",
     "details": [
       "React + Redux + Jest",
