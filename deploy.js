@@ -1,5 +1,8 @@
-require('dotenv').config();
-const FtpDeploy = require('ftp-deploy');
+import FtpDeploy from 'ftp-deploy';
+import path from 'node:path';
+
+process.loadEnvFile(path.join(process.cwd(), '.env'));
+
 const ftpDeploy = new FtpDeploy();
 
 const stage = process.argv[2] === 'stage';
@@ -10,7 +13,7 @@ const config = {
     password: stage ? process.env.FTP_PASSWORD_STAGE : process.env.FTP_PASSWORD,
     host: process.env.FTP_HOST,
     port: 21,
-    localRoot: __dirname + '/dist',
+    localRoot: process.cwd() + '/dist',
     remoteRoot: '/www.francescobedussi.it',
     // include: ['*', '**/*'],      // this would upload everything except dot files
     include: [

@@ -2,31 +2,19 @@
   "name": "francescobedussi.it",
   "version": "1.0.0",
   "description": "My personal website",
-  "main": "index.js",
-  "dependencies": {
-    "postcss-cli": "^4.1.1",
-    "postcss-cssnext": "^3.0.2"
-  },
+  "type": "module",
+  "dependencies": {},
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "dotenv": "^8.2.0",
-    "ftp-deploy": "^2.3.7",
-    "postcss-cli": "^4.1.1",
-    "postcss-cssnext": "^3.0.2"
+    "ftp-deploy": "^2.3.7"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "buildCss": "postcss src/style.css -o dist/style.css -w",
-    "buildJs": "cp src/script.js dist/js && ./node_modules/.bin/babel src/script.js --watch --out-file dist/js/script-compiled.js --presets=env",
-    "11ty": "npx @11ty/eleventy --input=./src/index2.liquid --output=./dist",
+    "11ty": "npx @11ty/eleventy --input=./src/index.liquid --output=./dist",
     "start": "npx @11ty/eleventy --input=./src/index.liquid --output=./dist --serve",
     "deploy": "node deploy"
   },
   "browserslist": [
     "> 1%",
-    "last 2 versions",
-    "ie 11"
+    "last 2 versions"
   ],
   "repository": {
     "type": "git",
